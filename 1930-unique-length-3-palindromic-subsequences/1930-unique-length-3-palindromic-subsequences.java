@@ -1,32 +1,33 @@
 class Solution {
     public int countPalindromicSubsequence(String s) {
-        int n=s.length();
-        int result=0;
-        Set<Character>set_palindrome=new HashSet<>();
-        Set<Character>set=new HashSet<>();
-        int [] index=new int[26];
-        Arrays.fill(index,-1);
-        for(int idx=0;idx<n;idx++){
-            index[s.charAt(idx)-'a']=idx;
-        }
-        int i=0;
-        while(i<n){
-            char ch=s.charAt(i);
-            if(index[ch-'a']>=i+2){
-                int count=0;
-                int j=index[ch-'a'];
-                if(!set_palindrome.contains(s.charAt(i))){
-                    for(int start=i+1;start<j;start++){
-                    set.add(s.charAt(start));
-                }
-                count=set.size();
-                set.clear();
-                }
-                result=result+count;
-                set_palindrome.add(s.charAt(i));
+        int[] first = new int[26];
+        int[] last = new int[26];
+        Arrays.fill(first, -1);
+        Arrays.fill(last, -1);
+        
+        for (int i = 0; i < s.length(); i++) {
+            int curr = s.charAt(i) - 'a';
+            if (first[curr] == - 1) {
+                first[curr] = i;
             }
-            i++;
+            
+            last[curr] = i;
         }
-        return result;
+        
+        int ans = 0;
+        for (int i = 0; i < 26; i++) {
+            if (first[i] == -1) {
+                continue;
+            }
+            
+            Set<Character> st = new HashSet();
+            for (int middle = first[i] + 1; middle < last[i]; middle++) {
+                st.add(s.charAt(middle));
+            }
+            
+            ans += st.size();
+        }
+        
+        return ans;
     }
 }

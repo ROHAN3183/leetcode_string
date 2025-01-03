@@ -1,4 +1,11 @@
-#optimized
+
+#optimized!
+1. Compute the prefix sum array (`prefix_sum`) where each element stores the cumulative sum of the array up to that index.  
+2. Iterate through the array up to the second-last index (`j <= n - 2`).  
+3. For each split point `j`, check if the sum of the left subarray (`prefix_sum[j]`) is greater than or equal to the sum of the right subarray (`total sum - prefix_sum[j]`).  
+4. Increment the `count` if the condition is satisfied.  
+5. Return the `count` as the total number of valid split points. 
+    
 class Solution {
     public int waysToSplitArray(int[] nums) {
         int n=nums.length;

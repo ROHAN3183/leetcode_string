@@ -1,3 +1,11 @@
+# logic part!
+
+1. Use an `index` array to store the last occurrence of each character in the string.  
+2. Iterate through the string and check if the last occurrence of a character is at least 2 indices ahead.  
+3. Use a `HashSet` to collect distinct middle characters between the first and last occurrence.  
+4. Avoid duplicate counting using `set_palindrome` to track processed starting characters.  
+5. Add the size of the middle-character set to the result and clear the set for the next iteration.  
+    
 class Solution {
     public int countPalindromicSubsequence(String s) {
         int n=s.length();

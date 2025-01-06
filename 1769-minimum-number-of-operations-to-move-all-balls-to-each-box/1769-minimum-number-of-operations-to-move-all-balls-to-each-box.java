@@ -1,35 +1,28 @@
 class Solution {
     public int[] minOperations(String boxes) {
         int n = boxes.length();
-        int i = 0;
-        int j;
-        int k;
-        int[] result = new int[n];
+        String ans = "";
+        int result = 0;
+        int[] operation = new int[n];
         
-        while (i < n) {
-            int count1 = 0;
-            int count2 = 0;
-            j = n - 1;
-            k = 0;
-
-            while (i < j) {
-                if (boxes.charAt(j) == '1') {
-                    count1 += j - i;
-                }
-                j--;
+        // Construct the string `ans` containing all the '1' characters
+        for (int i = 0; i < n; i++) {
+            char ch = boxes.charAt(i);
+            if (ch == '1') {
+                ans = ans + i; // Append index of '1' instead of the character
             }
-
-            while (k < i) {
-                if (boxes.charAt(k) == '1') {
-                    count2 += i - k;
-                }
-                k++;
-            }
-
-            result[i] = count1 + count2;
-            i++;
         }
 
-        return result;
+        // Compute the operations for each box
+        for (int i = 0; i < n; i++) {
+            result = 0; // Reset the result for each box
+            for (int j = 0; j < ans.length(); j++) {
+                int num = ans.charAt(j) - '0'; // Convert character to integer index
+                result += Math.abs(num - i); // Calculate distance
+            }
+            operation[i] = result; // Store the result for box `i`
+        }
+        
+        return operation;
     }
 }

@@ -7,7 +7,7 @@ class Solution {
         int j=0;
         if (m == 0) return 0;
         if (n < m) return -1; 
-        while(idx<=n-m){
+        while(idx<=n-m){ //To avoid outofbound condition.
             i=idx;
             j=0;
             while(j<m && haystack.charAt(i)==needle.charAt(j)){

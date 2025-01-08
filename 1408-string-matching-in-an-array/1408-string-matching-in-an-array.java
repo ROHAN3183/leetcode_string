@@ -8,7 +8,9 @@ class Solution {
                 String str=words[j];
                 if(i!=j){
                     if(isValid(str,x)){
-                        list.add(words[j]);
+                        if(!list.contains(str)){
+                            list.add(str);
+                        }
                     }
                 }
             }

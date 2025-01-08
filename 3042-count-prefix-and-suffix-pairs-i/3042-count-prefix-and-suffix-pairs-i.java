@@ -1,4 +1,5 @@
-class Solution {
+# BRUTE FORCE
+    class Solution {
     public int countPrefixSuffixPairs(String[] words) {
         int n=words.length;
         int count=0;
@@ -13,7 +14,7 @@ class Solution {
         }
         return count;
     }
-    boolean isValid(String s,String str){
+    boolean isValid(String s,String str){ //Better result use startsWith() AND endsWith() 
         int n1=s.length();
         int n2=str.length();
         if(n1>n2){

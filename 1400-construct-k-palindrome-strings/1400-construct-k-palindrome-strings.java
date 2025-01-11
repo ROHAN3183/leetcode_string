@@ -1,5 +1,6 @@
+#Approach 
 class Solution {
-    public boolean canConstruct(String s, int k) {
+    public boolean canConstruct(String s, int k) {//if count of character present is odd it means increase the count .
         int n=s.length();
         int [] frequency=new int[26];
         for(int i=0;i<n;i++){

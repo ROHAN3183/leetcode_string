@@ -1,3 +1,49 @@
+#BRUTE FORECE
+    
+    class Solution {
+    public List<String> wordSubsets(String[] words1, String[] words2) {
+        ArrayList<String>list=new ArrayList<>();
+        int n=words1.length;
+        int m=words2.length;
+        for(int i=0;i<n;i++){
+            String s1=words1[i];
+            int len1= s1.length();
+            int [] character=new int[26];
+            for(int j=0;j<len1;j++){
+                char ch1=s1.charAt(j);
+                character[ch1-'a']+=1;
+            }
+            int length=0;
+            for(int k=0;k<m;k++){
+                String s2=words2[k];
+                int len2= s2.length();
+                int count=0;
+            int[] temp = character.clone();
+                for(int l=0;l<len2;l++){
+                    char ch2=s2.charAt(l);
+                    if(temp[ch2-'a']>=1){
+                        count++;
+                        temp[ch2-'a']-=1;
+                    }
+                    else{
+                        break;
+                    }
+                }
+                if(count==len2){
+                        length++;
+                }
+            }
+             if(length==m){
+                    list.add(s1);
+            }
+
+        }
+        return list;
+    }
+}
+
+    # OPTIMIZED  
+        
 class Solution {
     public List<String> wordSubsets(String[] words1, String[] words2) {
         List<String> result = new ArrayList<>();

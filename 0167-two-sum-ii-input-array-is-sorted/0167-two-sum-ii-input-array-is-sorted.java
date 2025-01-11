@@ -1,5 +1,5 @@
 class Solution {
-    public int[] twoSum(int[] numbers, int target) {
+    public int[] twoSum(int[] numbers, int target) { //use two pointer approach
         int n=numbers.length;
         int i=0;
         int j=n-1;

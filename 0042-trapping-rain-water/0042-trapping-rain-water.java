@@ -1,5 +1,5 @@
 class Solution {
-    public int trap(int[] height) {
+    public int trap(int[] height) { // mantain left_largest and right_largest array for difference between them
         int n=height.length;
         int [] left_largest =new int[n];
         int [] right_largest=new int[n];

@@ -13,6 +13,7 @@ class Solution {
         }
         int idx = 0;
         // Process each element in the 'changed' array
+        Arrays.sort(changed);
         for (int i = 0; i < n; i++) {
             int num = changed[i];
             

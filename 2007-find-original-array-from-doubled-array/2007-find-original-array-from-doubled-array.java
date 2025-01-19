@@ -1,39 +1,31 @@
 class Solution {
     public int[] findOriginalArray(int[] changed) {
-        int n = changed.length;
-        // If the length is odd, we cannot form pairs, so return an empty array.
-        if (n % 2 != 0) {
-            return new int[] {};
+        int n=changed.length;
+        if(n%2!=0){
+            return new int[0];
         }
-        HashMap<Integer, Integer> map = new HashMap<>();
-        int[] res = new int[n / 2];
-        // Count the frequencies of each number in the 'changed' array
-        for (int num : changed) {
-            map.put(num, map.getOrDefault(num, 0) + 1);
+        HashMap<Integer,Integer>map=new HashMap<>();
+        int [] result=new int[n/2];
+        for(int i=0;i<n;i++){
+            map.put(changed[i],map.getOrDefault(changed[i],0)+1);
         }
-        int idx = 0;
-        // Process each element in the 'changed' array
+        int idx=0;
         Arrays.sort(changed);
-        for (int i = 0; i < n; i++) {
-            int num = changed[i];
-            
-            // Skip if this number has already been processed (its frequency is 0)
-            if (map.get(num) == 0) {
+        for(int i=0;i<n;i++){
+           int nums=changed[i];
+            if(map.get(nums)==0){
                 continue;
             }
-
-            // If we can pair the number 'num' with its double '2 * num'
-            if (map.getOrDefault(2 * num, 0) > 0) {
-                // Record the original element in the result array
-                res[idx++] = num;
-                // Decrement the count for 'num' and '2 * num'
-                map.put(num, map.get(num) - 1);
-                map.put(2 * num, map.get(2 * num) - 1);
-            } else {
-                // If no valid pair is found, return an empty array
-                return new int[] {};
+            if(map.getOrDefault(2*nums,0)>0){
+                result[idx++]=nums;
+                map.put(nums,map.get(nums)-1);
+                map.put(2*nums,map.get(2*nums)-1);
             }
+            else{
+                return new int[0];
+            }
+
         }
-        return res;
+        return result;
     }
 }

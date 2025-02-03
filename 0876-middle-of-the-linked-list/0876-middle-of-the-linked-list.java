@@ -29,20 +29,13 @@ class Solution {
 }
 # OPTIMIZED CODE 
 class Solution {
-    public ListNode middleNode(ListNode head) { // FAST AND SLOW Approach
-        ListNode temp=head;
-        ListNode traverse=head;
-        int count =0;
-        while(temp!=null){
-            count++;
-            temp=temp.next;
+    public ListNode middleNode(ListNode head) { // slow and fast approach
+        ListNode slow=head;
+        ListNode fast =head;
+        while(fast!=null && fast.next!=null){
+            slow =slow.next;
+            fast=fast.next.next;
         }
-        int result=0;
-        while(result<count/2){
-            result++;
-            traverse=traverse.next;
-        }
-        head=traverse;
-        return head;
+        return slow;
     }
 }

@@ -9,7 +9,7 @@
  * }
  */
 class Solution {
-    public ListNode middleNode(ListNode head) {
+    public ListNode middleNode(ListNode head) { //slow fast approach
         ListNode slow=head;
         ListNode fast =head;
         while(fast!=null && fast.next!=null){

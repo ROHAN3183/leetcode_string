@@ -9,8 +9,9 @@
  *     }
  * }
  */
+
 public class Solution {
-    public boolean hasCycle(ListNode head) {
+    public boolean hasCycle(ListNode head) { //if slow==fast it means loop do exist.
         ListNode slow=head;
         ListNode fast=head;
         while(fast!=null &&fast.next!=null){

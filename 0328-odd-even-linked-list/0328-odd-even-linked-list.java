@@ -9,7 +9,7 @@
  * }
  */
 class Solution {
-    public ListNode oddEvenList(ListNode head) {
+    public ListNode oddEvenList(ListNode head) { // Assume first node as odd and second node as even.
         if(head==null){
             return null;
         }

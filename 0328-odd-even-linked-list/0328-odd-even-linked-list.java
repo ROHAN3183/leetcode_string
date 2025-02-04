@@ -22,7 +22,7 @@ class Solution {
             odd=odd.next;
             even=even.next;
         }
-        odd.next=start_even;
+        odd.next=head.next;
         return head;
     }
 }

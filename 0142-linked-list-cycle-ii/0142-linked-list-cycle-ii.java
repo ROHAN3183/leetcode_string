@@ -9,8 +9,26 @@
  *     }
  * }
  */
+# brute force
 public class Solution {
-    public ListNode detectCycle(ListNode head) {
+    public ListNode detectCycle(ListNode head) { //In hashMap if it contain's node it means loop do exits. 
+        HashMap<ListNode,Integer>map=new HashMap<>();
+        ListNode temp=head;
+        while(temp!=null){
+            if(map.containsKey(temp)){
+                return temp;
+            }
+            map.put(temp,1);
+            temp=temp.next;
+        }
+    return null;
+    }
+}
+
+# optimized code
+
+public class Solution {
+    public ListNode detectCycle(ListNode head) { //use slow and fast approach if slow =fast it means loop do exist's.
         ListNode slow=head;
         ListNode fast=head;
         boolean flag=false;

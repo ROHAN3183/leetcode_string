@@ -21,7 +21,7 @@ class Solution {
         if(k==0){
             return head;
         }
-        if(length==0){
+        if(head==null){
             return null;
         }
         k=k%length;

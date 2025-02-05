@@ -9,10 +9,10 @@
  * }
  */
 class Solution {
-    public ListNode rotateRight(ListNode head, int k) {
-        ListNode temp=head;
-        ListNode tail=head;
-        int length=0;
+    public ListNode rotateRight(ListNode head, int k) { //calculate the length of linklist and also maintain tail for last node
+        ListNode temp=head;                            //add the tail.next =head.
+        ListNode tail=head;                            // get the length where need to put null using subtracting length of lini
+        int length=0;                                  //with the position to be change
         while(temp!=null){
             length++;
             tail=temp;

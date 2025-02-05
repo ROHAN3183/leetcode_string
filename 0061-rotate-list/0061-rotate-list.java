@@ -21,7 +21,11 @@ class Solution {
         if(k==0){
             return head;
         }
+        if(length==0){
+            return null;
+        }
         k=k%length;
+
         tail.next=head;
         ListNode temp2=head;
         int pos=length-k;

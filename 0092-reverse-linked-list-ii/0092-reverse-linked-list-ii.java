@@ -15,7 +15,7 @@ class Solution {
         }
         ListNode dummy=new ListNode(0);
         dummy.next=head;
-        ListNode prev=head.next;
+        ListNode prev=dummy;
         for(int i=1;i<left;i++){
             prev=prev.next;
         }

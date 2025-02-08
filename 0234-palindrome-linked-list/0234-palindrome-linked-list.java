@@ -11,9 +11,9 @@
 #BRUTE CODE
     
 class Solution {
-    public boolean isPalindrome(ListNode head) { // Just add all the element in stack . 
-        ListNode temp=head;                      // while poping out the element just compare the element with linklist element 
-        Stack<Integer> stack=new Stack<>();      // while poping the element it don't match with the linkist then return false.
+    public boolean isPalindrome(ListNode head) { // 1) Just add all the element in stack . 
+        ListNode temp=head;                      // 2) while poping out the element just compare the element with linklist element 
+        Stack<Integer> stack=new Stack<>();      // 3) while poping the element it don't match with the linkist then return false.
         while(temp!=null){
             stack.push(temp.val);
             temp=temp.next;

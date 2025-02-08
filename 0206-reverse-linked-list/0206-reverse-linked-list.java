@@ -9,7 +9,7 @@
  * }
  */
 class Solution {
-    public ListNode reverseList(ListNode head) {
+    public ListNode reverseList(ListNode head) { // before changing the nextnode store the value in tempory so that we can move forward. 
         ListNode current=head;
         ListNode prev=null;
         while(current!=null){

@@ -19,7 +19,6 @@ class Solution {
             slow=slow.next;
             fast=fast.next.next;
         }
-        prev.next=null;
         prev=reversed(slow);
         while(temp!=null && prev!=null){
             if(temp.val!=prev.val){

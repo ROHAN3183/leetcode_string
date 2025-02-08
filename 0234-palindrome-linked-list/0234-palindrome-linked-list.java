@@ -8,10 +8,34 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+#BRUTE CODE
+    
 class Solution {
-    public boolean isPalindrome(ListNode head) {
-        if(head==null ||head.next==null){
-            return true;
+    public boolean isPalindrome(ListNode head) { // Just add all the element in stack . 
+        ListNode temp=head;                      // while poping out the element just compare the element with linklist element 
+        Stack<Integer> stack=new Stack<>();      // while poping the element it don't match with the linkist then return false.
+        while(temp!=null){
+            stack.push(temp.val);
+            temp=temp.next;
+        }
+        temp=head;
+        while(temp!=null&&!stack.isEmpty()){
+            int reversed_character=stack.pop();
+            if(reversed_character!=temp.val){
+                return false;
+            }
+            temp=temp.next;
+        }
+        return true;
+    }
+}
+
+#OPTIMIZED CODE
+    
+class Solution {
+    public boolean isPalindrome(ListNode head) { // 1) find the mid element using slow fast Approach.
+        if(head==null ||head.next==null){        // 2) Reverse the linklist from slow to last of linklist.
+            return true;                         // 3) Then again traverse from fist_part of head and second_part head until the any part don't become the null. 
         }
         ListNode temp=head;
         ListNode fast=head;

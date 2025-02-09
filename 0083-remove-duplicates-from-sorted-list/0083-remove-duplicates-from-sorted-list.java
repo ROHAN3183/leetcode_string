@@ -1,13 +1,10 @@
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
+                                          # LOGIC OF THIS CODE
+                                            
+1) Take a LinkedHashSetto store the the values of the element.
+2) Again traverse to the set to put the back element to the linkist using the temp as pointer
+   and prev .
+3) In last put the prev next=null;    
+
 #BRUTE CODE
     
 class Solution {
@@ -32,8 +29,13 @@ class Solution {
       return head;
     }
 }
-# OTIMIZED CODE
-    
+                                                # OTIMIZED CODE LOGIC
+1) Take two pointer current and the prev.
+2) current=head.next where as prev=head so that current will be always at least one ahead .
+3) If current.val!=prev.val then prev.next=curent and alway more current=current.next;
+4) In last the prev.next=null.
+5) Return head. 
+                                                   
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
         

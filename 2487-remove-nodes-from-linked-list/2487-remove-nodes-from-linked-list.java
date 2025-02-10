@@ -1,47 +1,29 @@
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
+import java.util.Stack;
+
 class Solution {
     public ListNode removeNodes(ListNode head) {
-        Stack<Integer>stack=new Stack<>();
-        ListNode temp=head;
-        while(temp!=null){
-            stack.push(temp.val);
-            temp=temp.next;
+        Stack<ListNode> stack = new Stack<>();
+        ListNode temp = head;
+
+        // Step 1: Traverse the list and push nodes onto the stack
+        while (temp != null) {
+            stack.push(temp);
+            temp = temp.next;
         }
-        temp=head;
-        while(stack.size()>0){
-            int x=stack.pop();
-            temp.val=x;
-            temp=temp.next;
-        }
-        stack.clear();
-        temp=head;
-        int maxi=0;
-        while(temp!=null){
-            if(temp.val>=maxi){
-                maxi=Math.max(temp.val,maxi);
-                stack.push(temp.val);
+
+        // Step 2: Maintain the maximum value seen so far (right to left)
+        ListNode newHead = null;
+        int maxSoFar = Integer.MIN_VALUE;
+
+        while (!stack.isEmpty()) {
+            ListNode node = stack.pop();
+            if (node.val >= maxSoFar) {
+                maxSoFar = node.val;
+                node.next = newHead;
+                newHead = node;
             }
-            temp=temp.next;
         }
-        ListNode dummy=head;
-        ListNode prev=dummy;
-      //  ListNode prev_null=null;
-        while(stack.size()>0){
-            int x=stack.pop();
-            prev.next=new ListNode(x);
-           // prev_null=prev;
-            prev=prev.next;
-        }
-        prev.next=null;
-        return dummy.next;
+
+        return newHead;
     }
 }

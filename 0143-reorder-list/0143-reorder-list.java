@@ -1,13 +1,11 @@
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
+                                        LOGIC FOR THIS CODE
+                                            
+1.Find the middle** using slow and fast pointers.  
+2.Reverse the second half** starting from `slow.next`.  
+3.Break the link** by setting `slow.next = null`.  
+4.Merge both halves** by alternating nodes.  
+5.Stop when `right` is null**, ensuring correct order.  
+    
 class Solution {
     public void reorderList(ListNode head) {
         if (head == null || head.next == null) {

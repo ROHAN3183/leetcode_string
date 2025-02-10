@@ -34,14 +34,14 @@ class Solution {
         }
         ListNode dummy=head;
         ListNode prev=dummy;
-       // ListNode prev_node=null;
+      //  ListNode prev_null=null;
         while(stack.size()>0){
             int x=stack.pop();
             prev.next=new ListNode(x);
            // prev_null=prev;
             prev=prev.next;
         }
-       // prev_null.next=null;
+        prev.next=null;
         return dummy.next;
     }
 }

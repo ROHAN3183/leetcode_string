@@ -1,13 +1,11 @@
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
+                                        LOGIC OF THIS CODE
+                                            
+1.Find the last node of list2** by traversing it.  
+2.Find the (a-1)th node in list1** (prev_left) and the bth node.  
+3.Link prev_left to list2** to merge the left part.  
+4.Link list2's last node to b+1th node** to merge the right part.  
+5.Return list1** as the final merged list.  
+
 class Solution {
     public ListNode mergeInBetween(ListNode list1, int a, int b, ListNode list2) {
         ListNode temp2=list2;

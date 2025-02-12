@@ -25,9 +25,9 @@ class Solution {
         ListNode right_node=null;
         int left_val=0;
         int right_val=0;
-
+        int count=1;
         for(int i=1;i<=length;i++){
-            if(i==left_pos){
+            if(count==left_pos){
                 left_val=temp.val;
                 left_node=temp;
                 flag1=true;
@@ -41,6 +41,7 @@ class Solution {
                 left_node.val=right_val;
                 right_node.val=left_val;
             }
+            count++;
             temp=temp.next;
         }
         return head;

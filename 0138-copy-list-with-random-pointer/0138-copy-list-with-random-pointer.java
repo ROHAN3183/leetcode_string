@@ -1,18 +1,10 @@
-/*
-// Definition for a Node.
-class Node {
-    int val;
-    Node next;
-    Node random;
-
-    public Node(int val) {
-        this.val = val;
-        this.next = null;
-        this.random = null;
-    }
-}
-*/
-
+                                            LOGIC OF THIS CODE(REFTER CODEWITHMIK)
+1) Traverse the original_list and just copy the value and also put the list_random value in the HashMap.
+2) During the putting in map put original_list as the key where as the newnode_list respectively in map.
+3) After that again start traversing in the original_list seach in map that is map.contains original_list.next then put it in the newnode_list respectively.
+    
+#BRUTE FORCE
+    
 class Solution {
     public Node copyRandomList(Node head) {
         HashMap<Node,Node>map=new HashMap<>();

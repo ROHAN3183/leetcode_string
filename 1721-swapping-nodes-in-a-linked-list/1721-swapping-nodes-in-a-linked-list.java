@@ -19,40 +19,29 @@ class Solution {
         temp=head;
         int left_pos=k;
         int right_pos=length-k+1;
-        int pos=1;
         boolean flag1=false;
         boolean flag2=false;
-        ListNode prev_left=null;
         ListNode left_node=null;
-        ListNode left_next_node=null;
-        ListNode prev_right=null;
         ListNode right_node=null;
-        ListNode right_next_node=null;
-        ListNode prev=null;
+        int left_val=0;
+        int right_val=0;
 
-        while(temp!=null){
-            if(pos==left_pos){
-                prev_left=prev;//100
-                left_node=temp;//200
-                left_next_node=temp.next;//300
+        for(int i=1;i<=length;i++){
+            if(i==left_pos){
+                left_val=temp.val;
+                left_node=temp;
                 flag1=true;
             }
-            if(pos==right_pos){
-                prev_right=prev;//300
-                right_node=temp;//400
-                right_next_node=temp.next;//500
+            if(i==right_pos){
+                right_val=temp.val;
+                right_node=temp;
                 flag2=true;
             }
-            if(flag1 && flag2){
-                prev_left.next=right_node;
-                right_node.next=left_next_node;
-                prev_right.next=left_node;
-                left_node.next=right_next_node;
-                break;
+            if(flag1 &&flag2){
+                left_node.val=right_val;
+                right_node.val=left_val;
             }
-            prev=temp;
             temp=temp.next;
-            pos++;
         }
         return head;
     }

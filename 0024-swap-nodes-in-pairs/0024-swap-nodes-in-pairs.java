@@ -19,7 +19,7 @@ class Solution {
         ListNode x=head;
         while(x!=null){
             x=current.next;
-            if(x!=null&&x.next!=null){
+            if(x!=null && x.next!=null){
                 current.next=prev;
                 prev.next=x.next;
                 prev=x;

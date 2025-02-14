@@ -15,12 +15,13 @@ class Solution {
             if(map.containsKey(element)){
                 idx=map.get(element);
             }
-            for(int j=idx;j<m;j++){
+            for(int j=idx+1;j<m;j++){
                 if(nums2[j]>element){
-                    result[result_idx++]=nums2[j];
+                    result[result_idx]=nums2[j];
                     break;
                 }
             }
+            result_idx++;
         }
         return result;
     }

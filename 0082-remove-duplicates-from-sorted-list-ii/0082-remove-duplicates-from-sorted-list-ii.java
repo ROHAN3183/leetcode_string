@@ -1,13 +1,4 @@
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
+#BRUTE CODE
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
         HashMap<Integer,Integer>map=new LinkedHashMap<>();
@@ -28,6 +19,37 @@ class Solution {
             }
             temp=temp.next;
         }
+        return dummy.next;
+    }
+}
+#OPTIMIZED CODE
+class Solution {
+    public ListNode deleteDuplicates(ListNode head) {
+        if(head==null||head.next==null){
+            return head;
+        }
+
+        ListNode dummy=new ListNode(-1);
+        ListNode temp=dummy;
+        ListNode prev=head;
+        ListNode current=head.next;
+        int dublicate=Integer.MIN_VALUE;
+        while(current!=null){
+            if(current.val!=prev.val &&prev.val!=dublicate){
+                temp.next=prev;
+                temp=temp.next;
+            }
+            else{
+                dublicate=prev.val;
+            }
+            if(current.next==null&&current.val!=dublicate){
+                temp.next=current;
+                temp=temp.next;
+            }
+            prev=prev.next;
+            current=current.next;
+        }
+        temp.next=null;
         return dummy.next;
     }
 }

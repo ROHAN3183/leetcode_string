@@ -4,7 +4,7 @@ class Solution {
         int n=nums.length;
         int sum=0;
         int max_length=0;
-       // map.put(0,-1);
+        map.put(0,-1);
         for(int i=0;i<n;i++){
             if(nums[i]!=0){
                 sum=sum+nums[i];

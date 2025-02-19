@@ -27,6 +27,7 @@ class Solution {
                 }
                 temp_newNode.next=prev;
                 temp_newNode=end;
+                prev=null;
             }
             else{
                 temp_newNode.next=current;

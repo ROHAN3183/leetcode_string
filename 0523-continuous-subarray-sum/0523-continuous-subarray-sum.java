@@ -16,10 +16,10 @@ class Solution {
                     return true;
                 }
             }
-            else{
-                if(map.containsKey(remainder)){
+
+                if(!map.containsKey(remainder)){
                     map.put(remainder,i);
-                }
+                
             }
         }
         return false;

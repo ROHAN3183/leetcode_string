@@ -1,16 +1,15 @@
 class StockSpanner {
-    private Stack<Pair<Integer, Integer>> stack; 
+    Stack<int[]>stack=new Stack<>();
     public StockSpanner() {
         stack=new Stack();
     }
     
     public int next(int price) {
         int span=1;
-        while(!stack.isEmpty() && stack.peek().getKey()<=price){
-            span=span+stack.peek().getValue();
-            stack.pop();
+        while(!stack.isEmpty() && stack.peek()[0]<=price){
+            span=span+stack.pop()[1];
         }
-        stack.push(new Pair<>(price,span));
+        stack.push(new int[]{price,span});
         return span;
     }
 }

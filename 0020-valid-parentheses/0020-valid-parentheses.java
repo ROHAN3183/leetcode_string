@@ -1,3 +1,7 @@
+                                                Logic Of Code
+1)if opening symbol means (,{,] then push it into the stack but if closing sysmbol is there then match it with stack peek 
+2)if stack peek is  opposite of the same symbol then pop out else return false.
+                                                    
 class Solution {
     public boolean isValid(String s) {
         Stack<Character> stack=new Stack<>();

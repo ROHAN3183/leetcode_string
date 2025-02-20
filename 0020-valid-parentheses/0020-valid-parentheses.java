@@ -15,6 +15,9 @@ class Solution {
                 stack.peek()=='['&&ch==']'){
                     stack.pop();
                 }
+                else{
+                    return false;
+                }
             }
         }
         if(!stack.isEmpty()){

@@ -1,3 +1,8 @@
+                                                    #Logic of code
+1) two thing are the most important just virtual make array double that will help you in moving circular stack with the help
+    i%n.
+2)just use the concept of the monostack property means upcomming element should always less then then peek element else pop out.
+    
 class Solution {
     public int[] nextGreaterElements(int[] nums) {
         Stack<Integer>stack=new Stack<>();

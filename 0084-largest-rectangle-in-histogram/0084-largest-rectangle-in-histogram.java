@@ -19,7 +19,7 @@ class Solution {
                 stack.pop();
             }
             if(stack.isEmpty()){
-                NSL[i]=n;
+                NSL[i]=-1;
             }
             else{
                 NSL[i]=stack.peek();

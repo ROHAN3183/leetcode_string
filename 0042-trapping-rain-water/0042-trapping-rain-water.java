@@ -1,3 +1,4 @@
+#1 optimized code space (2N)
 class Solution {
     public int trap(int[] height) { // mantain left_largest and right_largest array for difference between them
         int n=height.length;
@@ -16,5 +17,33 @@ class Solution {
            count+= Math.min(left_largest[j],right_largest[j])-height[j];
         }
         return count;
+    }
+}
+#2 OPTIMIZED CODE space (1)
+ 
+    Just use two pointer the for that if left is small it means that will be the deciding factor of the storing 
+    because otherwise water will get flow .
+    
+    class Solution {
+    public int trap(int[] height) { 
+        int n=height.length;
+        int left=0;
+        int right=n-1;
+        int ans=0;
+        int left_max=0;
+        int right_max=0;
+        while(left<right){
+             left_max=Math.max(left_max,height[left]);
+             right_max=Math.max(right_max,height[right]);
+            if(right_max >left_max){
+                ans=ans+left_max-height[left];
+                left++;
+            }
+            else{
+                ans=ans+right_max-height[right];
+                right--;
+            }
+        }
+        return ans;
     }
 }

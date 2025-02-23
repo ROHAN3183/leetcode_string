@@ -1,6 +1,6 @@
 #Logic of the code
 1) first find the nextgreaterelementfrom the right second nextgreaterelementfrom the left third smallest to left and also
-    find the smallest right.
+    find the smallest right during this remember one edge case that flow the < alternate ,also store the index in stack. 
     
 class Solution {
     public long subArrayRanges(int[] nums) {

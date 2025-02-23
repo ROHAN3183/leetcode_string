@@ -1,4 +1,10 @@
-class Solution {
+logic of the code://codemikstory
+
+1) use the concept of the NearestToLeft and NearestToRight also store the index in the stack and index in the NSL.
+2) use formula that is arr[i]*left*right(where as left=i-NSL[i] ,right=NSR[i]-i).
+3) in nearestToLeft or nearesToRight among one one them use > not >= .so that it will add dublicate also.
+    
+    class Solution {
     public int sumSubarrayMins(int[] arr) {
         int n=arr.length;
         int ans=0;

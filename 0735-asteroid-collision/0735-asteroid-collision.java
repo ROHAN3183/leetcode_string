@@ -1,3 +1,10 @@
+logic of the code
+    
+1) suppose a=stack.peek() whereas b=coming element that is asteroids[i] if sum of a+b is negative means a is smaller means 
+    stack.peek() will get distorey till the that sum don't become the positive.
+2) if sum is positive means b is smaller it means comming element is smaller so that it will destorey means no need to push it
+    into the stack. if conditoin is neutural means both will get destorey so no need to push.
+    
 class Solution {
     public int[] asteroidCollision(int[] asteroids) {
         Stack<Integer> stack=new Stack<>();

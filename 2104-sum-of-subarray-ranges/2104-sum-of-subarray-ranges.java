@@ -1,3 +1,7 @@
+#Logic of the code
+1) first find the nextgreaterelementfrom the right second nextgreaterelementfrom the left third smallest to left and also
+    find the smallest right.
+    
 class Solution {
     public long subArrayRanges(int[] nums) {
         int n=nums.length;

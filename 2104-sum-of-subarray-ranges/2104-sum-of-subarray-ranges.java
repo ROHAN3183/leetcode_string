@@ -7,8 +7,8 @@ class Solution {
         int [] Right_smallest=nearestToRightSmallest(nums,n);
         int [] Left_smallest=nearestToLeftSmallest(nums,n);
         for(int i=0;i<n;i++){
-            long long max=(long)nums[i]*((Right_max[i]-i)*(i-Left_max[i]));
-            long long min=(long)nums[i]*((Right_smallest[i]-i)*(i-Left_smallest[i]));
+            long max=(long) nums[i]*(Right_max[i]-i)*(i-Left_max[i]);
+            long min=(long) nums[i]*(Right_smallest[i]-i)*(i-Left_smallest[i]);
             ans=ans+(max-min);
         }
         return ans;

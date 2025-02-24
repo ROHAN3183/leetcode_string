@@ -1,3 +1,7 @@
+logic of the code :
+if comming string is not number means 1,2,etc  then pop out first two digit from the stack and perform some operation with the
+coming string otherwise just put it into the stack by converting it into the integer. 
+
 class Solution {
     public int evalRPN(String[] tokens) {
         Stack<Integer> stack=new Stack<>();

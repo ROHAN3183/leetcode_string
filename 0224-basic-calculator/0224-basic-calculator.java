@@ -1,3 +1,6 @@
+logic of the code :
+whenever the sign is comming then store the result using result=result+number*sign whenever the ( it means push the result as 
+well as the result first push result then the sign . if ')' then store it into result=result+number*sign.
 class Solution {
     public int calculate(String s) {
         Stack<Integer> stack=new Stack<>();

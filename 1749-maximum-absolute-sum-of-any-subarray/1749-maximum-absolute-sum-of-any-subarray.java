@@ -1,3 +1,7 @@
+logic of the code:
+use Kadane’s algorithm check wheather comming number is greater then the sum of the previous then make it as then the max_sum 
+find both the max_sum of the subarray also find the min_sum of the subarray because we have to find the absolute differnce of the
+subarray.  
 class Solution {
     public int maxAbsoluteSum(int[] nums) {
         int n=nums.length;

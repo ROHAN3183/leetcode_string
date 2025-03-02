@@ -1,3 +1,8 @@
+logic of the code:
+
+just take the array of 26 size to store the frequency of that if any character is found in the fre1 like 'd' where as in fre2 'd' is not there then
+return false. otherwise sort it.a and if it found the all the equal then return true else false.
+    
 class Solution {
     public boolean closeStrings(String word1, String word2) {
         int n1=word1.length();

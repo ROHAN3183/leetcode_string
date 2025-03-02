@@ -20,7 +20,7 @@ class Solution {
         }
         Arrays.sort(fre1);
         Arrays.sort(fre2);
-        for(int i=0;i<n1;i++){
+        for(int i=0;i<26;i++){
             if(fre1[i]!=fre2[i]){
                 return false;
             }

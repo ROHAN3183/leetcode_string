@@ -1,3 +1,7 @@
+logic for the code 
+1) pop out the element from the stack.
+2) push out the element.
+    
 class Solution {
     public boolean validateStackSequences(int[] pushed, int[] popped) {
         Stack<Integer> stack=new Stack<>();

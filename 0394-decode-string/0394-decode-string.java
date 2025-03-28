@@ -1,3 +1,9 @@
+Logic of the code:
+1) take two stack first for storing the character like a,b,[,] .. another for storing digit like 1,2,33...
+2) to convert two digit trick is num=num*10 +(ch-'0')
+3) whenever '[' then push num into stack
+4) whenever ']' then push back reversed timced string into stack.
+    
 class Solution {
     public String decodeString(String s) {
         

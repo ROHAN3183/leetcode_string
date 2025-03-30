@@ -1,3 +1,7 @@
+logic of the code: 
+1) if top of the stack is '[' and comming is ']' then no issue. pop() out.
+2) remaining the stack of the stack will contain both '[' and ']' we need to count the either ']' or '[' size of the ('['+1)/2;
+
 class Solution {
     public int minSwaps(String s) {
         Stack<Character> stack=new Stack();

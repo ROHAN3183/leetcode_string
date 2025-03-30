@@ -1,45 +1,34 @@
 class Solution {
     public String removeDuplicates(String s, int k) {
-        Stack<Character> stack = new Stack<>();
-        StringBuilder final_result = new StringBuilder();
+        Stack<Pair> stack=new Stack();
+        StringBuilder final_result=new StringBuilder();
+        for(int i=0;i<s.length();i++){
+            char ch =s.charAt(i);
+            if(!stack.isEmpty() && stack.peek().ch==ch){
+                stack.peek().count++;
+            }
+            else{
+                stack.push(new Pair(ch,1));
+            }
+            if(stack.peek().count==k){
+                stack.pop();
+            }
 
-        for(int i = 0; i < s.length(); i++){
-            char ch = s.charAt(i);
-            stack.push(ch);
-            manipulation(stack, k);
         }
-
         while(!stack.isEmpty()){
-            final_result.append(stack.pop());
+            Pair current=stack.pop();
+            for(int i=0;i<current.count;i++){
+                final_result.append(current.ch);
+            }
         }
         return final_result.reverse().toString();
     }
-
-    private void manipulation(Stack<Character> stack, int k){
-        if(stack.size() < k) return;
-
-        boolean flag = true;
-        StringBuilder str = new StringBuilder();
-        int count = 0;
-
-        while(!stack.isEmpty() && count < k){
-            str.append(stack.pop());
-            count++;
-        }
-
-        char[] result = str.toString().toCharArray();
-
-        for(int j = 1; j < result.length; j++){
-            if(result[j] != result[j - 1]){
-                flag = false;
-                break;
-            }
-        }
-
-        if(!flag){
-            for(int m = result.length - 1; m >= 0; m--){
-                stack.push(result[m]);
-            }
-        }
-    }        
+}
+class Pair{
+    char ch;
+    int count;
+    Pair(char ch,int count){
+        this.ch=ch;
+        this.count=count;
+    }
 }

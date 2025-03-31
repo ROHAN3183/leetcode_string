@@ -4,7 +4,10 @@ class Solution {
         Stack<Character> stack=new Stack();
         for(int i=0;i<n;i++){
             char ch =s.charAt(i);
-            if((!stack.isEmpty()&&stack.peek()=='A' && ch=='B')||(!stack.isEmpty()&&stack.peek()=='C'&&ch=='D')){
+            if(stack.isEmpty()){
+                stack.push(ch);
+            }
+            else if((stack.peek()=='A' && ch=='B')||(stack.peek()=='C'&&ch=='D')){
                 stack.pop();
             }
             else{

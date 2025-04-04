@@ -1,3 +1,4 @@
+# BRUTE FORCE
 class Solution {
     public long countSubarrays(int[] nums, int minK, int maxK) {
         int n=nums.length;
@@ -15,6 +16,32 @@ class Solution {
                     break;
                 }
             }
+        }
+        return result;
+    }
+}
+#OPTIMIZED CODE
+class Solution {
+    public long countSubarrays(int[] nums, int minK, int maxK) {
+        int n=nums.length;
+        int min_index=-1;
+        int max_index=-1;
+        int out_ofBound=-1;
+        long result=0;
+        for(int i=0;i<n;i++){
+            if(nums[i]>maxK || nums[i]<minK){
+                out_ofBound=i;
+            }
+            if(nums[i]==minK){
+                min_index=i;
+            }
+            if(nums[i]==maxK){
+                max_index=i;
+            }
+           int count=Math.min(min_index,max_index)-out_ofBound;
+           if(count>0){
+            result=result+count;
+           }
         }
         return result;
     }

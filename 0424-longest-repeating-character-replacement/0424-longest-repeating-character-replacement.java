@@ -1,3 +1,7 @@
+logic for code :
+focus on the mantaining maximum count of the frequency of the window and size of the window .
+difference between both should be less than k.
+
 class Solution {
     public int characterReplacement(String s, int k) {
         int [] freq =new int [26];

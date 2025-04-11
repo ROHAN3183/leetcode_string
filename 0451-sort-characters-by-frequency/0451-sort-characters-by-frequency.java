@@ -9,11 +9,11 @@ class Solution {
         }
 
         for(Map.Entry<Character,Integer>entry: map.entrySet()){
-            minHeap.offer(entry);
+            maxHeap.offer(entry);
 
         }
-        while(!minHeap.isEmpty()){
-            Map.Entry<Character, Integer> entry = minHeap.poll();
+        while(!maxHeap.isEmpty()){
+            Map.Entry<Character, Integer> entry = maxHeap.poll();
             char ch =entry.getKey();
             int n=entry.getValue();
             for(int i=0;i<n;i++){

@@ -1,6 +1,6 @@
 class Solution {
     public String frequencySort(String s) {
-        PriorityQueue<Map.Entry<Character,Integer>>minHeap=new PriorityQueue<>((a,b)->b.getValue()-a.getValue());
+        PriorityQueue<Map.Entry<Character,Integer>>maxHeap=new PriorityQueue<>((a,b)->b.getValue()-a.getValue());
         HashMap<Character,Integer> map=new HashMap<>();
         StringBuilder str=new StringBuilder();
         for(int i=0;i<s.length();i++){

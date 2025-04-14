@@ -7,14 +7,21 @@ class Solution {
         return (int)result;
     }
     private long find_Exponential(long a,long b){
+        long result=1;
         if(b==0){
             return 1;
         }
-        long half=find_Exponential(a,b/2);
-        long result=(half*half)%M;
-        if(b%2==1){
-            result=(result*a)%M;
+        while(b>0){
+            if(b%2==1){
+                result=a*result;
+                b=b-1;
+            }
+            else{
+                b=b/2;
+                a=a*a;
+
+            }
         }
-        return result;
+        return result%M;
     }
 }

@@ -13,12 +13,12 @@ class Solution {
         }
         while(b>0){
             if(b%2==1){
-                result=a*result;
+                result=(a*result)%M;
                 b=b-1;
             }
             else{
                 b=b/2;
-                a=a*a;
+                a=(a*a)%M;
 
             }
         }

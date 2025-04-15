@@ -7,8 +7,8 @@ class Solution {
         long sum=0;
 
         for(int i=n1-1;i>=0;i--){
-            sum=sum+shifts[i];
-            prefix[i]=(int)sum%26;
+            sum=(sum+shifts[i])%26;
+            prefix[i]=(int)sum;
         }
 
         for(int i=0;i<n1;i++){

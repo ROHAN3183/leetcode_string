@@ -8,11 +8,11 @@ class Solution {
         PriorityQueue<Integer>minHeapRight=new PriorityQueue<>();
         int number=0;
         while(number<k){
-            while(minHeapLeft.size()<=candidates && i<=j){
+            while(minHeapLeft.size()<candidates && i<=j){
                 minHeapLeft.add(costs[i]);
                 i++;
             }
-            while(minHeapRight.size()<=candidates && i<=j){
+            while(minHeapRight.size()<candidates && i<=j){
                 minHeapRight.add(costs[j]);
                 j--;
             }

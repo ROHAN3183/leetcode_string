@@ -11,25 +11,17 @@ class Solution {
         for(Map.Entry<Integer,Integer>entry:map.entrySet()){
             minHeap.add(entry);
         }
-        for(int i=0;i<k;i++){
-            Map.Entry<Integer,Integer> entry=minHeap.peek();
-            if(entry.getValue()<=1){
-                minHeap.poll();
-                
-            }
-            else{
-                
-                entry=minHeap.poll();
-                int count=entry.getValue()-1;
-                minHeap.add(new AbstractMap.SimpleEntry<>(entry.getKey(),count));
-            }
-        }
-        int result=0;
-        while(!minHeap.isEmpty()){
-            minHeap.poll();
-            result++;
-        }
+        int size=map.size();
+        while(k>0 && !minHeap.isEmpty()){
+            Map.Entry<Integer,Integer>entry=minHeap.poll();
 
-    return result;
+            int fre=entry.getValue();
+            if(k>=fre){
+                k-=fre;
+                size--;
+            }
+
+        }
+        return size;
     }
 }

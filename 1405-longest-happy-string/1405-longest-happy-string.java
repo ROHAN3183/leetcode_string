@@ -1,52 +1,43 @@
 import java.util.AbstractMap;
-import java.util.Map;
-import java.util.PriorityQueue;
-
 class Solution {
     public String longestDiverseString(int a, int b, int c) {
-        PriorityQueue<Map.Entry<Character, Integer>> maxHeap = new PriorityQueue<>((x, y) -> y.getValue() - x.getValue());
-
-        if (a > 0) {
-            maxHeap.add(new AbstractMap.SimpleEntry<>('a', a));
+        StringBuilder str=new StringBuilder();
+        PriorityQueue<Map.Entry<Character,Integer>>maxHeap=new PriorityQueue<>((x,y)->y.getValue()-x.getValue());
+        if(a>0){
+            maxHeap.add(new AbstractMap.SimpleEntry<>('a',a));
         }
-        if (b > 0) {
-            maxHeap.add(new AbstractMap.SimpleEntry<>('b', b));
+        if(b>0){
+            maxHeap.add(new AbstractMap.SimpleEntry<>('b',b));
         }
-        if (c > 0) {
-            maxHeap.add(new AbstractMap.SimpleEntry<>('c', c));
+        if(c>0){
+            maxHeap.add(new AbstractMap.SimpleEntry<>('c',c));
         }
-
-        StringBuilder str = new StringBuilder();
-
-        while (!maxHeap.isEmpty()) {
-            Map.Entry<Character, Integer> temp1 = maxHeap.poll();
-
-            if (str.length() >= 2 && 
-                str.charAt(str.length() - 1) == temp1.getKey() &&
-                str.charAt(str.length() - 2) == temp1.getKey()) {
-
-                if (!maxHeap.isEmpty()) {
-                    Map.Entry<Character, Integer> temp2 = maxHeap.poll();
+        while(!maxHeap.isEmpty()){
+            Map.Entry<Character,Integer>temp1=maxHeap.poll();
+            if(str.length()>=2 && str.charAt(str.length()-1)==temp1.getKey() &&
+                str.charAt(str.length()-2)==temp1.getKey() ){
+                if(!maxHeap.isEmpty()){
+                    Map.Entry<Character,Integer> temp2=maxHeap.poll();
                     str.append(temp2.getKey());
-                    temp2.setValue(temp2.getValue() - 1);
-                    if (temp2.getValue() > 0) {
-                        maxHeap.add(temp2);
+                    int newValue2=temp2.getValue()-1;
+                    if(newValue2>0){
+                        maxHeap.add(new AbstractMap.SimpleEntry<>(temp2.getKey(),newValue2));
                     }
-                    // Add temp1 back to the heap after processing temp2
-                    maxHeap.add(temp1);
-                } else {
-                    // If no other characters available, we can't add more
+                }
+                else{
                     break;
                 }
-            } else {
+                maxHeap.add(temp1);
+            }
+            else{
                 str.append(temp1.getKey());
-                temp1.setValue(temp1.getValue() - 1);
-                if (temp1.getValue() > 0) {
-                    maxHeap.add(temp1);
+                int newValue1=temp1.getValue()-1;
+                if(newValue1>0){
+                    maxHeap.add(new AbstractMap.SimpleEntry<>(temp1.getKey(),newValue1));
                 }
             }
-        }
 
+        }
         return str.toString();
     }
 }

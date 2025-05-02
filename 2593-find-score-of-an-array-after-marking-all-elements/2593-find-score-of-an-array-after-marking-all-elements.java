@@ -6,18 +6,22 @@ import java.util.Arrays;
 class Solution {
     public long findScore(int[] nums) {
         // Priority queue to keep elements ordered by their value (min-heap)
+        // If values are equal, we can choose the smaller index first (though problem doesn't specify)
         PriorityQueue<Map.Entry<Integer, Integer>> minHeap = new PriorityQueue<>(
-            (a, b) -> Integer.compare(a.getKey(), b.getKey()) // Min-heap based on the value of nums[i]
+            (a, b) -> {
+                if (a.getKey().equals(b.getKey())) {
+                    return Integer.compare(a.getValue(), b.getValue());
+                }
+                return Integer.compare(a.getKey(), b.getKey());
+            }
         );
 
         // Add elements to the priority queue with (value, index) pairs
         for (int i = 0; i < nums.length; i++) {
-            minHeap.add(new AbstractMap.SimpleEntry<>(nums[i], i));
+            minHeap.offer(new AbstractMap.SimpleEntry<>(nums[i], i));
         }
 
-        int n = nums.length;
-        boolean[] marked = new boolean[n];
-        Arrays.fill(marked, false);  // Mark all elements as unvisited initially
+        boolean[] marked = new boolean[nums.length];
         long score = 0;
 
         // Process the elements in order of their value (min-heap)
@@ -31,11 +35,11 @@ class Solution {
                 score += value;  // Add value to score
                 marked[index] = true;  // Mark the current element
 
-                // Mark neighbors (left and right) only if they have not been marked
-                if (index - 1 >= 0 && !marked[index - 1]) {
+                // Mark neighbors (left and right)
+                if (index > 0) {
                     marked[index - 1] = true;
                 }
-                if (index + 1 < n && !marked[index + 1]) {
+                if (index < nums.length - 1) {
                     marked[index + 1] = true;
                 }
             }

@@ -8,7 +8,10 @@ class Solution {
         }
         int count=0;
 
-        while(minHeap.size()>=2 && minHeap.peek()<k){
+        while(minHeap.size()>=2){
+            if(minHeap.peek()>=k){
+                break;
+            }
             long x=minHeap.poll();
             long y=minHeap.poll();
             long result=(Math.min(x,y)*2 + Math.max(x,y));

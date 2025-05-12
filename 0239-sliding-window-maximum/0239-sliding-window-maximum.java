@@ -3,8 +3,8 @@ class Solution {
        int n=nums.length;
        int [] result=new int [n-k+1];
        Deque<Integer>Dq=new ArrayDeque<>();
-       int j=0,idx=0;
-       while(j<n){
+       int idx=0;
+       for(int j=0;j<n;j++){
 
         if(!Dq.isEmpty() && Dq.peekFirst()<j-k+1){ //remove the extra size element
             Dq.pollFirst();
@@ -16,7 +16,7 @@ class Solution {
         if(j>=k-1){
             result[idx++]=nums[Dq.peekFirst()];
         }
-        j++;
+
        }
        return result;
         

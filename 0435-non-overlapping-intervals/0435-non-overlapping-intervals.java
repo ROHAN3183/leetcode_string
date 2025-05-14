@@ -9,9 +9,10 @@ class Solution {
             int nextStart=intervals[i][0];
             if(currentEnd > nextStart){
                 count++;
-                currentEnd=intervals[i][1];
-                nextStart=intervals[i][0];
 
+            }
+            else{
+                currentEnd=intervals[i][1];
             }
         }
         return count;

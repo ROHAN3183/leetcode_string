@@ -1,52 +1,46 @@
 class Solution {
     public int longestPalindrome(String[] words) {
         int n=words.length;
-
-        StringBuilder leftString=new StringBuilder();
-        StringBuilder rightString=new StringBuilder();
-        StringBuilder mid=new StringBuilder();
-        int [] usedString=new int[n];
-        Arrays.fill(usedString,1);
+        HashMap<String,Integer>map=new HashMap<>();
         int size=0;
         boolean flag=true;
-        int midCount=0;
-
-       
-
         for(int i=0;i<n;i++){
-            String element=words[i];
-            int idx=i;
-            if( usedString[i]==1 && reverseFound(words,idx,element,rightString,usedString)){
-                leftString.append(element);
-            }
+            map.put(words[i],map.getOrDefault(words[i],0)+1);
         }
-        for(int j=0;j<n;j++){
-            if(words[j].charAt(0)==words[j].charAt(1)&& flag ==true && usedString[j]==1){
-                usedString[j]=0;
-                midCount=midCount+2;
-                flag=!flag;
-            }
-        }
-        size=leftString.toString().length()+rightString.toString().length()+midCount;
-        return size;
 
-    }
-    boolean reverseFound(String [] words,int idx,String element,StringBuilder rightString,int []usedString){
-        int n=words.length;
-        StringBuilder rev=new StringBuilder();
-        String result=rev.append(element).reverse().toString();
-        for(int i=0;i<n;i++){
+        for(Map.Entry<String,Integer>entry:map.entrySet()){
 
-            if(i==idx){
-                continue;
+            String left=entry.getKey();
+            String right=entry.getKey();
+            String rightRev = new StringBuilder(left).reverse().toString();
+            
+
+            if(map.containsKey(rightRev) && map.get(rightRev)!=0 && map.get(left)!=0){
+                int leftSize=map.get(left);
+                int rightSize=map.get(rightRev);
+
+                if(!left.equals(rightRev)){
+                    size=size+Math.min(leftSize,rightSize)*2;
+                    map.put(left,0);
+                    map.put(rightRev,0);
+                }
+                else{
+                    size=size+(map.get(left)/2)*2;
+                    map.put(left,leftSize%2);
+                }
+
             }
-            if(result.equals(words[i]) && usedString[i]!=0){
-                usedString[i]=0;
-                usedString[idx]=0;
-                rightString.insert(0,words[i]);
-                return true;
+            
+        }
+        for(Map.Entry<String,Integer>entry:map.entrySet()){
+            String midString =entry.getKey();
+            int midValue=entry.getValue();
+            if(midString.charAt(0)==midString.charAt(1) && midValue >0){
+                size=size+1;
+                break;
             }
         }
-        return false;
+        return size*2;
+
     }
 }

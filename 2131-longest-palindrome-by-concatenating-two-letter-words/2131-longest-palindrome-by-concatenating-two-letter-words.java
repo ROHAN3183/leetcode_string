@@ -3,7 +3,6 @@ class Solution {
         int n=words.length;
         HashMap<String,Integer>map=new HashMap<>();
         int size=0;
-        boolean flag=true;
         for(int i=0;i<n;i++){
             map.put(words[i],map.getOrDefault(words[i],0)+1);
         }

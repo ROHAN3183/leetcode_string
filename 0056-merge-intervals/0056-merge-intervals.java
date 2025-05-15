@@ -6,7 +6,6 @@ class Solution {
         }
         Arrays.sort(intervals,(a,b)->Integer.compare(a[0],b[0]));
         List<int[]> list=new ArrayList<>();
-        int [][]temp =new int[1][2];
         int currentStart=intervals[0][0];
         int currentEnd=intervals[0][1];
 

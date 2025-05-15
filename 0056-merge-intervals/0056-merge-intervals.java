@@ -1,7 +1,7 @@
 class Solution {
     public int[][] merge(int[][] intervals) {
         int n=intervals.length;
-        if(n==1){
+        if(n<=1){
             return intervals;
         }
         Arrays.sort(intervals,(a,b)->Integer.compare(a[0],b[0]));

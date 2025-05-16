@@ -14,7 +14,7 @@ class Solution {
                 while(k<l){
                     long sum=first+second+nums[k]+nums[l];
                     if(sum==target){
-                        list.add(new ArrayList<>(Arrays.asList(first,second,nums[k],nums[l])));
+                        list.add(new ArrayList<>(Arrays.asList(nums[i],nums[j],nums[k],nums[l])));
                         k++;
                         l--;
                         while(k < l && nums[k]==nums[k-1])k++;

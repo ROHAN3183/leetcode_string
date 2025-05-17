@@ -1,58 +1,52 @@
 class Solution {
     public boolean checkValidString(String s) {
-        int n = s.length();
-        Stack<Pair> stack1 = new Stack<>();
-        Stack<Integer> stack2 = new Stack<>();
+        int n=s.length();
+        Stack<Pair>openStack=new Stack<>();
+        Stack<Integer>index_AstricStack=new Stack<>();
 
-        for (int i = 0; i < n; i++) {
-            char ch = s.charAt(i);
-            if (ch == '*') {
-                stack2.push(i);
-            } else if (ch == '(') {
-                stack1.push(new Pair(ch, i));
-            } else {
-                if (!stack1.isEmpty() && stack1.peek().ch == '(') {
-                    stack1.pop();
-                } else {
-                    stack1.push(new Pair(ch, i));
+        for(int i=0;i<n;i++){
+            char ch=s.charAt(i);
+            if(ch=='*'){
+                index_AstricStack.push(i);
+            }
+            else if(ch=='('){
+                openStack.push(new Pair(ch,i));
+            }
+            else{
+                if(!openStack.isEmpty() && ch==')'){
+                    openStack.pop();
+                }
+                else if(!index_AstricStack.isEmpty() && ch==')' ){
+                    index_AstricStack.pop();
+                }
+                else{
+                    return false;
                 }
             }
         }
 
-        // New matching logic
-        while (!stack1.isEmpty() && !stack2.isEmpty()) {
-            Pair top = stack1.pop();
 
-            if (top.ch == '(') {
-        // Match '(' with '*' after it
-            if (stack2.peek() > top.num) {
-                stack2.pop();
-            } else {
-            // No '*' after this '('
+        //remaining '('
+
+        while(!openStack.isEmpty() && !index_AstricStack.isEmpty()){
+            Pair top=openStack.pop();
+            int index=index_AstricStack.pop();
+            if(top.nums > index){
                 return false;
             }
-            } else { // top.ch == ')'
-        // Match ')' with '*' before it
-                if (stack2.peek() < top.num) {
-                stack2.pop();
-                } else {
-            // No '*' before this ')'
-                    return false;
-                }
+
+        }
+
+        return openStack.isEmpty();
+
+
     }
-}
-
-
-
-        return stack1.isEmpty();
-    }
-
-    class Pair {
+    class Pair{
         char ch;
-        int num;
-        Pair(char ch, int num) {
-            this.ch = ch;
-            this.num = num;
+        int nums;
+        Pair(char ch,int nums){
+            this.ch=ch;
+            this.nums=nums;
         }
     }
 }

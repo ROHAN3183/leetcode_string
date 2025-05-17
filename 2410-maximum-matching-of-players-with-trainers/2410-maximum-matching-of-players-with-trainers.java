@@ -1,35 +1,22 @@
 class Solution {
     public int matchPlayersAndTrainers(int[] players, int[] trainers) {
-        
-        int no_players=players.length;
-        int no_trainers=trainers.length;
-        int ans=0;
-
-        PriorityQueue<Integer>heap=new PriorityQueue<>();
         Arrays.sort(players);
+        Arrays.sort(trainers);
 
-        for(int i=0;i<no_trainers;i++){
+        int i = 0; 
+        int j = 0; 
+        int matches = 0;
 
-            heap.add(trainers[i]);
-
-        }
-
-        int i=0;
-
-        while(i<no_players && !heap.isEmpty()){
-
-
-            if(!heap.isEmpty() && players[i]<=heap.peek()){
-                heap.poll();
-                ans++;
+        while (i < players.length && j < trainers.length) {
+            if (players[i] <= trainers[j]) {
+                matches++;
                 i++;
+                j++;
+            } else {
+                j++; 
             }
-            else if(!heap.isEmpty()){
-                heap.poll();
-            }
-
         }
-        return ans;
 
+        return matches;
     }
 }

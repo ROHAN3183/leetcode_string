@@ -1,12 +1,9 @@
-import java.util.Stack;
-
 class Solution {
     public boolean checkValidString(String s) {
         int n = s.length();
         Stack<Pair> stack1 = new Stack<>();
         Stack<Integer> stack2 = new Stack<>();
 
-        // First pass: match parentheses and collect asterisks
         for (int i = 0; i < n; i++) {
             char ch = s.charAt(i);
             if (ch == '*') {
@@ -22,27 +19,23 @@ class Solution {
             }
         }
 
-        // Second pass: try to match remaining parentheses with asterisks
+        // New matching logic
         while (!stack1.isEmpty() && !stack2.isEmpty()) {
-            Pair top = stack1.peek();
-            int starPos = stack2.peek();
-            
+            Pair top = stack1.pop();
             if (top.ch == '(') {
-                if (starPos > top.num) {
-                    stack1.pop();
+                // Find first asterisk after the '('
+                while (!stack2.isEmpty() && stack2.peek() < top.num) {
                     stack2.pop();
-                } else {
-                    // No matching asterisk after this '('
-                    break;
                 }
-            } else { // top.ch == ')'
-                if (starPos < top.num) {
-                    stack1.pop();
+                if (stack2.isEmpty()) return false;
+                stack2.pop();
+            } else {
+                // Find first asterisk before the ')'
+                while (!stack2.isEmpty() && stack2.peek() > top.num) {
                     stack2.pop();
-                } else {
-                    // No matching asterisk before this ')'
-                    break;
                 }
+                if (stack2.isEmpty()) return false;
+                stack2.pop();
             }
         }
 

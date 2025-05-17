@@ -22,22 +22,27 @@ class Solution {
         // New matching logic
         while (!stack1.isEmpty() && !stack2.isEmpty()) {
             Pair top = stack1.pop();
+
             if (top.ch == '(') {
-                // Find first asterisk after the '('
-                while (!stack2.isEmpty() && stack2.peek() < top.num) {
-                    stack2.pop();
-                }
-                if (stack2.isEmpty()) return false;
+        // Match '(' with '*' after it
+            if (stack2.peek() > top.num) {
                 stack2.pop();
             } else {
-                // Find first asterisk before the ')'
-                while (!stack2.isEmpty() && stack2.peek() > top.num) {
-                    stack2.pop();
-                }
-                if (stack2.isEmpty()) return false;
-                stack2.pop();
+            // No '*' after this '('
+                return false;
             }
-        }
+            } else { // top.ch == ')'
+        // Match ')' with '*' before it
+                if (stack2.peek() < top.num) {
+                stack2.pop();
+                } else {
+            // No '*' before this ')'
+                    return false;
+                }
+    }
+}
+
+
 
         return stack1.isEmpty();
     }

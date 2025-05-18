@@ -12,7 +12,7 @@ class Solution {
             maxHeap.offer(entry);
 
         }
-        
+         
         while(!maxHeap.isEmpty()){
             Map.Entry<Character, Integer> entry = maxHeap.poll();
             char ch =entry.getKey();
@@ -50,3 +50,59 @@ class Solution {
         return result;
     }
 }
+
+                                            # CUSTUM COMPARATOR
+
+// 1. Numeric ascending
+Arrays.sort(arr, (a, b) -> Integer.compare(a, b));
+
+// 2. Numeric descending
+Arrays.sort(arr, (a, b) -> Integer.compare(b, a));
+
+// 3. String ascending
+Arrays.sort(strArr, (a, b) -> a.compareTo(b));
+
+// 4. String descending
+Arrays.sort(strArr, (a, b) -> b.compareTo(a));
+
+// 5. By length
+Arrays.sort(strArr, (a, b) -> Integer.compare(a.length(), b.length()));
+
+// 6. By char at index 1 (with null check omitted for clarity)
+Arrays.sort(strArr, (a, b) -> {
+    char c1 = a.length() > 1 ? a.charAt(1) : '0';
+    char c2 = b.length() > 1 ? b.charAt(1) : '0';
+    return Character.compare(c1, c2);
+});
+
+// 7. Largest number pattern
+Arrays.sort(strArr, (a, b) -> (b + a).compareTo(a + b));
+
+// 8. Multiple fields
+Arrays.sort(studentArr, (a, b) -> {
+    int cmp = Integer.compare(a.grade, b.grade);
+    if (cmp != 0) return cmp;
+    return a.name.compareTo(b.name);
+});
+
+// 9. Null-safe string ascending
+Arrays.sort(strArr, (a, b) -> {
+    if (a == null) return 1;
+    if (b == null) return -1;
+    return a.compareTo(b);
+});
+
+// 10. Complex digit extraction with if-else
+Arrays.sort(arr, (a, b) -> {
+    int d1 = getDigitAtIndex1(a);
+    int d2 = getDigitAtIndex1(b);
+    return Integer.compare(d1, d2);
+});
+
+
+
+
+
+
+
+

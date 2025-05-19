@@ -8,7 +8,7 @@ class Solution {
         Arrays.fill(leftCandy,1);
         Arrays.fill(rightCandy,1);
 
-        for(int i=1;i<n-1;i++){ //left-right side
+        for(int i=1;i<n;i++){ //left-right side
             if(ratings[i]>ratings[i-1]){
                 rightCandy[i]=rightCandy[i-1]+1;
             }

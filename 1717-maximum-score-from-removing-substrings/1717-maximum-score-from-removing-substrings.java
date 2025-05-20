@@ -12,7 +12,7 @@ class Solution {
         }
          return scoreCalculator(s, 'a', 'b', x, 'b', 'a', y);
     }
-    private int scoreCalculator(String s,char first1,char second1,int val1,char second2,char first2,int val2 ){
+    private int scoreCalculator(String s,char first1,char second1,int val1,char first2,char second2,int val2 ){
         int n=s.length();
         Stack<Character>stack=new Stack<>();
         int score=0;
@@ -44,7 +44,7 @@ class Solution {
 
             char ch=result.charAt(i);
 
-            if(!newstack.isEmpty() && newstack.peek()==second2 && ch==first2){
+            if(!newstack.isEmpty() && newstack.peek()==first2 && ch==second2){
                 newstack.pop();
                 score=score+val2;
             }

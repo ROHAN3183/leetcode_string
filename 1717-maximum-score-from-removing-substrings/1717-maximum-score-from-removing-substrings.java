@@ -10,7 +10,7 @@ class Solution {
             int value2=scoreCalculator(s,'b','a',y,'a','b',x);
             return value2;
         }
-        return -1;
+         return scoreCalculator(s, 'a', 'b', x, 'b', 'a', y);
     }
     private int scoreCalculator(String s,char first1,char second1,int val1,char second2,char first2,int val2 ){
         int n=s.length();

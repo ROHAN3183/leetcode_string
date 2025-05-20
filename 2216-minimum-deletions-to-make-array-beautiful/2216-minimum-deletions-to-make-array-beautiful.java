@@ -1,18 +1,22 @@
 class Solution {
     public int minDeletion(int[] nums) {
-        int n=nums.length;
-        int i=0;
-        int count=0;
-        for(int j=0;j<n-1;j++){
-            if(i%2==0 && nums[j]==nums[j+1]){
-                count++;
-
-            }
-            else{
-                i++;
+        int deletions = 0;
+        int n = nums.length;
+        int pos = 0; // current position in the new array
+        for (int i = 0; i < n; i++) {
+            if (pos % 2 == 0) {
+                if (i + 1 < n && nums[i] == nums[i + 1]) {
+                    deletions++;
+                } else {
+                    pos++;
+                }
+            } else {
+                pos++;
             }
         }
-        if((n-count)%2!=0)count++;
-        return count;
+        if (pos % 2 != 0) {
+            deletions++;
+        }
+        return deletions;
     }
 }

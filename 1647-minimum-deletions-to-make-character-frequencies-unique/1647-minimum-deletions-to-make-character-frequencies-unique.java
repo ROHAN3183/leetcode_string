@@ -1,43 +1,36 @@
 class Solution {
     public int minDeletions(String s) {
         int n=s.length();
+        int count=0;
         HashMap<Character,Integer>map=new HashMap<>();
+        PriorityQueue<Integer>maxHeap=new PriorityQueue<>(Collections.reverseOrder());
 
         for(int i=0;i<n;i++){//frequency map
             char ch=s.charAt(i);
             map.put(ch,map.getOrDefault(ch,0)+1);
         }
-        List<Integer>list=new ArrayList<>();
 
-        for(Map.Entry<Character,Integer>entry:map.entrySet()){//build array
+        for(Map.Entry<Character,Integer>entry:map.entrySet()){//build heap
             int value=entry.getValue();
-            list.add(value);
-
+            maxHeap.add(value);
         }
-        Integer[] arr=list.toArray(new Integer[0]);
-        Arrays.sort(arr,Collections.reverseOrder());//sorting
 
-        int i=0;
-        int j=i+1;
-        int count=0;
-        int arrSize=arr.length;
+        while(maxHeap.size()>=2){//logic of code
+            int firstPeek=maxHeap.poll();
+            int secondPeek=maxHeap.poll();
 
-        while(j < arrSize && i<j){ // logic
-
-            if( j < arrSize && arr[i]!=arr[j]){
-                i++;
-                j++;
+            if(firstPeek !=secondPeek){
+                maxHeap.add(secondPeek);
+                
             }
-            else if(arr[i]==arr[j]){
-                arr[j]=arr[j]-1;
+            else if(firstPeek==secondPeek){
+                firstPeek=firstPeek-1;
+                if(firstPeek >0)maxHeap.add(firstPeek);
+                if(secondPeek>0)maxHeap.add(secondPeek);
                 count++;
-                Arrays.sort(arr,Collections.reverseOrder());
-                if(arr[i]==0 ||arr[j]==0){
-                    break;
-                }
             }
-
         }
     return count;
+
     }
 }

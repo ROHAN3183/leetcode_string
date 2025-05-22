@@ -1,3 +1,5 @@
+logic of the code :-> SLOW FAST APPROACH
+
 class Solution {
     public int findDuplicate(int[] nums) {
 

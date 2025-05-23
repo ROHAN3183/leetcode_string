@@ -1,3 +1,4 @@
+logic of the code -> ckeck both (min-max) && (max-min) 
 class Solution {
     public int maxDistance(List<List<Integer>> arrays) {
         int n=arrays.size();

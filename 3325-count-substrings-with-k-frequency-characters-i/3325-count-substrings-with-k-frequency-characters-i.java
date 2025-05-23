@@ -6,9 +6,6 @@ class Solution {
         int j=0;
         boolean flag=true;
         int result=0;
-        if(k==1){
-            return n*(n+1)/2;
-        }
 
         while(j<n){
             char ch =s.charAt(j);

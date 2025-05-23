@@ -3,7 +3,7 @@ class Solution {
         int n=s.length();
         int i=0;
         int j=0;
-        int result=0;
+        int result=n*(n+1)/2;
         if(k==1){
             return n*(n+1)/2;
         }
@@ -14,7 +14,7 @@ class Solution {
             map.put(ch,map.getOrDefault(ch,0)+1);
 
             while(map.get(ch)>=k){
-                result=result+n-j;
+                //result=result+n-j;
                 char left=s.charAt(i);
                 map.put(left,map.get(left)-1);
                 if(map.get(left)==0){
@@ -22,6 +22,7 @@ class Solution {
                 }
                 i++;
             }
+            result=result-(j-i+1);
             j++;
         }
         return result;

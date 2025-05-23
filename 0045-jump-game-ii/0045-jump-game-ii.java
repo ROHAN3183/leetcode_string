@@ -1,22 +1,27 @@
 class Solution {
     public int jump(int[] nums) {
         int n=nums.length;
-        int last_jump=0;
-        int max_jump=0;
-        int count=0;
-        if(n==1){
-            return 0;
-        }
-        for(int i=0;i<n;i++){
-            max_jump=Math.max(max_jump,nums[i]+i);
-            if(i==last_jump){
-                last_jump=max_jump;
+        int i=0;
+        int jump=0;
+        int idx=0;
+        while(i<n-1){
+            int j=i+1;
+            int maxi=Integer.MIN_VALUE;
+            boolean flag=true;
+            int count=0;
+            while(j<n && count < nums[i]){
+                if(maxi<=nums[j]){
+                    maxi=nums[j];
+                    idx=j;
+                }
+
                 count++;
+                j++;
             }
-            if(last_jump>=n-1){
-                return count;
-            }
+            if (idx == i) return -1;
+            jump++;
+            i=idx;
         }
-        return count;
+        return jump;
     }
 }

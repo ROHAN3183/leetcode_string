@@ -1,40 +1,28 @@
 class Solution {
     public int numberOfSubstrings(String s, int k) {
         int n=s.length();
-        HashMap<Character,Integer>map=new HashMap<>();
         int i=0;
         int j=0;
-        boolean flag=true;
         int result=0;
+        if(k==1){
+            return n*(n+1)/2;
+        }
+        HashMap<Character,Integer>map=new HashMap<>();
 
         while(j<n){
-            char ch =s.charAt(j);
+            char ch = s.charAt(j);
+            map.put(ch,map.getOrDefault(ch,0)+1);
 
-           if(map.containsKey(ch) && map.get(ch)!=-1){
-             map.put(ch,map.getOrDefault(ch,0)+1);
-            }
-            else{
-                map.put(ch,map.getOrDefault(ch,0)+1);
-            }
-
-            if(map.containsKey(ch) && map.get(ch)>=k){
-                char firstTime=s.charAt(i);
-                while(s.charAt(i)!=(ch)){
-                    i++;
+            while(map.get(ch)>=k){
+                result=result+n-j;
+                char left=s.charAt(i);
+                map.put(left,map.get(left)-1);
+                if(map.get(left)==0){
+                    map.remove(left);
                 }
-                if(flag){
-                    result=result+ n-(j-i);
-                    flag=!flag;//first count both forword and the back
-                }
-                else{
-                    result+=n-j;
-                }
-                i=0; // to again find the starting point of the character 
-                map.put(ch,-1);//to mark that it has been used.
-
+                i++;
             }
             j++;
-
         }
         return result;
         

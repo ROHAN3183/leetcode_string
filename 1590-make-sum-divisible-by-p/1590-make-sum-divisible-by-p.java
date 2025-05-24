@@ -1,13 +1,13 @@
 class Solution {
     public int minSubarray(int[] nums, int p) {
         int n=nums.length;
-        long prefixSum=0;
+        int prefixSum=0;
         // prefixSum
         for(int i=0;i<n;i++){
             prefixSum=prefixSum+nums[i];
 
         }
-        int remainder=(int)(prefixSum%p); //number to delete
+        int remainder=prefixSum%p; //number to delete
         if(remainder==0)return 0;
    
         HashMap<Integer,Integer>map=new HashMap<>();

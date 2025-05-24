@@ -7,7 +7,7 @@ class Solution {
             prefixSum=prefixSum+nums[i];
 
         }
-        int remainder=(int)prefixSum%p; //number to delete
+        int remainder=(int)(prefixSum%p); //number to delete
         if(remainder==0)return 0;
    
         HashMap<Integer,Integer>map=new HashMap<>();

@@ -99,6 +99,13 @@ Arrays.sort(arr, (a, b) -> {
     return Integer.compare(d1, d2);
 });
 
+    ********************************SLIDING WINDOW LOGIC KEYS*********************************************
+
+
+BASED ON THE FREQURNCY OF THE FIXED NO OF THE CHARACTER***
+Totals number of the substring from the front (n-j) give the all the substring from i to j ,to get the substring from the back 
+also then start moving the i and reduce the frequency and always add n-j to the result to till that the freq>=k. 
+
 
 
 

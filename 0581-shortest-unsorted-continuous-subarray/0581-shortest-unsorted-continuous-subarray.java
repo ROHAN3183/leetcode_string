@@ -1,3 +1,5 @@
+logic : find the min and the max where there is downfall in the graph.
+    
 class Solution {
     public int findUnsortedSubarray(int[] nums) {
         int n=nums.length;

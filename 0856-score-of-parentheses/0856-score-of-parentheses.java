@@ -1,36 +1,30 @@
 class Solution {
     public int scoreOfParentheses(String s) {
-        int n = s.length();
-        Stack<Character> stack = new Stack<>();
-        int score = 0;
+        int n=s.length();
+        int score =0;
+        Stack<Integer> stack=new Stack<>();
 
-        for (int i = 0; i < n; i++) {
-            char ch = s.charAt(i);
-
-            if (!stack.isEmpty() && stack.peek() == '(' && ch == ')') {
+        for(int i=0;i<n;i++){
+            char ch=s.charAt(i);
+            if(ch=='('){
+                stack.push(0);
+            }
+            else if(!stack.isEmpty() && stack.peek()==0 && ch==')'){
                 stack.pop();
-                stack.push('1'); // Found ()
-            } else if (ch == '(') {
-                stack.push('(');
-            } else if (!stack.isEmpty() && ch == ')') {
-                int sum = 0;
-                while (!stack.isEmpty() && stack.peek() != '(') {
-                    char temp = stack.pop();
-                    sum += (int)(temp - '0');  // Convert char to int
+                stack.push(1);
+            }
+            else if(!stack.isEmpty() && stack.peek()>0 && ch==')'){
+                int sum=0;
+                while(!stack.isEmpty() && stack.peek()>0){
+                    sum=sum+stack.pop();
                 }
-                if (!stack.isEmpty() && stack.peek() == '(') {
-                    stack.pop(); // remove '('
-                }
-                sum *= 2;
-                stack.push((char)(sum + '0')); // Convert int to char
+                stack.push(2*sum);
             }
         }
-
-        // Sum all characters in stack
-        while (!stack.isEmpty()) {
-            score += (int)(stack.pop() - '0');
+        while(!stack.isEmpty()){
+            score=score+stack.pop();
         }
-
         return score;
+        
     }
 }

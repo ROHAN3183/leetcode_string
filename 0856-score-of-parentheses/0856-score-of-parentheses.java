@@ -18,6 +18,9 @@ class Solution {
                 while(!stack.isEmpty() && stack.peek()>0){
                     sum=sum+stack.pop();
                 }
+                if (!stack.isEmpty() && stack.peek() == 0) {
+                    stack.pop(); // pop the matching '(' marker
+                }
                 stack.push(2*sum);
             }
         }

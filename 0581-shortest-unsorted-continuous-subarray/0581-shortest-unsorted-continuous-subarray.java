@@ -19,7 +19,7 @@ class Solution {
         int j=n-1;
         boolean flag1=false;
         boolean flag2=false;
-        while(i<n || j>=0){
+        while(i<n && j>=0){
             if( i<n && nums[i]>min && flag1==false){
                 leftIndex=i;
                 flag1=true;

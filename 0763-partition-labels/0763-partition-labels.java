@@ -7,7 +7,7 @@ class Solution {
         Arrays.fill(start, -1);
         Arrays.fill(end, -1);
 
-        // Record the first and last occurrence of each character
+        // Record first and last positions of each character
         for (int i = 0; i < n; i++) {
             char ch = s.charAt(i);
             if (start[ch - 'a'] == -1) {
@@ -16,7 +16,7 @@ class Solution {
             end[ch - 'a'] = i;
         }
 
-        ArrayList<Integer> result = new ArrayList<>();
+        List<Integer> result = new ArrayList<>();
         
         // Collect all non-empty intervals
         List<int[]> intervals = new ArrayList<>();
@@ -26,9 +26,9 @@ class Solution {
             }
         }
         
-        // Sort intervals by their start time
+        // Sort intervals by start time
         intervals.sort((a, b) -> Integer.compare(a[0], b[0]));
-        
+
         // Merge intervals
         if (!intervals.isEmpty()) {
             int currentStart = intervals.get(0)[0];
@@ -37,6 +37,7 @@ class Solution {
             for (int i = 1; i < intervals.size(); i++) {
                 int[] interval = intervals.get(i);
                 if (interval[0] <= currentEnd) { // Overlapping
+                    currentStart = Math.min(currentStart, interval[0]);
                     currentEnd = Math.max(currentEnd, interval[1]);
                 } else {
                     result.add(currentEnd - currentStart + 1);

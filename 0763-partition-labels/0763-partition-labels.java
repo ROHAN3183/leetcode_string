@@ -1,50 +1,53 @@
 class Solution {
     public List<Integer> partitionLabels(String s) {
-        int n=s.length();
+        int n = s.length();
         
-        int [] start=new int[26];
-        int [] end=new int[26];
-        Arrays.fill(start,-1);
-        Arrays.fill(end,-1);
+        int[] start = new int[26];
+        int[] end = new int[26];
+        Arrays.fill(start, -1);
+        Arrays.fill(end, -1);
 
-        HashMap<Character,Integer>map=new HashMap<>();
-        ArrayList<Integer>result=new ArrayList<>();
-
-        for(int i=0;i<n;i++){
-            char ch=s.charAt(i);
-            if(!map.containsKey(ch)){
-                map.put(ch,i);
-                start[(int)ch-'a']=i;
+        // Record the first and last occurrence of each character
+        for (int i = 0; i < n; i++) {
+            char ch = s.charAt(i);
+            if (start[ch - 'a'] == -1) {
+                start[ch - 'a'] = i;
             }
-            end[(int)ch-'a']=i;
+            end[ch - 'a'] = i;
         }
-        int a1=start[0];
-        int a2=end[0];
-        int i=1;
-        while(i<26){
-            if(start[i]<0||end[i]<0){
-                i++;
-                continue;
+
+        ArrayList<Integer> result = new ArrayList<>();
+        
+        // Collect all non-empty intervals
+        List<int[]> intervals = new ArrayList<>();
+        for (int i = 0; i < 26; i++) {
+            if (start[i] != -1) {
+                intervals.add(new int[]{start[i], end[i]});
             }
-
-            if( i<26 && a2>=start[i] && a1<=end[i]){//overlapping
-                while(i<26 && a2>=start[i] && a1<=end[i]){
-                    a1=Math.min(a1,start[i]);
-                    a2=Math.max(a2,end[i]);
-                    i++;
-
+        }
+        
+        // Sort intervals by their start time
+        intervals.sort((a, b) -> Integer.compare(a[0], b[0]));
+        
+        // Merge intervals
+        if (!intervals.isEmpty()) {
+            int currentStart = intervals.get(0)[0];
+            int currentEnd = intervals.get(0)[1];
+            
+            for (int i = 1; i < intervals.size(); i++) {
+                int[] interval = intervals.get(i);
+                if (interval[0] <= currentEnd) { // Overlapping
+                    currentEnd = Math.max(currentEnd, interval[1]);
+                } else {
+                    result.add(currentEnd - currentStart + 1);
+                    currentStart = interval[0];
+                    currentEnd = interval[1];
                 }
-                result.add(a2-a1+1);
-
             }
-            else{
-                a1=start[i];
-                a2=end[i];
-                i++;
-
-            }   
-
+            // Add the last interval
+            result.add(currentEnd - currentStart + 1);
         }
+        
         return result;
     }
 }

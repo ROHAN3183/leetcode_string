@@ -37,7 +37,7 @@ class Solution {
                 currentEnd=Math.max(currentEnd,nextEnd);
 
             }
-            else{
+            else{// non overlapping
                 result.add(currentEnd-currentStart+1);
                 currentStart=nextStart;
                 currentEnd=nextEnd;

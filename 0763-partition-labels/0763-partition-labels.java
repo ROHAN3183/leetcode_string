@@ -1,54 +1,51 @@
 class Solution {
     public List<Integer> partitionLabels(String s) {
-        int n = s.length();
-        
-        int[] start = new int[26];
-        int[] end = new int[26];
-        Arrays.fill(start, -1);
-        Arrays.fill(end, -1);
+        int n=s.length();
+        int []start=new int[26];
+        int []end=new int[26];
+        Arrays.fill(start,-1);
+        Arrays.fill(end,-1);
 
-        // Record first and last positions of each character
-        for (int i = 0; i < n; i++) {
-            char ch = s.charAt(i);
-            if (start[ch - 'a'] == -1) {
-                start[ch - 'a'] = i;
+        HashMap<Character,Integer>map=new HashMap<>();
+
+        for(int i=0;i<n;i++){
+            char ch=s.charAt(i);
+            if(!map.containsKey(ch)) {
+                map.put(ch,i);
+                start[(int)ch-'a']=i;
             }
-            end[ch - 'a'] = i;
+            end[(int)ch-'a']=i;
         }
 
-        List<Integer> result = new ArrayList<>();
-        
-        // Collect all non-empty intervals
-        List<int[]> intervals = new ArrayList<>();
-        for (int i = 0; i < 26; i++) {
-            if (start[i] != -1) {
-                intervals.add(new int[]{start[i], end[i]});
+        ArrayList<int[]>list=new ArrayList<>();
+        ArrayList<Integer>result=new ArrayList<>();
+        for(int i=0;i<26;i++){
+            if(start[i]>=0 && end[i]>=0){
+                list.add(new int[]{start[i],end[i]});
+            } 
+        }
+        list.sort((a,b)->Integer.compare(a[0],b[0]));
+        int currentStart=list.get(0)[0];
+        int currentEnd=list.get(0)[1];
+
+        for(int i=1;i<list.size();i++){
+            int nextStart=list.get(i)[0];
+            int nextEnd=list.get(i)[1];
+
+            if(currentEnd>=nextStart){ //overlapping
+                currentStart=Math.min(currentStart,nextStart);
+                currentEnd=Math.max(currentEnd,nextEnd);
+
+            }
+            else{
+                result.add(currentEnd-currentStart+1);
+                currentStart=nextStart;
+                currentEnd=nextEnd;
             }
         }
-        
-        // Sort intervals by start time
-        intervals.sort((a, b) -> Integer.compare(a[0], b[0]));
+        result.add(currentEnd-currentStart+1);
+        return result;
 
-            // Merge intervals
-        
-            int currentStart = intervals.get(0)[0];
-            int currentEnd = intervals.get(0)[1];
-            
-            for (int i = 1; i < intervals.size(); i++) {
-                int[] interval = intervals.get(i);
-                if (interval[0] <= currentEnd) { // Overlapping
-                    currentStart = Math.min(currentStart, interval[0]);
-                    currentEnd = Math.max(currentEnd, interval[1]);
-                } else {
-                    result.add(currentEnd - currentStart + 1);
-                    currentStart = interval[0];
-                    currentEnd = interval[1];
-                }
-            }
-            // Add the last interval
-            result.add(currentEnd - currentStart + 1);
-     
-        
-         return result;
+
     }
 }

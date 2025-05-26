@@ -17,11 +17,11 @@ class Solution {
         }
         
         // We can either remove everything after left, or everything before right
-        int minLength = Math.min(n - left - 1, right);
+        int minLength = right;
         
         // Try to merge the prefix and suffix
         int i = 0, j = right;
-        while (i <= left && j < n) {
+        while (i < n-1  && j < n) {
             if (arr[i] <= arr[j]) {
                 minLength = Math.min(minLength, j - i - 1);
                 i++;

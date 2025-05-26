@@ -29,8 +29,8 @@ class Solution {
         // Sort intervals by start time
         intervals.sort((a, b) -> Integer.compare(a[0], b[0]));
 
-        // Merge intervals
-        if (!intervals.isEmpty()) {
+            // Merge intervals
+        
             int currentStart = intervals.get(0)[0];
             int currentEnd = intervals.get(0)[1];
             
@@ -47,8 +47,8 @@ class Solution {
             }
             // Add the last interval
             result.add(currentEnd - currentStart + 1);
-        }
+     
         
-        return result;
+         return result;
     }
 }

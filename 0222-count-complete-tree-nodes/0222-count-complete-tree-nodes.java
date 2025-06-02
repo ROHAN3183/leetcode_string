@@ -8,9 +8,10 @@ class Solution {
         if(root==null){
             return 0;
         }
-        int number=0;
-        int leftTraverseCount=number + traverse(root.left);
-        int rightTraverseCount=number + traverse(root.right);
+
+        int leftTraverseCount=traverse(root.left);
+        int rightTraverseCount=traverse(root.right);
+        
         return leftTraverseCount+rightTraverseCount+1;
     }
 }

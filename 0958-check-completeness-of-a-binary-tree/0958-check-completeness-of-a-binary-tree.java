@@ -5,7 +5,7 @@ class Solution {
         List<Object[]> ans = new ArrayList<>();
         traverse(root, ans, 1);
         int totalNodes = ans.size();
-        if (totalNodes == 0) return true; // empty tree is complete
+
         int maxIndex = 0;
         for (Object[] nodeInfo : ans) {
             int currentIndex = (int) nodeInfo[1];

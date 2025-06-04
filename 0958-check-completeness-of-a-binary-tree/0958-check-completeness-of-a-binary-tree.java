@@ -1,11 +1,20 @@
+
+
 class Solution {
     public boolean isCompleteTree(TreeNode root) {
         List<Object[]> ans = new ArrayList<>();
         traverse(root, ans, 1);
         int totalNodes = ans.size();
-        int lastIndex = (int) ans.get(totalNodes - 1)[1];
-        // If the last index matches total nodes, tree is complete
-        return lastIndex == totalNodes;
+        if (totalNodes == 0) return true; // empty tree is complete
+        int maxIndex = 0;
+        for (Object[] nodeInfo : ans) {
+            int currentIndex = (int) nodeInfo[1];
+            if (currentIndex > maxIndex) {
+                maxIndex = currentIndex;
+            }
+        }
+        // If the maximum index matches total nodes, tree is complete
+        return maxIndex == totalNodes;
     }
 
     void traverse(TreeNode root, List<Object[]> ans, int idx) {

@@ -106,6 +106,58 @@ BASED ON THE FREQURNCY OF THE FIXED NO OF THE CHARACTER***
 Totals number of the substring from the front (n-j) give the all the substring from i to j ,to get the substring from the back 
 also then start moving the i and reduce the frequency and always add n-j to the result to till that the freq>=k. 
 
+************************************custom class to store both the TreeNode and its index during level order traversal******************
+
+// Define the TreeNode class (if not already defined)
+class TreeNode {
+    int val;
+    TreeNode left, right;
+
+    TreeNode(int val) {
+        this.val = val;
+    }
+}
+
+// Define the custom class to hold node and index
+class IndexedNode {
+    TreeNode node;
+    int index;
+
+    IndexedNode(TreeNode node, int index) {
+        this.node = node;
+        this.index = index;
+    }
+}
+
+// Main class with the function
+public class Solution {
+
+    public List<IndexedNode> storeNodeWithIndex(TreeNode root) {
+        List<IndexedNode> result = new ArrayList<>();
+        Queue<IndexedNode> queue = new LinkedList<>();
+
+        if (root != null) {
+            queue.add(new IndexedNode(root, 1)); // Start index at 1
+        }
+
+        while (!queue.isEmpty()) {
+            IndexedNode current = queue.poll();
+            TreeNode node = current.node;
+            int index = current.index;
+
+            result.add(current); // Store (node, index) pair
+
+            if (node.left != null) {
+                queue.add(new IndexedNode(node.left, 2 * index));
+            }
+            if (node.right != null) {
+                queue.add(new IndexedNode(node.right, 2 * index + 1));
+            }
+        }
+
+        return result;
+    }
+}
 
 
 

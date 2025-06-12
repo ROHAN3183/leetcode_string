@@ -1,7 +1,7 @@
 class Solution {
     public int maxLevelSum(TreeNode root) {
         Queue<TreeNode> queue = new LinkedList<>();
-        int min = -(int) Math.pow(10, 5);
+        int max = -(int) Math.pow(10, 5);
         int level = 1;
         int index = 1;
         queue.add(root);
@@ -20,8 +20,8 @@ class Solution {
                 }
 
             }
-            if (min < sum) {
-                min = sum;
+            if (max < sum) {
+                max = sum;
                 level = index;
             }
             index++;

@@ -31,3 +31,41 @@ class Solution {
 
     }
 }
+***************************************************DFS**************************************************************************
+
+class Solution {
+    public int maxLevelSum(TreeNode root) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        int max = Integer.MIN_VALUE;
+        int result = 1;
+        traverse(root, 1, map);
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+
+            int key = entry.getKey();
+            int value = entry.getValue();
+            if (max < value) {
+                max = value;
+                result = key;
+            }
+
+        }
+        return result;
+
+    }
+
+    void traverse(TreeNode root, int level, HashMap<Integer, Integer> map) {
+        if (root == null) {
+            return;
+        }
+
+        if (map.containsKey(level)) {
+            int oldValue = map.get(level);
+            map.put(level, oldValue + root.val);
+        } else {
+            map.put(level, root.val);
+        }
+
+        traverse(root.left, level + 1, map);
+        traverse(root.right, level + 1, map);
+    }
+}

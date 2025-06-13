@@ -1,3 +1,5 @@
+#logic of the code-> Always pass the extra coin to the parent that is "leftmoves + rightmoves + root.val - 1" .
+    
 class Solution {
     int moves;
 

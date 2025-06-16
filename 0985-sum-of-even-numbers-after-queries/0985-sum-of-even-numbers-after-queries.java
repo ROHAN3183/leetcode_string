@@ -1,31 +1,29 @@
 class Solution {
     public int[] sumEvenAfterQueries(int[] nums, int[][] queries) {
-        List<Integer> result = new ArrayList<>();
-        int n1 = nums.length;
-        int n2 = queries.length;
-        for (int i = 0; i < n1 && i < n2; i++) {
-            int idx = queries[i][1];
-            int val = queries[i][0];
-            nums[idx] = nums[idx] + val;
-            calculateSum(nums, result);
+        int n = queries.length;
+        int evenSum = 0;
+        int[] result = new int[n];
 
-        }
-        int[] ans = new int[result.size()];
-        for (int i = 0; i < ans.length; i++) {
-            ans[i] = result.get(i);
-        }
-        return ans;
-
-    }
-
-    void calculateSum(int[] nums, List<Integer> result) {
-        int sum = 0;
-        for (int i = 0; i < nums.length; i++) {
+        for (int i = 0; i < nums.length ; i++) {
             if (nums[i] % 2 == 0) {
-                sum += nums[i];
+                evenSum += nums[i];
             }
         }
-        result.add(sum);
 
+        for (int i = 0; i < n&&i<nums.length; i++) {
+            int idx = queries[i][1];
+            int val = queries[i][0];
+            if(nums[idx]%2==0){
+                evenSum-=nums[idx];
+            }
+            nums[idx]+=val;
+            if(nums[idx]%2==0){
+                evenSum+=nums[idx];
+            }
+
+            result[i]=evenSum;
+        }
+
+        return result;
     }
 }

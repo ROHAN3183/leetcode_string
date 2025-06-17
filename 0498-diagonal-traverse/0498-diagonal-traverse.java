@@ -1,42 +1,41 @@
-
 class Solution {
     public int[] findDiagonalOrder(int[][] mat) {
-        int m = mat.length;
-        int n = mat[0].length;
-        
-        // Map to store diagonals
-        Map<Integer, List<Integer>> map = new HashMap<>();
-        
-        // Fill the map using (i + j) as the key
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                // If the map doesn't contain the diagonal index, initialize it
-                if (!map.containsKey(i + j)) {
-                    map.put(i + j, new ArrayList<>());
-                }
-                map.get(i + j).add(mat[i][j]);
+        TreeMap<Integer,List<Integer>>map=new TreeMap<>();
+        List<Integer>ans=new ArrayList<>();
+       
+
+        int n=mat.length;
+        int m=mat[0].length;
+
+
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                int key=i+j;
+                map.putIfAbsent(key,new ArrayList<>());
+                map.get(key).add(mat[i][j]);
             }
         }
+
         
-        List<Integer> result = new ArrayList<>();
-        boolean flip = true;
-        
-        // Traverse the map and fill the result list
-        for (Map.Entry<Integer, List<Integer>> entry : map.entrySet()) {
-            List<Integer> diagonal = entry.getValue();
-            if (flip) {
-                Collections.reverse(diagonal);  // Reverse the diagonal list
+        for(Map.Entry<Integer,List<Integer>>entry:map.entrySet()){
+            int key=entry.getKey();
+            if((entry.getKey())%2==0){
+                Collections.reverse(map.get(key));
             }
-            result.addAll(diagonal);
-            flip = !flip;
         }
-        
-        // Convert List<Integer> to int[] array
-        int[] resultArray = new int[result.size()];
-        for (int i = 0; i < result.size(); i++) {
-            resultArray[i] = result.get(i);
+
+
+
+        for(Map.Entry<Integer,List<Integer>>entry:map.entrySet()){
+            List<Integer>listValue=entry.getValue();
+            ans.addAll(listValue);
+
         }
+        int []result=new int[ans.size()];
+        for(int i=0;i<ans.size();i++){
+            result[i]=ans.get(i);
+        }
+        return result;
         
-        return resultArray;
     }
 }

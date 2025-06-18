@@ -47,7 +47,7 @@ class Solution {
         if (r < 0 || c < 0 || r >= board.length || c >= board[0].length) {
             return;
         }
-        if (board[r][c] == 'X') {
+        if (board[r][c] != 'O') {
             return;
         }
 

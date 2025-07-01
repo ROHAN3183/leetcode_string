@@ -1,3 +1,6 @@
+//Java, whenever you want to compare strings lexicographically (dictionary order), you should use:
+//👉 compareTo() or compareToIgnoreCase()
+
 class Solution {
     String result = "";
 

@@ -32,3 +32,21 @@ class Solution {
         }
     }
 }
+***************************************MOST OPTIMIZED CODE********************************************************
+//best code deep thinking
+class Solution {
+    public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
+        // Base cases
+        if (root1 == null) return root2;
+        if (root2 == null) return root1;
+
+        // Merge values
+        root1.val += root2.val;
+
+        // Recurse on left and right children
+        root1.left = mergeTrees(root1.left, root2.left);
+        root1.right = mergeTrees(root1.right, root2.right);
+
+        return root1;
+    }
+}

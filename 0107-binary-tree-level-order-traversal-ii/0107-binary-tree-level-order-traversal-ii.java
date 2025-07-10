@@ -1,3 +1,7 @@
+/*But new thing to know is that we can use the */
+/*LinkedList<List<Integer>> result = new LinkedList<>();*/
+/*THIS used the feature of that we can addFirst and addLast alway */
+/*this is also best method that is used to solve this problem*/
 class Solution {
     public List<List<Integer>> levelOrderBottom(TreeNode root) {
 

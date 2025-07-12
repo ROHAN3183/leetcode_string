@@ -1,3 +1,7 @@
+/*logic of the code ->
+Alway maintain the lastvisted node so that we can link it with current root. 
+do the traversal in the right->left->root.
+*/
 class Solution {
     TreeNode lastVisited;
 

@@ -1,6 +1,6 @@
 class Solution {
 
-    class Pair {
+   static class Pair {
         int distance;
         double time;
 
@@ -17,7 +17,7 @@ class Solution {
         int size = position.length;
         for (int i = 0; i < size; i++) {
             int d = position[i];
-            double time = (double)position[i] / speed[i];
+            double time = (double)(target-position[i]) / speed[i];
             maxHeap.offer(new Pair(d, time));
         }
         double minTime=-1;

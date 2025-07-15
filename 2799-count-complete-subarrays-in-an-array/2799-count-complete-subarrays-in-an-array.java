@@ -1,3 +1,5 @@
+/*logic of the code -> track the size of the map once if got the valid subarray it means upcomming will be also valid only 
+so now move forward the i pointer so that new subarray can we found.*/
 class Solution {
     public int countCompleteSubarrays(int[] nums) {
 

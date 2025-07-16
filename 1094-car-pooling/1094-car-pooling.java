@@ -1,3 +1,9 @@
+/*logic of the code :
+think if someone sitting in the car they will out from the car after reaching the station it means till the ending time 
+if the last passenger ending time < stating it means that seat got the vaccant then the last passnger seat get empty.
+current passenger  > capacity the  return false.
+*/
+***************************************************OPTIMIZED CODE***************************************************************
 class Solution {
     class Trip {
         int numPassengers;

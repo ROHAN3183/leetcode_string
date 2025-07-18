@@ -1,3 +1,8 @@
+/* LOgic of the code : 2 times Binary Search
+first the min and the max range so , on that we can apply the binary search  to get the target.
+second for count the number of the smallest element in the matrix.
+*/
+***********************************************OPTIMIZED CODE******************************************************************
 class Solution {
     int min = Integer.MAX_VALUE;
     int max = Integer.MIN_VALUE;

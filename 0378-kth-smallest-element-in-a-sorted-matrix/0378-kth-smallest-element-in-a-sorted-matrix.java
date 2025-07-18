@@ -4,7 +4,7 @@ class Solution {
 
     public int kthSmallest(int[][] matrix, int k) {
 
-        findMinAndMax(matrix, min, max);
+        findMinAndMax(matrix);
 
         int low = min;
         int high = max;
@@ -31,7 +31,7 @@ class Solution {
 
     }
 
-    void findMinAndMax(int[][] matrix, int min, int max) {
+    void findMinAndMax(int[][] matrix) {
 
         for (int i = 0; i < matrix.length; i++) {
 

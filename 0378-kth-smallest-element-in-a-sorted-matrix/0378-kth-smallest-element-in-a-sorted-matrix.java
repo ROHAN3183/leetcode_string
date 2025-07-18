@@ -1,10 +1,10 @@
 class Solution {
-    int min;
-    int max;
+    int min = Integer.MAX_VALUE;
+    int max = Integer.MIN_VALUE;
 
     public int kthSmallest(int[][] matrix, int k) {
 
-        findMinAndMax(matrix);
+        findMinAndMax(matrix, min, max);
 
         int low = min;
         int high = max;
@@ -31,7 +31,7 @@ class Solution {
 
     }
 
-    void findMinAndMax(int[][] matrix) {
+    void findMinAndMax(int[][] matrix, int min, int max) {
 
         for (int i = 0; i < matrix.length; i++) {
 

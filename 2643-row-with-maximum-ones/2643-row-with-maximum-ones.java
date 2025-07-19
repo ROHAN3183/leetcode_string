@@ -1,3 +1,6 @@
+/*Logic of the code ->
+apply the binary search on the sorted row.
+*/
 class Solution {
     public int[] rowAndMaximumOnes(int[][] mat) {
         int row = mat.length;

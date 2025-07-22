@@ -1,23 +1,32 @@
 class Solution {
-    int sum = 0;
-
     public int uniquePaths(int m, int n) {
-        dfs(m, n, 0, 0);
-        return sum;
+        int[][] dp = new int[m][n];
+        
+        // Initialize dp array with -1
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                dp[i][j] = -1;
+            }
+        }
+        
+        return countPaths(m - 1, n - 1, dp);
     }
+    
+    private int countPaths(int i, int j, int[][] dp) {
+        // Base case: if we're at the starting cell
+        if (i == 0 && j == 0) return 1;
 
-    void dfs(int m, int n, int row, int col) {
-        if (row >= m || col >= n) {
-            return;
-        }
+        // If out of bounds
+        if (i < 0 || j < 0) return 0;
 
-        if (row == m - 1 && col == n - 1) {
-            sum++;
-            return;
-        }
-        dfs(m, n, row + 1, col);
-        dfs(m, n, row, col + 1);
+        // If already computed
+        if (dp[i][j] != -1) return dp[i][j];
 
-        return;
+        // Compute from top and left
+        int up = countPaths(i - 1, j, dp);
+        int left = countPaths(i, j - 1, dp);
+
+        dp[i][j] = up + left;
+        return dp[i][j];
     }
 }

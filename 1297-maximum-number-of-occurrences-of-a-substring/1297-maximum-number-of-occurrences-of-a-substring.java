@@ -3,7 +3,7 @@ class Solution {
         HashMap<Character, Integer> mapFreq = new HashMap<>();
         HashMap<String, Integer> mapString = new HashMap<>();
         StringBuilder str = new StringBuilder();
-        int max = Integer.MIN_VALUE;
+        int max = 0;
         int n = s.length();
         int i = 0;
         int j = 0;

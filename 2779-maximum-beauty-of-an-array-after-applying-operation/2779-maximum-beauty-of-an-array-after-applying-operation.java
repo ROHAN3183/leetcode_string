@@ -1,3 +1,10 @@
+***************************************LOGIC OF THE CODE***********************************************************************
+First store the (-k ,+k ) in the list .
+Sort on the basis of the start.
+Maintain the Dequeue push at the last.
+if coming is start is greater the peek of the end it mean's on overlapping ,so no need to keep it always track the size of the 
+Dequeue.
+***************************************OPTIMIZED CODE**************************************************************************
 class Solution {
     class Pair {
         int start;

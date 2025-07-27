@@ -1,12 +1,10 @@
 class Solution {
     public int maximumCandies(int[] candies, long k) {
-        int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
         for (int i = 0; i < candies.length; i++) {
-            min = Math.min(min, candies[i]);
             max = Math.max(max, candies[i]);
         }
-        int low = min;
+        int low = 1;
         int high = max;
         int ans = 0;
         while (low <= high) {

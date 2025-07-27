@@ -1,3 +1,10 @@
+****************************************logic of the code*************************************************************************
+1) Create an array where arr[i] can tell you the next consonant.
+2) Apply the sliding window in the such a way that srinking the window consonant > k.
+3) count the result such in a way count = nextConsonant-j because if k = 2 at the j=5 but next consonant is at the index 7 then it
+till that also all the subarray possible again keep srinking as that if from back i get increased then also get the valid answer 
+add that also to the answer.
+**********************************************************************************************************************************
 class Solution {
     public int countOfSubstrings(String word, int k) {
         HashMap<Character, Integer> map = new HashMap<>();

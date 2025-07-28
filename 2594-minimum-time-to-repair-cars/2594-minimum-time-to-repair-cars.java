@@ -1,12 +1,12 @@
 class Solution {
     public long repairCars(int[] ranks, int cars) {
-        int minRank = Integer.MAX_VALUE;
+        int maxRank = 0;
         for (int rank : ranks) {
-            minRank = Math.min(minRank, rank);
+            maxRank = Math.max(maxRank, rank);  // find the maximum rank
         }
 
         long low = 1;
-        long high = (long) minRank * cars * cars;
+        long high = (long) maxRank * cars * cars;  // use maxRank instead of minRank
         long ans = high;
 
         while (low <= high) {
@@ -23,8 +23,8 @@ class Solution {
 
     boolean isValid(int[] ranks, long time, int cars) {
         long count = 0;
-        for (int r : ranks) {
-            count += (long) Math.sqrt((double) time / r);
+        for (int i = 0; i < ranks.length; i++) {
+            count += (long) Math.sqrt((double) time / ranks[i]);
             if (count >= cars) return true;
         }
         return false;

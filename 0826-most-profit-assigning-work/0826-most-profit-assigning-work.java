@@ -41,6 +41,7 @@ class Solution {
 }
 *******************************************BINARY SEARCH***********************************************************************
 class Solution {
+    
     class Pair {
         int difficult;
         int profit;
@@ -57,7 +58,11 @@ class Solution {
             list.add(new Pair(difficulty[i], profit[i]));
         }
         Collections.sort(list, (a, b) -> a.difficult - b.difficult);
-        Arrays.sort(worker);
+        int maxprofit = 0;
+        for (int i = 0; i < list.size(); i++) {
+            maxprofit = Math.max(list.get(i).profit, maxprofit);
+            list.get(i).profit = maxprofit;
+        }
         int result = 0;
         for (int i = 0; i < worker.length; i++) {
             int value = worker[i];
@@ -73,7 +78,7 @@ class Solution {
         while (low <= high) {
             int mid = low + (high - low) / 2;
             if (list.get(mid).difficult <= value) {
-                max = Math.max(max, list.get(mid).profit);
+                max = list.get(mid).profit;
                 low = mid + 1;
             } else {
                 high = mid - 1;

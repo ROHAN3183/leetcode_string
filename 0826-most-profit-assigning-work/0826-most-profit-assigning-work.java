@@ -1,3 +1,4 @@
+
 class Solution {
 
     class Pair {
@@ -11,25 +12,30 @@ class Solution {
     }
 
     public int maxProfitAssignment(int[] difficulty, int[] profit, int[] worker) {
-        List<Pair>list=new ArrayList<>();
-        int ans=0;
-        for(int i = 0;i<difficulty.length;i++){
-            list.add(new Pair(difficulty[i],profit[i]));
+        List<Pair> list = new ArrayList<>();
+        int ans = 0;
+
+        for (int i = 0; i < difficulty.length; i++) {
+            list.add(new Pair(difficulty[i], profit[i]));
         }
-        Collections.sort(list ,(a,b)->(a.difficult-b.difficult));
+
+        Collections.sort(list, (a, b) -> a.difficult - b.difficult);
         Arrays.sort(worker);
 
-        for(int i=0;i<worker.length;i++){
+        int j = 0;
+        int best = 0;
+
+        for (int i = 0; i < worker.length; i++) {
             int value = worker[i];
-            int max=0;
-            for(int j=0;j<list.size();j++){
-               if(list.get(j).difficult>value){
-                break;
-               }
-                max=Math.max(list.get(j).profit,max);
+
+            while (j < list.size() && list.get(j).difficult <= value) {
+                best = Math.max(best, list.get(j).profit);
+                j++;
             }
-            ans+=max;
+
+            ans += best;
         }
+
         return ans;
     }
 }

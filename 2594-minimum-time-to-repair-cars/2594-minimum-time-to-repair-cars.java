@@ -2,11 +2,11 @@ class Solution {
     public long repairCars(int[] ranks, int cars) {
         int maxRank = 0;
         for (int rank : ranks) {
-            maxRank = Math.max(maxRank, rank);  // find the maximum rank
+            maxRank = Math.max(maxRank, rank);
         }
 
         long low = 1;
-        long high = (long) maxRank * cars * cars;  // use maxRank instead of minRank
+        long high = (long) maxRank * cars * cars;
         long ans = high;
 
         while (low <= high) {

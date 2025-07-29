@@ -25,7 +25,7 @@ class Solution {
             Pair loose = minHeap.poll();
             Pair win = minHeap.poll();
             minHeap.clear();
-            list.remove(loose.idx);
+            list.remove((Integer)loose.key);
             list.add(loose.key);
             map.put(win.key, map.getOrDefault(win.key, 0) + 1);
             if (map.get(win.key) >= k) {

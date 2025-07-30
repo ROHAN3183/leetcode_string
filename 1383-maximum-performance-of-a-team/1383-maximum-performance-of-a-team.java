@@ -1,3 +1,4 @@
+*********************************************SIMILAR TO 2542*********************************************************************
 class Solution {
     public int maxPerformance(int n, int[] speed, int[] efficiency, int k) {
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();

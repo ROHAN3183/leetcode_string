@@ -9,7 +9,7 @@ class Solution {
             sorted[i][1] = nums2[i];
         }
         Arrays.sort(sorted,(a,b)->Integer.compare(b[1],a[1]));
-        int sum=0;
+        long sum=0;
         for(int i=0;i<k-1;i++){
             sum+=sorted[i][0];
             minHeap.offer(sorted[i][0]);

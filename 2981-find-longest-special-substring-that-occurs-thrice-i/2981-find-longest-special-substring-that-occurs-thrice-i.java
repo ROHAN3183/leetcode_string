@@ -1,3 +1,5 @@
+/*Sliding window is getting fail because whose aaaaaaaaaa then when j will get the end that is length when how will get the 
+strink and how  that why trying to generate all the possible substring */
 class Solution {
     public int maximumLength(String s) {
         HashMap<String, Integer> map = new HashMap<>();

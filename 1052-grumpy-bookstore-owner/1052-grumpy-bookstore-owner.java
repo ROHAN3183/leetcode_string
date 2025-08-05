@@ -5,7 +5,6 @@ class Solution {
         int j = 0;
         int count = 0;
         int max = 0;
-        int start = -1;
         int alreadySatisfied = 0;
 
         for (int k = 0; k < n; k++) {
@@ -25,24 +24,11 @@ class Solution {
                 i++;
             }
             if (j - i + 1 == minutes) {
-                if (max < count) {
-                    max = count;
-                    start = i;
-
-                }
+                max = Math.max(max, count);
             }
             j++;
         }
 
-        if (start == -1) {
-            return alreadySatisfied;
-        }
-
-        for (int k = start; k < start + minutes; k++) {
-            if (grumpy[k] == 1) {
-                alreadySatisfied += customers[k];
-            }
-        }
-        return alreadySatisfied;
+        return alreadySatisfied + max;
     }
 }

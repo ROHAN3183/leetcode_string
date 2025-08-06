@@ -6,7 +6,7 @@ class Solution {
         long sum = 0;
         Arrays.sort(happiness);
 
-        for (int i = n - 1; i >= 0; i--) {
+        for (int i = n - 1; i >=0; i--) {
             if (k <= 0) {
                 return sum;
             }

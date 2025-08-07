@@ -18,22 +18,39 @@ class Solution {
                 return a.value - b.value;
             }
         });
-
+        HashMap<Character, Integer> map = new HashMap<>();
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+            if (Character.isLetter(ch)) {
+                map.put(ch, map.getOrDefault(ch, 0) + 1);
+            }
+        }
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
             if (Character.isLetter(ch)) {
                 minHeap.offer(new Pair(ch, i));
             } else {
                 Pair delete = minHeap.poll();
+                int freq = map.get(delete.value);
+                if (freq == 1) {
+                    map.remove(delete.value);
+                } else {
+                    map.put(delete.value, freq - 1);
+                }
                 list.add(delete.idx);
             }
         }
         StringBuilder str = new StringBuilder();
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
-            if (Character.isLetter(ch) &&!list.contains(i)) {
+            if (Character.isLetter(ch) && map.containsKey(ch) && !list.contains(i)) {
                 str.append(ch);
-
+                int freq = map.get(ch);
+                if (freq == 1) {
+                    map.remove(ch);
+                } else {
+                    map.put(ch, freq - 1);
+                }
             }
         }
         return str.toString();

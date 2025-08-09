@@ -1,15 +1,11 @@
 class Solution {
     public String findLongestWord(String s, List<String> dictionary) {
         int n2 = dictionary.size();
-        char[] array = s.toCharArray();
-       // Arrays.sort(array);
         String max = "";
         for (int i = 0; i < n2; i++) {
             int idx = i;
             String str = dictionary.get(i);
-            char[] temp = str.toCharArray();
-          //  Arrays.sort(temp);
-            int ans = function(array, temp, idx);
+            int ans = function(s, str, idx);
             if (ans >= 0 && dictionary.get(ans).length() > max.length()) {
                 max = dictionary.get(ans);
             } else if (ans >= 0 && max.length() == dictionary.get(ans).length()) {
@@ -22,20 +18,19 @@ class Solution {
         return max;
     }
 
-    int function(char[] array, char[] temp, int idx) {
-        if (array.length < temp.length) {
+    int function(String s, String word, int idx) {
+        if (s.length() < word.length()) {
             return -1;
         }
         int j = 0;
         int count = 0;
-        for (int i = 0; i < array.length; i++) {
-
-            if (array[i] == temp[j]) {
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == word.charAt(j)) {
                 count++;
                 j++;
-            }
-            if (count == temp.length) {
-                return idx;
+                if (count == word.length()) {
+                    return idx;
+                }
             }
         }
         return -1;

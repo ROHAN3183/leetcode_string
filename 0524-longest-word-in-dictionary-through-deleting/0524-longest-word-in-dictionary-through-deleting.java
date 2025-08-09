@@ -5,7 +5,7 @@ class Solution {
         for (int i = 0; i < n2; i++) {
             int idx = i;
             String str = dictionary.get(i);
-            int ans = function(s, str, idx);
+            int ans = isValid(s, str, idx);
             if (ans >= 0 && dictionary.get(ans).length() > max.length()) {
                 max = dictionary.get(ans);
             } else if (ans >= 0 && max.length() == dictionary.get(ans).length()) {
@@ -18,7 +18,7 @@ class Solution {
         return max;
     }
 
-    int function(String s, String word, int idx) {
+    int isValid(String s, String word, int idx) {
         if (s.length() < word.length()) {
             return -1;
         }

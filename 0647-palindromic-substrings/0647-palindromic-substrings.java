@@ -1,32 +1,28 @@
 class Solution {
     public int countSubstrings(String s) {
-        int n=s.length();
-        int count=0;
-
-        for(int i=0;i<n;i++){
-            StringBuilder str=new StringBuilder();
-            for(int j=i;j<n;j++){
-
-                str.append(s.charAt(j));
-                char [] temp=str.toString().toCharArray();
-                if(reverse(temp)){
+        int n = s.length();
+        Boolean[][] dp = new Boolean[1001][1001];
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = i; j < n; j++) {
+                if (solver(s, i, j, dp)) {
                     count++;
                 }
-                
             }
         }
         return count;
     }
-    boolean reverse(char[] temp ){
-        int i=0;
-        int j=temp.length-1;
-        while(i<=j){
-            if(temp[i]!=temp[j]){
-                return false;
-            }
-            i++;
-            j--;
+
+    boolean solver(String s, int i, int j, Boolean[][] dp) {
+        if (i >= j) {
+            return true;
         }
-        return true;
+        if (dp[i][j] != null) {
+            return dp[i][j];
+        }
+        if (s.charAt(i) == s.charAt(j)) {
+            return dp[i][j] = solver(s, i + 1, j - 1, dp);
+        }
+        return dp[i][j] = false;
     }
 }

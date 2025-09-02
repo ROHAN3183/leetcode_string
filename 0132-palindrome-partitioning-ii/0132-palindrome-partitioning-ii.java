@@ -7,7 +7,7 @@ class Solution {
     }
 
     int dfs(String s, int i) {
-        if (i == s.length()) {
+        if (i >= s.length()) {
             return 0;
         }
         if (dp[i] != null) {

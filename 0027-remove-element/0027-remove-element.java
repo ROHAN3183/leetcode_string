@@ -11,9 +11,9 @@ class Solution {
         }
         int n = lastPosition - firstPosition + 1;
         result = nums.length - n;
-        int j = lastPosition + 1;
-        for (int i = firstPosition; j < nums.length; i++, j++) {
-            nums[i] = nums[j];
+
+        for (int i = lastPosition + 1; i < nums.length; i++) {
+            nums[firstPosition++] = nums[i];
         }
 
         return result;

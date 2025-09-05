@@ -20,7 +20,7 @@ class Solution {
 
     boolean binarySearch(int[] nums2, int target) {
         int low = 0;
-        int high = nums2.length;
+        int high = nums2.length-1;
         while (low <= high) {
             int mid = low + (high - low) / 2;
             if (nums2[mid] == target) {

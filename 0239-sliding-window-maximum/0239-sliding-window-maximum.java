@@ -1,24 +1,36 @@
+import java.util.*;
+
 class Solution {
     public int[] maxSlidingWindow(int[] nums, int k) {
-       int n=nums.length;
-       int [] result=new int [n-k+1];
-       Deque<Integer>Dq=new ArrayDeque<>();
-       int idx=0;
-       for(int j=0;j<n;j++){
+        Deque<Integer> dq = new ArrayDeque<>(); // stores indices
+        int n = nums.length;
+        int idx = 0;
+        int[] result = new int[n - k + 1];
 
-        if(!Dq.isEmpty() && Dq.peekFirst()<j-k+1){ //remove the extra size element
-            Dq.pollFirst();
+        // First window
+        for (int i = 0; i < k; i++) {
+            while (!dq.isEmpty() && nums[dq.peekLast()] <= nums[i]) {
+                dq.pollLast();
+            }
+            dq.offerLast(i); // store index
         }
-        while(!Dq.isEmpty() && nums[Dq.peekLast()]<nums[j]){ //remove the smallar element from the Dequeue
-            Dq.pollLast();
-        }
-        Dq.addLast(j);
-        if(j>=k-1){
-            result[idx++]=nums[Dq.peekFirst()];
+        result[idx++] = nums[dq.peekFirst()]; // take max from index
+
+        // Remaining windows
+        for (int i = k; i < n; i++) {
+            // remove indices out of this window
+            if (!dq.isEmpty() && dq.peekFirst() <= i - k) {
+                dq.pollFirst();
+            }
+
+            while (!dq.isEmpty() && nums[dq.peekLast()] <= nums[i]) {
+                dq.pollLast();
+            }
+            dq.offerLast(i);
+
+            result[idx++] = nums[dq.peekFirst()];
         }
 
-       }
-       return result;
-        
+        return result;
     }
 }

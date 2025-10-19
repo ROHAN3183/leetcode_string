@@ -11,7 +11,7 @@ class Solution {
             int u = edge[0];
             int v = edge[1];
 
-            Adj.get(u).add(u);
+            Adj.get(u).add(v);
             Adj.get(v).add(u);
 
         }

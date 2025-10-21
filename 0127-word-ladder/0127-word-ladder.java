@@ -1,13 +1,14 @@
 class Solution {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         Queue<String> queue = new LinkedList<>();
-        return bfs(wordList, beginWord, endWord, queue);
+        boolean[] visited = new boolean[wordList.size()];
+        return bfs(wordList, beginWord, endWord, queue, visited);
 
     }
 
-    int bfs(List<String> wordList, String beginWord, String endWord, Queue<String> queue) {
+    int bfs(List<String> wordList, String beginWord, String endWord, Queue<String> queue, boolean[] visited) {
         queue.offer(beginWord);
-        boolean[] visited = new boolean[wordList.size()];
+
         int step = 1;
         while (!queue.isEmpty()) {
             int size = queue.size();

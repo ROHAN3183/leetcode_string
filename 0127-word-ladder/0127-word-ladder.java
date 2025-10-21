@@ -1,42 +1,44 @@
 class Solution {
-    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
-        Queue<String> queue = new LinkedList<>();
-        boolean[] visited = new boolean[wordList.size()];
-        return bfs(wordList, beginWord, endWord, queue, visited);
+    class Pair {
+        String word;
+        int step;
 
+        Pair(String word, int step) {
+            this.word = word;
+            this.step = step;
+        }
     }
 
-    int bfs(List<String> wordList, String beginWord, String endWord, Queue<String> queue, boolean[] visited) {
-        queue.offer(beginWord);
+    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+        Queue<Pair> queue = new LinkedList<>();
+        boolean[] visited = new boolean[wordList.size()];
+        queue.offer(new Pair(beginWord, 1));
 
-        int step = 1;
         while (!queue.isEmpty()) {
-            int size = queue.size();
-            for (int j = 0; j < size; j++) {
-                String curr = queue.poll();
-                if (curr.equals(endWord)) {
-                    return step;
-                }
-                for (int i = 0; i < wordList.size(); i++) {
-                    if (!visited[i] && isValid(curr, wordList.get(i))) {
-                        visited[i] = true;
-                        queue.offer(wordList.get(i));
+            Pair curr = queue.poll();
+            String word = curr.word;
+            int step = curr.step;
 
-                    }
+            if (word.equals(endWord)) {
+                return step;
+            }
+
+            for (int i = 0; i < wordList.size(); i++) {
+                if (!visited[i] && isValid(word, wordList.get(i))) {
+                    visited[i] = true;
+                    queue.offer(new Pair(wordList.get(i), step + 1));
                 }
             }
-            step++;
         }
+
         return 0;
     }
 
     boolean isValid(String prev, String next) {
-        if (prev.length() != next.length())
-            return false;
+        if (prev.length() != next.length()) return false;
         int diff = 0;
         for (int i = 0; i < prev.length(); i++) {
-            if (prev.charAt(i) != next.charAt(i))
-                diff++;
+            if (prev.charAt(i) != next.charAt(i)) diff++;
         }
         return diff == 1;
     }

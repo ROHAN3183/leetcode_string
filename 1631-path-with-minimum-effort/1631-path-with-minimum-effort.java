@@ -23,7 +23,10 @@ class Solution {
     boolean dfs(int[][] heights, boolean[][] visited, int prev, int i, int j, int target) {
         int n = heights.length;
         int m = heights[0].length;
-        if (i >= n || i < 0 || j >= m || j < 0 || Math.abs(prev - heights[i][j]) > target || visited[i][j]) {
+        if (i >= n || i < 0 || j >= m || j < 0 || visited[i][j]) {
+            return false;
+        }
+        if (Math.abs(prev - heights[i][j]) > target) {
             return false;
         }
         if (i == n - 1 && j == m - 1) {

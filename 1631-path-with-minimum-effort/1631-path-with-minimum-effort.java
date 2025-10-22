@@ -4,12 +4,6 @@ class Solution {
         int m = heights[0].length;
         int min = 0;
         int max = Integer.MAX_VALUE;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                min = Math.min(min, heights[i][j]);
-                max = Math.max(max, heights[i][j]);
-            }
-        }
         int low = min;
         int high = max;
         int ans = -1;

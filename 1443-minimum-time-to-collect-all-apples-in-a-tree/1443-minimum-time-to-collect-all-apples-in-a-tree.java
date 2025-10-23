@@ -19,10 +19,10 @@ class Solution {
                 count++;
             }
         }
-        if (count*2 - 2 <= 0) {
+        if (count * 2 - 2 <= 0) {
             return 0;
         }
-        return count*2 ;
+        return count * 2 - 2;
     }
 
     void dfs(ArrayList<ArrayList<Integer>> adj, int i, boolean[] visited, List<Boolean> hasApple,
@@ -35,20 +35,16 @@ class Solution {
         }
         if (hasApple.get(i)) {
             map.put(i, true);
-        } else if (adj.get(i).size() == 1) {
-            if (map.get(adj.get(i).get(0))) {
-                map.put(i, true);
-            } else {
-                map.put(i, false);
-            }
-        } else if (adj.get(i).size() == 2) {
-            if (map.get(adj.get(i).get(0)) || map.get(adj.get(i).get(1))) {
-                map.put(i, true);
-            } else {
-                map.put(i, false);
-            }
         } else {
-            map.put(i, false);
+            boolean hasAppleInNeighbor = false;
+            for (int neighbor : adj.get(i)) {
+                if (map.get(neighbor)) {
+                    hasAppleInNeighbor = true;
+                    break;
+                }
+            }
+            map.put(i, hasAppleInNeighbor);
+
         }
         return;
     }

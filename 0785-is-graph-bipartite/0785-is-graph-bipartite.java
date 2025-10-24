@@ -1,28 +1,23 @@
 class Solution {
     public boolean isBipartite(int[][] graph) {
+        Queue<Integer> queue = new LinkedList<>();
         int[] visited = new int[graph.length];
         Arrays.fill(visited, -1);
-        for (int i = 0; i < graph.length; i++) {
-            if (i == 0) {
-                visited[i] = 0;
-            }
-            if (!dfs(graph, visited, i)) {
-                return false;
-            }
-        }
-        return true;
+        return bfs(graph, visited, queue);
     }
 
-    boolean dfs(int[][] graph, int[] visited, int i) {
-
-        for (int neighbour : graph[i]) {
-            if (visited[neighbour] == -1) {
-                visited[neighbour] = 1 - visited[i];
-                if (!dfs(graph, visited, neighbour)) {
+    boolean bfs(int[][] graph, int[] visited, Queue<Integer> queue) {
+        queue.offer(0);
+        visited[0] = 0;
+        while (!queue.isEmpty()) {
+            int node = queue.poll();
+            for (int neibour : graph[node]) {
+                if (visited[neibour] == -1) {
+                    visited[neibour] = 1 - visited[node];
+                    queue.offer(neibour);
+                } else if (visited[neibour] == visited[node]) {
                     return false;
                 }
-            } else if (visited[neighbour] == visited[i]) {
-                return false;
             }
         }
         return true;

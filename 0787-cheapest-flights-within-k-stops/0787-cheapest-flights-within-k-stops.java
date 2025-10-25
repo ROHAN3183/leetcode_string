@@ -13,29 +13,44 @@ class Solution {
 
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
         ArrayList<ArrayList<Pair>> adj = new ArrayList<>();
-        for (int i = 0; i < n; i++) adj.add(new ArrayList<>());
-        for (int[] f : flights) adj.get(f[0]).add(new Pair(f[1], f[2]));
+        for (int i = 0; i < n; i++) {
+            adj.add(new ArrayList<>());
+        }
 
-        memo = new int[n][k + 2];
-        for (int[] row : memo) Arrays.fill(row, -1);
+        for (int[] flight : flights) {
+            int u = flight[0], v = flight[1], w = flight[2];
+            adj.get(u).add(new Pair(v, w));
+        }
+
+        memo = new int[n][n];
+        for (int[] row : memo) {
+            Arrays.fill(row, -1);
+        }
 
         int result = dfs(adj, src, dst, 0, k);
         return result == Integer.MAX_VALUE ? -1 : result;
     }
 
-    int dfs(ArrayList<ArrayList<Pair>> adj, int src, int dst, int stops, int k) {
-        if (src == dst) return 0;
-        if (stops > k) return Integer.MAX_VALUE;
-        if (memo[src][stops] != -1) return memo[src][stops];
+    int dfs(ArrayList<ArrayList<Pair>> adj, int src, int dst, int stops, int target) {
+
+        if (src == dst)
+            return 0;
+
+        if (stops > target)
+            return Integer.MAX_VALUE;
+
+        if (memo[src][stops] != -1)
+            return memo[src][stops];
 
         int min = Integer.MAX_VALUE;
-        for (Pair nei : adj.get(src)) {
-            int next = dfs(adj, nei.node, dst, stops + 1, k);
+        for (Pair neighbor : adj.get(src)) {
+            int next = dfs(adj, neighbor.node, dst, stops + 1, target);
             if (next != Integer.MAX_VALUE) {
-                min = Math.min(min, nei.cst + next);
+                min = Math.min(min, neighbor.cst + next);
             }
         }
 
-        return memo[src][stops] = min;
+        memo[src][stops] = min;
+        return min;
     }
 }

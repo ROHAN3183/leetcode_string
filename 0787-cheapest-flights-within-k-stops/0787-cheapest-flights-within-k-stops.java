@@ -1,56 +1,63 @@
 class Solution {
     class Pair {
-        int node;
-        int cst;
+        int node0;
+        int cost0;
 
-        Pair(int node, int cst) {
-            this.node = node;
-            this.cst = cst;
+        Pair(int node0, int cost0) {
+            this.node0 = node0;
+            this.cost0 = cost0;
+
         }
     }
 
-    int[][] memo;
+    class Info {
+        int node1;
+        int cost1;
+        int step;
+
+        Info(int node1, int step, int cost1) {
+            this.node1 = node1;
+            this.step = step;
+            this.cost1 = cost1;
+
+        }
+    }
 
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
+        int[] distance = new int[n];
         ArrayList<ArrayList<Pair>> adj = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             adj.add(new ArrayList<>());
         }
-
-        for (int[] flight : flights) {
-            int u = flight[0], v = flight[1], w = flight[2];
+        for (int[] edge : flights) {
+            int u = edge[0];
+            int v = edge[1];
+            int w = edge[2];
             adj.get(u).add(new Pair(v, w));
-        }
 
-        memo = new int[n][n];
-        for (int[] row : memo) {
-            Arrays.fill(row, -1);
         }
+        return bfs(adj, src, dst, k);
 
-        int result = dfs(adj, src, dst, 0, k);
-        return result == Integer.MAX_VALUE ? -1 : result;
     }
 
-    int dfs(ArrayList<ArrayList<Pair>> adj, int src, int dst, int stops, int target) {
-
-        if (src == dst)
-            return 0;
-
-        if (stops > target)
-            return Integer.MAX_VALUE;
-
-        if (memo[src][stops] != -1)
-            return memo[src][stops];
-
+    int bfs(ArrayList<ArrayList<Pair>> adj, int src, int dst, int k) {
+        Queue<Info> queue = new LinkedList<>();
+        queue.offer(new Info(src, -1, 0));
         int min = Integer.MAX_VALUE;
-        for (Pair neighbor : adj.get(src)) {
-            int next = dfs(adj, neighbor.node, dst, stops + 1, target);
-            if (next != Integer.MAX_VALUE) {
-                min = Math.min(min, neighbor.cst + next);
+        while (!queue.isEmpty()) {
+            Info X = queue.poll();
+            if (X.node1 == dst && X.step <= k) {
+                min = Math.min(min, X.cost1);
+                continue;
+            }
+            if (X.step >= k) {
+                continue;
+            }
+            for (Pair neibour : adj.get(X.node1)) {
+                queue.offer(new Info(neibour.node0, X.step + 1, X.cost1 + neibour.cost0));
             }
         }
-
-        memo[src][stops] = min;
-        return min;
+        return min == Integer.MAX_VALUE ? -1 : min;
     }
+
 }

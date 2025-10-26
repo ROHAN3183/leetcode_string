@@ -42,7 +42,10 @@ class Solution {
 
     int bfs(ArrayList<ArrayList<Pair>> adj, int src, int dst, int k) {
         Queue<Info> queue = new LinkedList<>();
+        int [] distance = new int [adj.size()];
+        Arrays.fill(distance,Integer.MAX_VALUE);
         queue.offer(new Info(src, -1, 0));
+        distance[src]=0;
         int min = Integer.MAX_VALUE;
         while (!queue.isEmpty()) {
             Info X = queue.poll();
@@ -54,7 +57,10 @@ class Solution {
                 continue;
             }
             for (Pair neibour : adj.get(X.node1)) {
-                queue.offer(new Info(neibour.node0, X.step + 1, X.cost1 + neibour.cost0));
+                if(X.cost1+neibour.cost0<distance[neibour.node0]){
+                    distance[neibour.node0]=X.cost1+neibour.cost0;
+                    queue.offer(new Info(neibour.node0, X.step + 1, X.cost1 + neibour.cost0));
+                }
             }
         }
         return min == Integer.MAX_VALUE ? -1 : min;

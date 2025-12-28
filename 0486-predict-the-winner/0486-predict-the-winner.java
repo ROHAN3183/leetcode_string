@@ -5,7 +5,7 @@ class Solution {
 
     boolean dfs(int[] nums, int i, int j, int s1, int s2, boolean term) {
         if (i > j) {
-            if (s1 > s2) {
+            if (s1 >= s2) {
                 return true;
             }
             return false;

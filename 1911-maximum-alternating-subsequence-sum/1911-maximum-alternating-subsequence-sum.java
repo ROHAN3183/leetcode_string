@@ -13,17 +13,16 @@ class Solution {
         if (dp[idx][flag] != null) {
             return dp[idx][flag];
         }
-        long option1 = 0;
-        long option2 = 0;
+        long best = 0;
         if (flag == 1) {
             long take = nums[idx] + dfs(nums, idx + 1, 0);
             long nottake = dfs(nums, idx + 1, 1);
-            option1 = Math.max(take, nottake);
+            best = Math.max(take, nottake);
         } else {
             long take = -nums[idx] + dfs(nums, idx + 1, 1);
             long nottake = dfs(nums, idx + 1, 0);
-            option2 = Math.max(take, nottake);
+            best = Math.max(take, nottake);
         }
-        return dp[idx][flag] = Math.max(option1, option2);
+        return dp[idx][flag] = best;
     }
 }

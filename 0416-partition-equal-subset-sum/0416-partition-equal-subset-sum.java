@@ -1,30 +1,36 @@
 class Solution {
-    int totalSum=0;
-    Boolean [][]memo;
+    int totalSum = 0;
+    Integer[][] dp;
+
     public boolean canPartition(int[] nums) {
-        
-        for (int i = 0; i < nums.length; i++) {
+        int n = nums.length;
+        for (int i = 0; i < n; i++) {
             totalSum += nums[i];
         }
+        dp = new Integer[n][totalSum];
         if (totalSum % 2 != 0) {
             return false;
         }
-        int target = totalSum / 2;
-        memo=new Boolean[nums.length][target+1];
-        return dfs(nums, 0, 0, target);
-    }
-
-    boolean dfs(int[] nums, int idx, int sum, int target) {
-        if (sum == target) {
+        if (dfs(nums, 0, totalSum / 2) == 1) {
             return true;
         }
-        if (idx >= nums.length || sum > target) {
-            return false;
+        return false;
+    }
+
+    int dfs(int[] nums, int idx, int target) {
+        if (target == 0) {
+            return 1;
         }
-        if(memo[idx][target]!= null){
-            return memo[idx][target];
+        if (idx >= nums.length || target < 0) {
+            return 0;
         }
-        memo[idx][target]=dfs(nums, idx + 1, sum + nums[idx], target) || dfs(nums, idx + 1, sum, target);
-        return memo[idx][target];
+        if (dp[idx][target] != null) {
+            return dp[idx][target];
+        }
+
+        int take = dfs(nums, idx + 1, target - nums[idx]);
+        int nottake = dfs(nums, idx + 1, target);
+
+        return dp[idx][target] = Math.max(take, nottake);
     }
 }

@@ -7,7 +7,7 @@ class Solution {
         for (int i = 0; i < n; i++) {
             totalSum += nums[i];
         }
-        dp = new Integer[n][totalSum];
+        dp = new Integer[n][totalSum / 2 + 1];
         if (totalSum % 2 != 0) {
             return false;
         }

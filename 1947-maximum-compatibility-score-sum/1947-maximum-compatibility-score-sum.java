@@ -12,9 +12,7 @@ class Solution {
             max = Math.max(max, ans);
             return;
         }
-        if (idx > students.length) {
-            return;
-        }
+
         int[] s = students[idx];
         for (int i = 0; i < mentors.length; i++) {
             int[] m = mentors[i];

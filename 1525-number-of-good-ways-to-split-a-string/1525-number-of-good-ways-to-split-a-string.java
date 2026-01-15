@@ -12,12 +12,12 @@ class Solution {
             prefix2[j] = map2.size();
             j--;
         }
-        j = 0;
         int count = 0;
         for (int i = 1; i < prefix1.length; i++) {
-            if (prefix1[i] == prefix2[j]) {
+            if (prefix1[i-1] == prefix2[i]) {
                 count++;
             }
+
         }
         return count;
     }

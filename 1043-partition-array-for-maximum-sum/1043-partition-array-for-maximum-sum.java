@@ -13,13 +13,13 @@ class Solution {
         if (dp[idx] != null) {
             return dp[idx];
         }
-        int sum = 0;
+
         int size = 1;
         int max = 0;
+        int val=arr[idx];
         PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
         for (int i = idx; size <= k && i < arr.length; i++) {
-            pq.offer(arr[i]);
-            int val = pq.peek();
+            val =Math.max(val,arr[i]);
             max = Math.max(max, (size * val) + dfs(arr, i + 1, k));
             size++;
         }

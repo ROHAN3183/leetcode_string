@@ -2,23 +2,27 @@ class Solution {
     Integer[] dp;
 
     public int maxSumAfterPartitioning(int[] arr, int k) {
-        dp = new Integer[501];
-        return dfs(arr, k, 0);
+        dp = new Integer[arr.length];
+        return dfs(arr, 0, k);
     }
 
-    int dfs(int[] arr, int k, int idx) {
+    int dfs(int[] arr, int idx, int k) {
         if (idx >= arr.length) {
             return 0;
         }
         if (dp[idx] != null) {
             return dp[idx];
         }
-        int maxSum = 0;
-        int result = 0;
-        for (int j = idx; j < arr.length && j - idx + 1 <= k; j++) {
-            maxSum = Math.max(maxSum, arr[j]);
-            result = Math.max(result, (maxSum * (j - idx + 1)) + dfs(arr, k, j + 1));
+        int sum = 0;
+        int size = 1;
+        int max = 0;
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+        for (int i = idx; size <= k && i < arr.length; i++) {
+            pq.offer(arr[i]);
+            int val = pq.peek();
+            max = Math.max(max, (size * val) + dfs(arr, i + 1, k));
+            size++;
         }
-        return dp[idx] = result;
+        return dp[idx] = max;
     }
 }

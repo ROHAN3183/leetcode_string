@@ -1,33 +1,35 @@
 class Solution {
-    List<Integer> list;
     int idx = 0;
 
     public void recoverTree(TreeNode root) {
-        list = new ArrayList<>();
-        dfs(root);
+        List<Integer> list = new ArrayList<>();
+        inorderStoring(root, list);
         Collections.sort(list);
-        recover(root);
+        recover(root, list);
         return;
     }
 
-    void dfs(TreeNode root) {
+    void inorderStoring(TreeNode root, List<Integer> list) {
         if (root == null) {
             return;
         }
-        dfs(root.left);
+        inorderStoring(root.left, list);
         list.add(root.val);
-        dfs(root.right);
+        inorderStoring(root.right, list);
         return;
-
     }
 
-    void recover(TreeNode root) {
+    void recover(TreeNode root, List<Integer> list) {
         if (root == null) {
             return;
         }
-        recover(root.left);
+
+        recover(root.left, list);
+
         root.val = list.get(idx++);
-        recover(root.right);
+
+        recover(root.right, list);
+
         return;
 
     }

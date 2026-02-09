@@ -1,21 +1,18 @@
 class Solution {
     public boolean isSameTree(TreeNode p, TreeNode q) {
-        return traverse(p,q);
+        return dfs(p, q);
     }
-    boolean traverse(TreeNode p,TreeNode q){
-        if(p==null && q==null){
-            return true;
-        }
-        if(p==null &&q==null){
-            return true;
-        }
-        if(p==null ||q==null){
-            return false;
-        }
-        if(p.val!=q.val){
-            return false;
-        }
-        return traverse(p.left,q.left)&&traverse(p.right,q.right);
 
+    boolean dfs(TreeNode root1, TreeNode root2) {
+        if (root1 == null && root2 == null) {
+            return true;
+        }
+        if (root1 == null || root2 == null) {
+            return false;
+        }
+        if (root1.val != root2.val) {
+            return false;
+        }
+        return dfs(root1.left, root2.left) && dfs(root1.right, root2.right);
     }
 }

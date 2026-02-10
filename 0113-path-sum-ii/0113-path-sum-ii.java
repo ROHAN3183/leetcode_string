@@ -1,26 +1,35 @@
 class Solution {
+    List<List<Integer>> result;
+
     public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
-        List<List<Integer>>result=new ArrayList<>();
-        List<Integer>ans=new ArrayList<>();
-        traverse(root,result,ans,targetSum,0);
+        result = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
+        dfs(root, targetSum, list);
         return result;
-        
+
     }
-    void traverse(TreeNode root,List<List<Integer>>result,List<Integer>ans,int targetSum,int sum){
-        if(root==null){
+
+    void dfs(TreeNode root, int targetSum, List<Integer> list) {
+        if (root == null) {
             return;
         }
-        sum=sum+root.val;
-        ans.add(root.val);
-        if(root.left==null && root.right==null && targetSum-sum==0){
-            result.add(new ArrayList<>(ans));
+        if (root.left == null && root.right == null) {
 
-        }
-        else{
-            traverse(root.left,result,ans,targetSum,sum);
-            traverse(root.right,result,ans,targetSum,sum);
+            if (targetSum - root.val == 0) {
+                list.add(root.val);
+                result.add(new ArrayList<>(list));
+                list.remove(list.size() - 1);
+            }
+            return;
         }
 
-        ans.remove(ans.size()-1);
+        list.add(root.val);
+        dfs(root.left, targetSum - root.val, list);
+        list.remove(list.size() - 1);
+        list.add(root.val);
+        dfs(root.right, targetSum - root.val, list);
+        list.remove(list.size() - 1);
+
+        return;
     }
 }

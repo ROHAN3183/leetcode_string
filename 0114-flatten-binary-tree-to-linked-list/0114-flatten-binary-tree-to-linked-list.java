@@ -1,27 +1,32 @@
-/*logic of the code ->
-Alway maintain the lastvisted node so that we can link it with current root. 
-do the traversal in the right->left->root.
-*/
 class Solution {
-    TreeNode lastVisited;
-
+    List<TreeNode> list;
     public void flatten(TreeNode root) {
-        lastVisited = null;
-        postorder(root);
+        list = new ArrayList<>();
+        if(root==null){
+            return;
+        }
 
+        dfs(root);
+        root.left=null;
+
+        for(int i=1;i<list.size();i++){
+            root.right=list.get(i);
+            root.left=null;
+            root=list.get(i);
+        }
+        return;
     }
 
-    void postorder(TreeNode root) {
+    void dfs(TreeNode root) {
         if (root == null) {
             return;
         }
 
-        postorder(root.right);
-        postorder(root.left);
+        list.add(root);
 
-        root.left = null;
-        root.right = lastVisited;
+        dfs(root.left);
+        dfs(root.right);
 
-        lastVisited = root;
+        return;
     }
 }

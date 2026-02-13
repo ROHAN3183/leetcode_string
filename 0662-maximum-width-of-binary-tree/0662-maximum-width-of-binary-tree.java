@@ -1,38 +1,43 @@
 class Solution {
+    class info {
+        TreeNode node;
+        int idx;
+
+        info(TreeNode node, int idx) {
+            this.node = node;
+            this.idx = idx;
+        }
+    }
+
     public int widthOfBinaryTree(TreeNode root) {
-        if (root == null) return 0;
+        return bfs(root);
+    }
 
-        Queue<TreeNode> node = new LinkedList<>();
-        Queue<Integer> index = new LinkedList<>();
-        int maxWidth = 0;
-
-        node.add(root);
-        index.add(1);
-
-        while (!node.isEmpty()) {
-            int size = node.size();
-            int first = index.peek();
-            int last = first;
-
+    int bfs(TreeNode root) {
+        int max = 0;
+        Queue<info> queue = new LinkedList<>();
+        queue.add(new info(root, 0));
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+            int low = 0;
+            int high = 0;
             for (int i = 0; i < size; i++) {
-                TreeNode current = node.poll();
-                int right = index.poll();
-                last = right;
-
-                if (current.left != null) {
-                    node.add(current.left);
-                    index.add(2 * right);
+                info value = queue.poll();
+                if (i == 0) {
+                    low = value.idx;
                 }
-
-                if (current.right != null) {
-                    node.add(current.right);
-                    index.add(2 * right + 1);
+                if (i == size - 1) {
+                    high = value.idx;
+                }
+                if (value.node.left != null) {
+                    queue.add(new info(value.node.left, 2 * value.idx + 1));
+                }
+                if (value.node.right != null) {
+                    queue.add(new info(value.node.right, 2 * value.idx + 2));
                 }
             }
-
-            maxWidth = Math.max(maxWidth, last - first + 1);
+            max = Math.max(max, high - low + 1);
         }
-
-        return maxWidth;
+        return max;
     }
 }

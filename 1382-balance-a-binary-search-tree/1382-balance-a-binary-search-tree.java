@@ -1,43 +1,30 @@
 class Solution {
-
-    class Pair {
-        TreeNode node;
-        int value;
-
-        Pair(TreeNode node, int value) {
-            this.node = node;
-            this.value = value;
-        }
-    }
-
+    List<Integer> list;
     public TreeNode balanceBST(TreeNode root) {
-        List<Pair> list = new ArrayList<>();
-        Storingdfs(root, list);
-        return creationdfs(list, 0, list.size() - 1);
-
+        list = new ArrayList<>();
+        inorder(root);
+        return dfs(list, 0, list.size() - 1);
     }
 
-    void Storingdfs(TreeNode root, List<Pair> list) {
+    void inorder(TreeNode root) {
         if (root == null) {
             return;
         }
-        Storingdfs(root.left, list);
-        list.add(new Pair(root, root.val));
-        Storingdfs(root.right, list);
+        inorder(root.left);
+        list.add(root.val);
+        inorder(root.right);
+        
+        return;
     }
 
-    TreeNode creationdfs(List<Pair> list, int start, int end) {
-        if (start > end) {
+    TreeNode dfs(List<Integer> list, int low, int high) {
+        if (low > high) {
             return null;
         }
-        int mid = start + (end - start) / 2;
-
-        TreeNode newnode = list.get(mid).node;
-
-        newnode.left = creationdfs(list, start, mid - 1);
-        newnode.right = creationdfs(list, mid + 1, end);
-
-        return newnode;
+        int mid = low + (high - low) / 2;
+        TreeNode root = new TreeNode(list.get(mid));
+        root.left = dfs(list, low, mid - 1);
+        root.right = dfs(list, mid + 1, high);
+        return root;
     }
-
 }

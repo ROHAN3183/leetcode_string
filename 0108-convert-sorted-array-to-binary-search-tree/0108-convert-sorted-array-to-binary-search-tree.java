@@ -1,7 +1,3 @@
-/*logic of the code
-Recursively find the mid of the array element.
-then send it as the mid +1 and mid -1 in the left and the right call of the recursion.
-*/
 class Solution {
     public TreeNode sortedArrayToBST(int[] nums) {
         if (nums.length == 0) {

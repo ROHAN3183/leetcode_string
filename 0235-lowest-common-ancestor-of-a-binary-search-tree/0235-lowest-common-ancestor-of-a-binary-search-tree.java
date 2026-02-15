@@ -1,18 +1,25 @@
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        return inorder(root,p,q);
+        return dfs(root, p, q);
     }
-    TreeNode inorder(TreeNode root,TreeNode p,TreeNode q){
-        if(root==null){
+
+    TreeNode dfs(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == null) {
             return null;
         }
-        if(root.val<p.val &&root.val<q.val){
-            return inorder(root.right,p,q);
+        if (root == p || root == q) {
+            return root;
         }
-        else if(root.val>p.val && root.val>q.val){
-            return inorder(root.left,p,q);
-        }
+        TreeNode left = dfs(root.left, p, q);
+        TreeNode right = dfs(root.right, p, q);
 
-        return root;
+        if (left != null && right != null) {
+            return root;
+        } else if (left != null) {
+            return left;
+        } else if (right != null) {
+            return right;
+        }
+        return null;
     }
 }

@@ -1,39 +1,30 @@
 class Solution {
     public boolean findTarget(TreeNode root, int k) {
-        return inorder(root, root, k);
+        List<Integer> list = new ArrayList<>();
+        dfs(root, list);
+        int i = 0;
+        int j = list.size() - 1;
+        while (i < j) {
+            int sum = list.get(i) + list.get(j);
+            if (sum == k) {
+                return true;
+            } else if (sum > k) {
+                j--;
+            } else if (sum < k) {
+                i++;
+            }
+        }
+        return false;
+
     }
 
-    // Traverse each node and check if its complement exists in the tree (excluding itself)
-    boolean inorder(TreeNode node, TreeNode root, int k) {
-        if (node == null) {
-            return false;
-        }
-
-        int target = k - node.val;
-
-        // ✅ Look for complement in the tree, ensuring we don't use the same node
-        if (found(root, target, node)) {
-            return true;
-        }
-
-        // ✅ Recurse on left and right subtrees
-        return inorder(node.left, root, k) || inorder(node.right, root, k);
-    }
-
-    // Search for target in BST, but ignore the original node
-    boolean found(TreeNode root, int target, TreeNode exclude) {
+    void dfs(TreeNode root, List<Integer> list) {
         if (root == null) {
-            return false;
+            return;
         }
-
-        if (root.val == target && root != exclude) {
-            return true;
-        }
-
-        if (target < root.val) {
-            return found(root.left, target, exclude);
-        } else {
-            return found(root.right, target, exclude);
-        }
+        dfs(root.left, list);
+        list.add(root.val);
+        dfs(root.right,list);
+        return;
     }
 }

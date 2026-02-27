@@ -1,73 +1,40 @@
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
-#BRUTE CODE
-    
 class Solution {
-    public boolean isPalindrome(ListNode head) { // 1) Just add all the element in stack . 
-        ListNode temp=head;                      // 2) while poping out the element just compare the element with linklist element 
-        Stack<Integer> stack=new Stack<>();      // 3) while poping the element it don't match with the linkist then return false.
-        while(temp!=null){
-            stack.push(temp.val);
-            temp=temp.next;
+    public boolean isPalindrome(ListNode head) {
+        ListNode slow = head;
+        ListNode fast = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
         }
-        temp=head;
-        while(temp!=null&&!stack.isEmpty()){
-            int reversed_character=stack.pop();
-            if(reversed_character!=temp.val){
-                return false;
-            }
-            temp=temp.next;
+        if (fast != null) {
+            slow = slow.next;
         }
-        return true;
-    }
-}
+        ListNode prev = reverse(slow);
+        return isvalid(head, prev);
 
-#OPTIMIZED CODE
-    
-class Solution {
-    public boolean isPalindrome(ListNode head) { // 1) find the mid element using slow fast Approach.
-        if(head==null ||head.next==null){        // 2) Reverse the linklist from slow to last of linklist.
-            return true;                         // 3) Then again traverse from fist_part of head and second_part head until the any part don't become the null. 
-        }
-        ListNode temp=head;
-        ListNode fast=head;
-        ListNode slow=head;
-        ListNode prev=null;
-        while(fast!=null && fast.next!=null){
-            //prev=slow;
-            fast=fast.next.next;
-            prev=slow;
-            slow=slow.next;
-        }
-        prev.next=null;
-        prev=reversed(slow);
-        while(temp!=null && prev!=null){
-            if(temp.val!=prev.val){
-                return false;
-            }
-            temp=temp.next;
-            prev=prev.next;
-        }
-        return true;
     }
-    private ListNode reversed(ListNode slow){
-        ListNode current=slow;
-        ListNode prev=null;
-        while(current!=null){
-            ListNode nextnode=current.next;
-            current.next=prev;
-            prev=current;
-            current=nextnode;
+
+    ListNode reverse(ListNode head) {
+        ListNode next = null;
+        ListNode prev = null;
+        ListNode curr = head;
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
         }
         return prev;
     }
-}
 
+    boolean isvalid(ListNode temp1, ListNode temp2) {
+        while (temp1 != null && temp2 != null) {
+            if (temp1.val != temp2.val) {
+                return false;
+            }
+            temp1 = temp1.next;
+            temp2 = temp2.next;
+        }
+        return true;
+    }
+}

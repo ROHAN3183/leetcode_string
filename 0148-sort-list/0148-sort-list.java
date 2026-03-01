@@ -1,30 +1,46 @@
 class Solution {
-    class info {
-        ListNode node;
-        int data;
-
-        info(ListNode node, int data) {
-            this.node = node;
-            this.data = data;
-        }
+    public ListNode sortList(ListNode head) {
+        return divideConque(head);
     }
 
-    public ListNode sortList(ListNode head) {
-        List<info> list = new ArrayList<>();
-        ListNode temp = head;
-        while (temp != null) {
-            list.add(new info(temp, temp.val));
-            temp = temp.next;
+    ListNode divideConque(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
         }
-        Collections.sort(list, (a, b) -> Integer.compare(a.data, b.data));
-        ListNode prev = new ListNode();
-        ListNode result = prev;
-        for (int i = 0; i < list.size(); i++) {
-            ListNode curr = list.get(i).node;
-            prev.next = curr;
-            prev = curr;
+        ListNode slow = head;
+        ListNode fast = head;
+        ListNode prev = null;
+        while (fast != null && fast.next != null) {
+            prev = slow;
+            slow = slow.next;
+            fast = fast.next.next;
         }
         prev.next = null;
-        return result.next;
+        ListNode left = divideConque(head);
+        ListNode right = divideConque(slow);
+        return merge(left, right);
+    }
+
+    ListNode merge(ListNode l1, ListNode l2) {
+        ListNode dummy = new ListNode(-1);
+        ListNode curr = dummy;
+        while (l1 != null && l2 != null) {
+            if (l1.val <= l2.val) {
+                curr.next = l1;
+                l1 = l1.next;
+            } else if (l1.val > l2.val) {
+                curr.next = l2;
+                l2 = l2.next;
+            }
+            curr = curr.next;
+        }
+        if (l1 != null) {
+            curr.next = l1;
+        }
+        if (l2 != null) {
+            curr.next = l2;
+
+        }
+        return dummy.next;
     }
 }

@@ -20,4 +20,12 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3546-equal-sum-grid-partition-i](https://github.com/ROHAN3183/leetcode_string/tree/main/3546-equal-sum-grid-partition-i/) | Medium |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0371-sum-of-two-integers](https://github.com/ROHAN3183/leetcode_string/tree/main/0371-sum-of-two-integers/) | Medium |
+## Bit Manipulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0371-sum-of-two-integers](https://github.com/ROHAN3183/leetcode_string/tree/main/0371-sum-of-two-integers/) | Medium |
 <!---LeetCode Topics End-->

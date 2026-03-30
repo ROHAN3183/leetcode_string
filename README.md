@@ -30,4 +30,16 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0371-sum-of-two-integers](https://github.com/ROHAN3183/leetcode_string/tree/main/0371-sum-of-two-integers/) | Medium |
+## Hash Table
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Medium |
+## String
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Medium |
+## Sorting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Medium |
 <!---LeetCode Topics End-->

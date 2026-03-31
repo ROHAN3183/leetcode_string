@@ -37,6 +37,7 @@
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0521-longest-uncommon-subsequence-i](https://github.com/ROHAN3183/leetcode_string/tree/main/0521-longest-uncommon-subsequence-i/) | Easy |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |

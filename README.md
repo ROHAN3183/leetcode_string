@@ -53,6 +53,7 @@
 | [0522-longest-uncommon-subsequence-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
 | [0575-distribute-candies](https://github.com/ROHAN3183/leetcode_string/tree/main/0575-distribute-candies/) | Easy |
 | [0884-uncommon-words-from-two-sentences](https://github.com/ROHAN3183/leetcode_string/tree/main/0884-uncommon-words-from-two-sentences/) | Easy |
+| [1156-swap-for-longest-repeated-character-substring](https://github.com/ROHAN3183/leetcode_string/tree/main/1156-swap-for-longest-repeated-character-substring/) | Medium |
 | [1347-minimum-number-of-steps-to-make-two-strings-anagram](https://github.com/ROHAN3183/leetcode_string/tree/main/1347-minimum-number-of-steps-to-make-two-strings-anagram/) | Medium |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Medium |
 | [2965-find-missing-and-repeated-values](https://github.com/ROHAN3183/leetcode_string/tree/main/2965-find-missing-and-repeated-values/) | Easy |
@@ -65,6 +66,7 @@
 | [0521-longest-uncommon-subsequence-i](https://github.com/ROHAN3183/leetcode_string/tree/main/0521-longest-uncommon-subsequence-i/) | Easy |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
 | [0884-uncommon-words-from-two-sentences](https://github.com/ROHAN3183/leetcode_string/tree/main/0884-uncommon-words-from-two-sentences/) | Easy |
+| [1156-swap-for-longest-repeated-character-substring](https://github.com/ROHAN3183/leetcode_string/tree/main/1156-swap-for-longest-repeated-character-substring/) | Medium |
 | [1347-minimum-number-of-steps-to-make-two-strings-anagram](https://github.com/ROHAN3183/leetcode_string/tree/main/1347-minimum-number-of-steps-to-make-two-strings-anagram/) | Medium |
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/ROHAN3183/leetcode_string/tree/main/2515-shortest-distance-to-target-string-in-a-circular-array/) | Easy |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/2840-check-if-strings-can-be-made-equal-with-operations-ii/) | Medium |
@@ -117,4 +119,5 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1031-maximum-sum-of-two-non-overlapping-subarrays](https://github.com/ROHAN3183/leetcode_string/tree/main/1031-maximum-sum-of-two-non-overlapping-subarrays/) | Medium |
+| [1156-swap-for-longest-repeated-character-substring](https://github.com/ROHAN3183/leetcode_string/tree/main/1156-swap-for-longest-repeated-character-substring/) | Medium |
 <!---LeetCode Topics End-->

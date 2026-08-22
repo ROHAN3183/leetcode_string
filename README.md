@@ -52,6 +52,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0371-sum-of-two-integers](https://github.com/ROHAN3183/leetcode_string/tree/main/0371-sum-of-two-integers/) | Medium |
+| [1318-minimum-flips-to-make-a-or-b-equal-to-c](https://github.com/ROHAN3183/leetcode_string/tree/main/1318-minimum-flips-to-make-a-or-b-equal-to-c/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |

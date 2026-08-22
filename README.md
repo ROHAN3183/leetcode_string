@@ -5,6 +5,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/ROHAN3183/leetcode_string/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
+| [0137-single-number-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0137-single-number-ii/) | Medium |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/ROHAN3183/leetcode_string/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
@@ -51,6 +52,7 @@
 ## Bit Manipulation
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0137-single-number-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0137-single-number-ii/) | Medium |
 | [0371-sum-of-two-integers](https://github.com/ROHAN3183/leetcode_string/tree/main/0371-sum-of-two-integers/) | Medium |
 | [1318-minimum-flips-to-make-a-or-b-equal-to-c](https://github.com/ROHAN3183/leetcode_string/tree/main/1318-minimum-flips-to-make-a-or-b-equal-to-c/) | Medium |
 ## Hash Table

@@ -5,6 +5,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0001-two-sum/) | Easy |
+| [0015-3sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0015-3sum/) | Medium |
 | [0033-search-in-rotated-sorted-array](https://github.com/ROHAN3183/leetcode_string/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0137-single-number-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0137-single-number-ii/) | Medium |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/ROHAN3183/leetcode_string/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
@@ -90,6 +91,7 @@
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0015-3sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0015-3sum/) | Medium |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
 | [0561-array-partition](https://github.com/ROHAN3183/leetcode_string/tree/main/0561-array-partition/) | Easy |
@@ -98,6 +100,7 @@
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0015-3sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0015-3sum/) | Medium |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/ROHAN3183/leetcode_string/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [2540-minimum-common-value](https://github.com/ROHAN3183/leetcode_string/tree/main/2540-minimum-common-value/) | Easy |

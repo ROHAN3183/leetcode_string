@@ -8,6 +8,7 @@
 | [0015-3sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0015-3sum/) | Medium |
 | [0031-next-permutation](https://github.com/ROHAN3183/leetcode_string/tree/main/0031-next-permutation/) | Medium |
 | [0033-search-in-rotated-sorted-array](https://github.com/ROHAN3183/leetcode_string/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
+| [0048-rotate-image](https://github.com/ROHAN3183/leetcode_string/tree/main/0048-rotate-image/) | Medium |
 | [0053-maximum-subarray](https://github.com/ROHAN3183/leetcode_string/tree/main/0053-maximum-subarray/) | Medium |
 | [0088-merge-sorted-array](https://github.com/ROHAN3183/leetcode_string/tree/main/0088-merge-sorted-array/) | Easy |
 | [0128-longest-consecutive-sequence](https://github.com/ROHAN3183/leetcode_string/tree/main/0128-longest-consecutive-sequence/) | Medium |
@@ -35,6 +36,7 @@
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0048-rotate-image](https://github.com/ROHAN3183/leetcode_string/tree/main/0048-rotate-image/) | Medium |
 | [2906-construct-product-matrix](https://github.com/ROHAN3183/leetcode_string/tree/main/2906-construct-product-matrix/) | Medium |
 | [2965-find-missing-and-repeated-values](https://github.com/ROHAN3183/leetcode_string/tree/main/2965-find-missing-and-repeated-values/) | Easy |
 | [3546-equal-sum-grid-partition-i](https://github.com/ROHAN3183/leetcode_string/tree/main/3546-equal-sum-grid-partition-i/) | Medium |
@@ -53,6 +55,7 @@
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0048-rotate-image](https://github.com/ROHAN3183/leetcode_string/tree/main/0048-rotate-image/) | Medium |
 | [0371-sum-of-two-integers](https://github.com/ROHAN3183/leetcode_string/tree/main/0371-sum-of-two-integers/) | Medium |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/ROHAN3183/leetcode_string/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |

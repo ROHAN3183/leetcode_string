@@ -6,6 +6,7 @@
 | ------- | ------- |
 | [0001-two-sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0001-two-sum/) | Easy |
 | [0015-3sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0015-3sum/) | Medium |
+| [0031-next-permutation](https://github.com/ROHAN3183/leetcode_string/tree/main/0031-next-permutation/) | Medium |
 | [0033-search-in-rotated-sorted-array](https://github.com/ROHAN3183/leetcode_string/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0053-maximum-subarray](https://github.com/ROHAN3183/leetcode_string/tree/main/0053-maximum-subarray/) | Medium |
 | [0137-single-number-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0137-single-number-ii/) | Medium |
@@ -105,6 +106,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0015-3sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0015-3sum/) | Medium |
+| [0031-next-permutation](https://github.com/ROHAN3183/leetcode_string/tree/main/0031-next-permutation/) | Medium |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/ROHAN3183/leetcode_string/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [2540-minimum-common-value](https://github.com/ROHAN3183/leetcode_string/tree/main/2540-minimum-common-value/) | Easy |

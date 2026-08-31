@@ -17,6 +17,7 @@
 | [0137-single-number-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0137-single-number-ii/) | Medium |
 | [0152-maximum-product-subarray](https://github.com/ROHAN3183/leetcode_string/tree/main/0152-maximum-product-subarray/) | Medium |
 | [0169-majority-element](https://github.com/ROHAN3183/leetcode_string/tree/main/0169-majority-element/) | Easy |
+| [0229-majority-element-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0229-majority-element-ii/) | Medium |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/ROHAN3183/leetcode_string/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
@@ -78,6 +79,7 @@
 | [0073-set-matrix-zeroes](https://github.com/ROHAN3183/leetcode_string/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0128-longest-consecutive-sequence](https://github.com/ROHAN3183/leetcode_string/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0169-majority-element](https://github.com/ROHAN3183/leetcode_string/tree/main/0169-majority-element/) | Easy |
+| [0229-majority-element-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0229-majority-element-ii/) | Medium |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/ROHAN3183/leetcode_string/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0575-distribute-candies](https://github.com/ROHAN3183/leetcode_string/tree/main/0575-distribute-candies/) | Easy |
@@ -109,6 +111,7 @@
 | [0015-3sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0015-3sum/) | Medium |
 | [0088-merge-sorted-array](https://github.com/ROHAN3183/leetcode_string/tree/main/0088-merge-sorted-array/) | Easy |
 | [0169-majority-element](https://github.com/ROHAN3183/leetcode_string/tree/main/0169-majority-element/) | Easy |
+| [0229-majority-element-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0229-majority-element-ii/) | Medium |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
 | [0561-array-partition](https://github.com/ROHAN3183/leetcode_string/tree/main/0561-array-partition/) | Easy |
@@ -132,6 +135,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0169-majority-element](https://github.com/ROHAN3183/leetcode_string/tree/main/0169-majority-element/) | Easy |
+| [0229-majority-element-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0229-majority-element-ii/) | Medium |
 | [0561-array-partition](https://github.com/ROHAN3183/leetcode_string/tree/main/0561-array-partition/) | Easy |
 | [0884-uncommon-words-from-two-sentences](https://github.com/ROHAN3183/leetcode_string/tree/main/0884-uncommon-words-from-two-sentences/) | Easy |
 | [1347-minimum-number-of-steps-to-make-two-strings-anagram](https://github.com/ROHAN3183/leetcode_string/tree/main/1347-minimum-number-of-steps-to-make-two-strings-anagram/) | Medium |
@@ -177,6 +181,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0169-majority-element](https://github.com/ROHAN3183/leetcode_string/tree/main/0169-majority-element/) | Easy |
+| [0229-majority-element-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0229-majority-element-ii/) | Medium |
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |

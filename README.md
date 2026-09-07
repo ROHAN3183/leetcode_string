@@ -22,6 +22,7 @@
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/ROHAN3183/leetcode_string/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
+| [0540-single-element-in-a-sorted-array](https://github.com/ROHAN3183/leetcode_string/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/ROHAN3183/leetcode_string/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0561-array-partition](https://github.com/ROHAN3183/leetcode_string/tree/main/0561-array-partition/) | Easy |
 | [0575-distribute-candies](https://github.com/ROHAN3183/leetcode_string/tree/main/0575-distribute-candies/) | Easy |
@@ -157,6 +158,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/ROHAN3183/leetcode_string/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
+| [0540-single-element-in-a-sorted-array](https://github.com/ROHAN3183/leetcode_string/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
 | [1004-max-consecutive-ones-iii](https://github.com/ROHAN3183/leetcode_string/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/ROHAN3183/leetcode_string/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [2540-minimum-common-value](https://github.com/ROHAN3183/leetcode_string/tree/main/2540-minimum-common-value/) | Easy |

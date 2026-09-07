@@ -29,6 +29,7 @@
 | [0875-koko-eating-bananas](https://github.com/ROHAN3183/leetcode_string/tree/main/0875-koko-eating-bananas/) | Medium |
 | [0930-binary-subarrays-with-sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0930-binary-subarrays-with-sum/) | Medium |
 | [1004-max-consecutive-ones-iii](https://github.com/ROHAN3183/leetcode_string/tree/main/1004-max-consecutive-ones-iii/) | Medium |
+| [1011-capacity-to-ship-packages-within-d-days](https://github.com/ROHAN3183/leetcode_string/tree/main/1011-capacity-to-ship-packages-within-d-days/) | Medium |
 | [1031-maximum-sum-of-two-non-overlapping-subarrays](https://github.com/ROHAN3183/leetcode_string/tree/main/1031-maximum-sum-of-two-non-overlapping-subarrays/) | Medium |
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/ROHAN3183/leetcode_string/tree/main/1482-minimum-number-of-days-to-make-m-bouquets/) | Medium |
 | [1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target](https://github.com/ROHAN3183/leetcode_string/tree/main/1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/) | Medium |
@@ -163,6 +164,7 @@
 | [0540-single-element-in-a-sorted-array](https://github.com/ROHAN3183/leetcode_string/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
 | [0875-koko-eating-bananas](https://github.com/ROHAN3183/leetcode_string/tree/main/0875-koko-eating-bananas/) | Medium |
 | [1004-max-consecutive-ones-iii](https://github.com/ROHAN3183/leetcode_string/tree/main/1004-max-consecutive-ones-iii/) | Medium |
+| [1011-capacity-to-ship-packages-within-d-days](https://github.com/ROHAN3183/leetcode_string/tree/main/1011-capacity-to-ship-packages-within-d-days/) | Medium |
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/ROHAN3183/leetcode_string/tree/main/1482-minimum-number-of-days-to-make-m-bouquets/) | Medium |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/ROHAN3183/leetcode_string/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [2540-minimum-common-value](https://github.com/ROHAN3183/leetcode_string/tree/main/2540-minimum-common-value/) | Easy |

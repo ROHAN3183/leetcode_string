@@ -1,14 +1,40 @@
 class Solution {
     public int singleNonDuplicate(int[] nums) {
-        HashMap<Integer,Integer>map=new HashMap<>();
-        for(int i=0;i<nums.length;i++){
-            map.put(nums[i],map.getOrDefault(nums[i],0)+1);
-        }
-        for(Map.Entry<Integer,Integer>entry:map.entrySet()){
-            if(entry.getValue()==1){
-                return entry.getKey();
+
+        int low = 0;
+        int high = nums.length - 1;
+
+        while (low <= high) {
+
+            int mid = low + (high - low) / 2;
+
+            // Check if mid is the single element
+            if ((mid == 0 || nums[mid - 1] != nums[mid]) &&
+                (mid == nums.length - 1 || nums[mid] != nums[mid + 1])) {
+                return nums[mid];
+            }
+
+            // mid is even
+            if (mid % 2 == 0) {
+
+                if (mid > 0 && nums[mid - 1] == nums[mid]) {
+                    high = mid - 1;
+                } else {
+                    low = mid + 1;
+                }
+
+            } 
+            // mid is odd
+            else {
+
+                if (nums[mid - 1] == nums[mid]) {
+                    low = mid + 1;
+                } else {
+                    high = mid - 1;
+                }
             }
         }
-        return 0;
+
+        return -1;
     }
 }

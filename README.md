@@ -26,6 +26,7 @@
 | [0560-subarray-sum-equals-k](https://github.com/ROHAN3183/leetcode_string/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0561-array-partition](https://github.com/ROHAN3183/leetcode_string/tree/main/0561-array-partition/) | Easy |
 | [0575-distribute-candies](https://github.com/ROHAN3183/leetcode_string/tree/main/0575-distribute-candies/) | Easy |
+| [0875-koko-eating-bananas](https://github.com/ROHAN3183/leetcode_string/tree/main/0875-koko-eating-bananas/) | Medium |
 | [0930-binary-subarrays-with-sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0930-binary-subarrays-with-sum/) | Medium |
 | [1004-max-consecutive-ones-iii](https://github.com/ROHAN3183/leetcode_string/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 | [1031-maximum-sum-of-two-non-overlapping-subarrays](https://github.com/ROHAN3183/leetcode_string/tree/main/1031-maximum-sum-of-two-non-overlapping-subarrays/) | Medium |
@@ -159,6 +160,7 @@
 | ------- | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/ROHAN3183/leetcode_string/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0540-single-element-in-a-sorted-array](https://github.com/ROHAN3183/leetcode_string/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
+| [0875-koko-eating-bananas](https://github.com/ROHAN3183/leetcode_string/tree/main/0875-koko-eating-bananas/) | Medium |
 | [1004-max-consecutive-ones-iii](https://github.com/ROHAN3183/leetcode_string/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/ROHAN3183/leetcode_string/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [2540-minimum-common-value](https://github.com/ROHAN3183/leetcode_string/tree/main/2540-minimum-common-value/) | Easy |

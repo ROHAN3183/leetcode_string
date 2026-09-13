@@ -90,6 +90,7 @@
 | [0073-set-matrix-zeroes](https://github.com/ROHAN3183/leetcode_string/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0076-minimum-window-substring](https://github.com/ROHAN3183/leetcode_string/tree/main/0076-minimum-window-substring/) | Hard |
 | [0128-longest-consecutive-sequence](https://github.com/ROHAN3183/leetcode_string/tree/main/0128-longest-consecutive-sequence/) | Medium |
+| [0142-linked-list-cycle-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0142-linked-list-cycle-ii/) | Medium |
 | [0169-majority-element](https://github.com/ROHAN3183/leetcode_string/tree/main/0169-majority-element/) | Easy |
 | [0229-majority-element-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0229-majority-element-ii/) | Medium |
 | [0424-longest-repeating-character-replacement](https://github.com/ROHAN3183/leetcode_string/tree/main/0424-longest-repeating-character-replacement/) | Medium |
@@ -141,6 +142,7 @@
 | [0015-3sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0015-3sum/) | Medium |
 | [0031-next-permutation](https://github.com/ROHAN3183/leetcode_string/tree/main/0031-next-permutation/) | Medium |
 | [0088-merge-sorted-array](https://github.com/ROHAN3183/leetcode_string/tree/main/0088-merge-sorted-array/) | Easy |
+| [0142-linked-list-cycle-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0142-linked-list-cycle-ii/) | Medium |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/ROHAN3183/leetcode_string/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [2540-minimum-common-value](https://github.com/ROHAN3183/leetcode_string/tree/main/2540-minimum-common-value/) | Easy |
@@ -219,4 +221,12 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0056-merge-intervals](https://github.com/ROHAN3183/leetcode_string/tree/main/0056-merge-intervals/) | Medium |
+## Linked List
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0142-linked-list-cycle-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0142-linked-list-cycle-ii/) | Medium |
+## Floyd's Cycle Finding Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0142-linked-list-cycle-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0142-linked-list-cycle-ii/) | Medium |
 <!---LeetCode Topics End-->

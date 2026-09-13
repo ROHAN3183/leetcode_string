@@ -129,6 +129,7 @@
 | [0015-3sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0015-3sum/) | Medium |
 | [0056-merge-intervals](https://github.com/ROHAN3183/leetcode_string/tree/main/0056-merge-intervals/) | Medium |
 | [0088-merge-sorted-array](https://github.com/ROHAN3183/leetcode_string/tree/main/0088-merge-sorted-array/) | Easy |
+| [0148-sort-list](https://github.com/ROHAN3183/leetcode_string/tree/main/0148-sort-list/) | Medium |
 | [0169-majority-element](https://github.com/ROHAN3183/leetcode_string/tree/main/0169-majority-element/) | Easy |
 | [0229-majority-element-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0229-majority-element-ii/) | Medium |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
@@ -144,6 +145,7 @@
 | [0031-next-permutation](https://github.com/ROHAN3183/leetcode_string/tree/main/0031-next-permutation/) | Medium |
 | [0088-merge-sorted-array](https://github.com/ROHAN3183/leetcode_string/tree/main/0088-merge-sorted-array/) | Easy |
 | [0142-linked-list-cycle-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0142-linked-list-cycle-ii/) | Medium |
+| [0148-sort-list](https://github.com/ROHAN3183/leetcode_string/tree/main/0148-sort-list/) | Medium |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/ROHAN3183/leetcode_string/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
 | [2540-minimum-common-value](https://github.com/ROHAN3183/leetcode_string/tree/main/2540-minimum-common-value/) | Easy |
@@ -177,6 +179,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0053-maximum-subarray](https://github.com/ROHAN3183/leetcode_string/tree/main/0053-maximum-subarray/) | Medium |
+| [0148-sort-list](https://github.com/ROHAN3183/leetcode_string/tree/main/0148-sort-list/) | Medium |
 | [0169-majority-element](https://github.com/ROHAN3183/leetcode_string/tree/main/0169-majority-element/) | Easy |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/ROHAN3183/leetcode_string/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
 ## Segment Tree
@@ -186,6 +189,7 @@
 ## Merge Sort
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0148-sort-list](https://github.com/ROHAN3183/leetcode_string/tree/main/0148-sort-list/) | Medium |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/ROHAN3183/leetcode_string/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
@@ -227,6 +231,7 @@
 | ------- | ------- |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/ROHAN3183/leetcode_string/tree/main/0019-remove-nth-node-from-end-of-list/) | Medium |
 | [0142-linked-list-cycle-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0142-linked-list-cycle-ii/) | Medium |
+| [0148-sort-list](https://github.com/ROHAN3183/leetcode_string/tree/main/0148-sort-list/) | Medium |
 ## Floyd's Cycle Finding Algorithm
 | Problem Name | Difficulty |
 | ------- | ------- |

@@ -28,6 +28,7 @@
 | [0560-subarray-sum-equals-k](https://github.com/ROHAN3183/leetcode_string/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0561-array-partition](https://github.com/ROHAN3183/leetcode_string/tree/main/0561-array-partition/) | Easy |
 | [0575-distribute-candies](https://github.com/ROHAN3183/leetcode_string/tree/main/0575-distribute-candies/) | Easy |
+| [0860-lemonade-change](https://github.com/ROHAN3183/leetcode_string/tree/main/0860-lemonade-change/) | Easy |
 | [0875-koko-eating-bananas](https://github.com/ROHAN3183/leetcode_string/tree/main/0875-koko-eating-bananas/) | Medium |
 | [0930-binary-subarrays-with-sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0930-binary-subarrays-with-sum/) | Medium |
 | [1004-max-consecutive-ones-iii](https://github.com/ROHAN3183/leetcode_string/tree/main/1004-max-consecutive-ones-iii/) | Medium |
@@ -162,6 +163,7 @@
 | [0134-gas-station](https://github.com/ROHAN3183/leetcode_string/tree/main/0134-gas-station/) | Medium |
 | [0455-assign-cookies](https://github.com/ROHAN3183/leetcode_string/tree/main/0455-assign-cookies/) | Easy |
 | [0561-array-partition](https://github.com/ROHAN3183/leetcode_string/tree/main/0561-array-partition/) | Easy |
+| [0860-lemonade-change](https://github.com/ROHAN3183/leetcode_string/tree/main/0860-lemonade-change/) | Easy |
 | [1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target](https://github.com/ROHAN3183/leetcode_string/tree/main/1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/) | Medium |
 ## Counting Sort
 | Problem Name | Difficulty |

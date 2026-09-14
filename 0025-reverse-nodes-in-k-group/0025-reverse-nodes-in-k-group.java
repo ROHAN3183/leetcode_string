@@ -1,27 +1,26 @@
-class Solution {
-    public ListNode reverseKGroup(ListNode head, int k) {
-        if (!isvalid(head, k)) {
-            return head;
-        }
-        ListNode curr = head;
-        ListNode prev = null;
-        for (int i = 0; i < k; i++) {
-            ListNode temp = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = temp;
-        }
-        head.next = reverseKGroup(curr, k);
-        return prev;
-    }
+class Solution{
+    public ListNode reverseKGroup(ListNode head,int k){
+        ListNode temp=head;
 
-    boolean isvalid(ListNode head, int k) {
-        int length = 0;
-        ListNode temp = head;
-        while (temp != null) {
-            length++;
-            temp = temp.next;
+        for(int i=0;i<k;i++){
+            if(temp==null){
+                return head;
+            }
+            temp=temp.next;
         }
-        return length >= k;
+
+        ListNode prev=null;
+        ListNode curr=head;
+
+        for(int i=0;i<k;i++){
+            ListNode next=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+        }
+
+        head.next=reverseKGroup(curr,k);
+
+        return prev;
     }
 }

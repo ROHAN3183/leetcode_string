@@ -121,6 +121,7 @@
 | [0424-longest-repeating-character-replacement](https://github.com/ROHAN3183/leetcode_string/tree/main/0424-longest-repeating-character-replacement/) | Medium |
 | [0521-longest-uncommon-subsequence-i](https://github.com/ROHAN3183/leetcode_string/tree/main/0521-longest-uncommon-subsequence-i/) | Easy |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
+| [0678-valid-parenthesis-string](https://github.com/ROHAN3183/leetcode_string/tree/main/0678-valid-parenthesis-string/) | Medium |
 | [0884-uncommon-words-from-two-sentences](https://github.com/ROHAN3183/leetcode_string/tree/main/0884-uncommon-words-from-two-sentences/) | Easy |
 | [1156-swap-for-longest-repeated-character-substring](https://github.com/ROHAN3183/leetcode_string/tree/main/1156-swap-for-longest-repeated-character-substring/) | Medium |
 | [1347-minimum-number-of-steps-to-make-two-strings-anagram](https://github.com/ROHAN3183/leetcode_string/tree/main/1347-minimum-number-of-steps-to-make-two-strings-anagram/) | Medium |
@@ -163,6 +164,7 @@
 | [0134-gas-station](https://github.com/ROHAN3183/leetcode_string/tree/main/0134-gas-station/) | Medium |
 | [0455-assign-cookies](https://github.com/ROHAN3183/leetcode_string/tree/main/0455-assign-cookies/) | Easy |
 | [0561-array-partition](https://github.com/ROHAN3183/leetcode_string/tree/main/0561-array-partition/) | Easy |
+| [0678-valid-parenthesis-string](https://github.com/ROHAN3183/leetcode_string/tree/main/0678-valid-parenthesis-string/) | Medium |
 | [0860-lemonade-change](https://github.com/ROHAN3183/leetcode_string/tree/main/0860-lemonade-change/) | Easy |
 | [1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target](https://github.com/ROHAN3183/leetcode_string/tree/main/1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/) | Medium |
 ## Counting Sort
@@ -207,6 +209,7 @@
 | [0053-maximum-subarray](https://github.com/ROHAN3183/leetcode_string/tree/main/0053-maximum-subarray/) | Medium |
 | [0118-pascals-triangle](https://github.com/ROHAN3183/leetcode_string/tree/main/0118-pascals-triangle/) | Easy |
 | [0152-maximum-product-subarray](https://github.com/ROHAN3183/leetcode_string/tree/main/0152-maximum-product-subarray/) | Medium |
+| [0678-valid-parenthesis-string](https://github.com/ROHAN3183/leetcode_string/tree/main/0678-valid-parenthesis-string/) | Medium |
 | [1031-maximum-sum-of-two-non-overlapping-subarrays](https://github.com/ROHAN3183/leetcode_string/tree/main/1031-maximum-sum-of-two-non-overlapping-subarrays/) | Medium |
 | [1626-best-team-with-no-conflicts](https://github.com/ROHAN3183/leetcode_string/tree/main/1626-best-team-with-no-conflicts/) | Medium |
 ## Sliding Window
@@ -265,4 +268,12 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0430-flatten-a-multilevel-doubly-linked-list](https://github.com/ROHAN3183/leetcode_string/tree/main/0430-flatten-a-multilevel-doubly-linked-list/) | Medium |
+## Stack
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0678-valid-parenthesis-string](https://github.com/ROHAN3183/leetcode_string/tree/main/0678-valid-parenthesis-string/) | Medium |
+## Bracket Sequences
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0678-valid-parenthesis-string](https://github.com/ROHAN3183/leetcode_string/tree/main/0678-valid-parenthesis-string/) | Medium |
 <!---LeetCode Topics End-->

@@ -18,10 +18,10 @@ class Solution {
         }
         for (int i = 1; i <= nums[idx]; i++) {
             if (dfs(nums, idx + i)) {
-                return true;
+                return dp[idx] = true;
             }
         }
         dp[idx] = false;
-        return false;
+        return dp[idx];
     }
 }

@@ -8,6 +8,7 @@
 | [0015-3sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0015-3sum/) | Medium |
 | [0031-next-permutation](https://github.com/ROHAN3183/leetcode_string/tree/main/0031-next-permutation/) | Medium |
 | [0033-search-in-rotated-sorted-array](https://github.com/ROHAN3183/leetcode_string/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
+| [0045-jump-game-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0045-jump-game-ii/) | Medium |
 | [0048-rotate-image](https://github.com/ROHAN3183/leetcode_string/tree/main/0048-rotate-image/) | Medium |
 | [0053-maximum-subarray](https://github.com/ROHAN3183/leetcode_string/tree/main/0053-maximum-subarray/) | Medium |
 | [0055-jump-game](https://github.com/ROHAN3183/leetcode_string/tree/main/0055-jump-game/) | Medium |
@@ -162,6 +163,7 @@
 ## Greedy
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0045-jump-game-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0045-jump-game-ii/) | Medium |
 | [0055-jump-game](https://github.com/ROHAN3183/leetcode_string/tree/main/0055-jump-game/) | Medium |
 | [0134-gas-station](https://github.com/ROHAN3183/leetcode_string/tree/main/0134-gas-station/) | Medium |
 | [0455-assign-cookies](https://github.com/ROHAN3183/leetcode_string/tree/main/0455-assign-cookies/) | Easy |
@@ -208,6 +210,7 @@
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0045-jump-game-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0045-jump-game-ii/) | Medium |
 | [0053-maximum-subarray](https://github.com/ROHAN3183/leetcode_string/tree/main/0053-maximum-subarray/) | Medium |
 | [0055-jump-game](https://github.com/ROHAN3183/leetcode_string/tree/main/0055-jump-game/) | Medium |
 | [0118-pascals-triangle](https://github.com/ROHAN3183/leetcode_string/tree/main/0118-pascals-triangle/) | Easy |

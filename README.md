@@ -13,6 +13,7 @@
 | [0053-maximum-subarray](https://github.com/ROHAN3183/leetcode_string/tree/main/0053-maximum-subarray/) | Medium |
 | [0055-jump-game](https://github.com/ROHAN3183/leetcode_string/tree/main/0055-jump-game/) | Medium |
 | [0056-merge-intervals](https://github.com/ROHAN3183/leetcode_string/tree/main/0056-merge-intervals/) | Medium |
+| [0057-insert-interval](https://github.com/ROHAN3183/leetcode_string/tree/main/0057-insert-interval/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/ROHAN3183/leetcode_string/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0088-merge-sorted-array](https://github.com/ROHAN3183/leetcode_string/tree/main/0088-merge-sorted-array/) | Easy |
 | [0118-pascals-triangle](https://github.com/ROHAN3183/leetcode_string/tree/main/0118-pascals-triangle/) | Easy |

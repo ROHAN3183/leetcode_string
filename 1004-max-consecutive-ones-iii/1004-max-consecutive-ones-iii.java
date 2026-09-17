@@ -11,7 +11,7 @@ class Solution {
             } else {
                 one++;
             }
-            while (((j - i + 1) - one) > k) {
+            while (j - i + 1 - one > k) {
                 if (nums[i] == 0) {
                     zero--;
                 } else {

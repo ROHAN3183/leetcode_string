@@ -19,6 +19,7 @@
 | [0118-pascals-triangle](https://github.com/ROHAN3183/leetcode_string/tree/main/0118-pascals-triangle/) | Easy |
 | [0128-longest-consecutive-sequence](https://github.com/ROHAN3183/leetcode_string/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0134-gas-station](https://github.com/ROHAN3183/leetcode_string/tree/main/0134-gas-station/) | Medium |
+| [0135-candy](https://github.com/ROHAN3183/leetcode_string/tree/main/0135-candy/) | Hard |
 | [0137-single-number-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0137-single-number-ii/) | Medium |
 | [0152-maximum-product-subarray](https://github.com/ROHAN3183/leetcode_string/tree/main/0152-maximum-product-subarray/) | Medium |
 | [0169-majority-element](https://github.com/ROHAN3183/leetcode_string/tree/main/0169-majority-element/) | Easy |
@@ -169,6 +170,7 @@
 | [0045-jump-game-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0045-jump-game-ii/) | Medium |
 | [0055-jump-game](https://github.com/ROHAN3183/leetcode_string/tree/main/0055-jump-game/) | Medium |
 | [0134-gas-station](https://github.com/ROHAN3183/leetcode_string/tree/main/0134-gas-station/) | Medium |
+| [0135-candy](https://github.com/ROHAN3183/leetcode_string/tree/main/0135-candy/) | Hard |
 | [0435-non-overlapping-intervals](https://github.com/ROHAN3183/leetcode_string/tree/main/0435-non-overlapping-intervals/) | Medium |
 | [0455-assign-cookies](https://github.com/ROHAN3183/leetcode_string/tree/main/0455-assign-cookies/) | Easy |
 | [0561-array-partition](https://github.com/ROHAN3183/leetcode_string/tree/main/0561-array-partition/) | Easy |

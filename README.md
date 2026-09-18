@@ -38,6 +38,7 @@
 | [0875-koko-eating-bananas](https://github.com/ROHAN3183/leetcode_string/tree/main/0875-koko-eating-bananas/) | Medium |
 | [0904-fruit-into-baskets](https://github.com/ROHAN3183/leetcode_string/tree/main/0904-fruit-into-baskets/) | Medium |
 | [0930-binary-subarrays-with-sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0930-binary-subarrays-with-sum/) | Medium |
+| [0992-subarrays-with-k-different-integers](https://github.com/ROHAN3183/leetcode_string/tree/main/0992-subarrays-with-k-different-integers/) | Hard |
 | [1004-max-consecutive-ones-iii](https://github.com/ROHAN3183/leetcode_string/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/ROHAN3183/leetcode_string/tree/main/1011-capacity-to-ship-packages-within-d-days/) | Medium |
 | [1031-maximum-sum-of-two-non-overlapping-subarrays](https://github.com/ROHAN3183/leetcode_string/tree/main/1031-maximum-sum-of-two-non-overlapping-subarrays/) | Medium |
@@ -117,6 +118,7 @@
 | [0884-uncommon-words-from-two-sentences](https://github.com/ROHAN3183/leetcode_string/tree/main/0884-uncommon-words-from-two-sentences/) | Easy |
 | [0904-fruit-into-baskets](https://github.com/ROHAN3183/leetcode_string/tree/main/0904-fruit-into-baskets/) | Medium |
 | [0930-binary-subarrays-with-sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0930-binary-subarrays-with-sum/) | Medium |
+| [0992-subarrays-with-k-different-integers](https://github.com/ROHAN3183/leetcode_string/tree/main/0992-subarrays-with-k-different-integers/) | Hard |
 | [1156-swap-for-longest-repeated-character-substring](https://github.com/ROHAN3183/leetcode_string/tree/main/1156-swap-for-longest-repeated-character-substring/) | Medium |
 | [1248-count-number-of-nice-subarrays](https://github.com/ROHAN3183/leetcode_string/tree/main/1248-count-number-of-nice-subarrays/) | Medium |
 | [1347-minimum-number-of-steps-to-make-two-strings-anagram](https://github.com/ROHAN3183/leetcode_string/tree/main/1347-minimum-number-of-steps-to-make-two-strings-anagram/) | Medium |
@@ -196,6 +198,7 @@
 | [0229-majority-element-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0229-majority-element-ii/) | Medium |
 | [0561-array-partition](https://github.com/ROHAN3183/leetcode_string/tree/main/0561-array-partition/) | Easy |
 | [0884-uncommon-words-from-two-sentences](https://github.com/ROHAN3183/leetcode_string/tree/main/0884-uncommon-words-from-two-sentences/) | Easy |
+| [0992-subarrays-with-k-different-integers](https://github.com/ROHAN3183/leetcode_string/tree/main/0992-subarrays-with-k-different-integers/) | Hard |
 | [1347-minimum-number-of-steps-to-make-two-strings-anagram](https://github.com/ROHAN3183/leetcode_string/tree/main/1347-minimum-number-of-steps-to-make-two-strings-anagram/) | Medium |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/ROHAN3183/leetcode_string/tree/main/3737-count-subarrays-with-majority-element-i/) | Medium |
 ## Binary Search
@@ -247,6 +250,7 @@
 | [0713-subarray-product-less-than-k](https://github.com/ROHAN3183/leetcode_string/tree/main/0713-subarray-product-less-than-k/) | Medium |
 | [0904-fruit-into-baskets](https://github.com/ROHAN3183/leetcode_string/tree/main/0904-fruit-into-baskets/) | Medium |
 | [0930-binary-subarrays-with-sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0930-binary-subarrays-with-sum/) | Medium |
+| [0992-subarrays-with-k-different-integers](https://github.com/ROHAN3183/leetcode_string/tree/main/0992-subarrays-with-k-different-integers/) | Hard |
 | [1004-max-consecutive-ones-iii](https://github.com/ROHAN3183/leetcode_string/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 | [1031-maximum-sum-of-two-non-overlapping-subarrays](https://github.com/ROHAN3183/leetcode_string/tree/main/1031-maximum-sum-of-two-non-overlapping-subarrays/) | Medium |
 | [1156-swap-for-longest-repeated-character-substring](https://github.com/ROHAN3183/leetcode_string/tree/main/1156-swap-for-longest-repeated-character-substring/) | Medium |

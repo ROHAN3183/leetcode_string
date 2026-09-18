@@ -41,6 +41,7 @@
 | [1004-max-consecutive-ones-iii](https://github.com/ROHAN3183/leetcode_string/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/ROHAN3183/leetcode_string/tree/main/1011-capacity-to-ship-packages-within-d-days/) | Medium |
 | [1031-maximum-sum-of-two-non-overlapping-subarrays](https://github.com/ROHAN3183/leetcode_string/tree/main/1031-maximum-sum-of-two-non-overlapping-subarrays/) | Medium |
+| [1423-maximum-points-you-can-obtain-from-cards](https://github.com/ROHAN3183/leetcode_string/tree/main/1423-maximum-points-you-can-obtain-from-cards/) | Medium |
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/ROHAN3183/leetcode_string/tree/main/1482-minimum-number-of-days-to-make-m-bouquets/) | Medium |
 | [1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target](https://github.com/ROHAN3183/leetcode_string/tree/main/1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/) | Medium |
 | [1626-best-team-with-no-conflicts](https://github.com/ROHAN3183/leetcode_string/tree/main/1626-best-team-with-no-conflicts/) | Medium |
@@ -69,6 +70,7 @@
 | [0713-subarray-product-less-than-k](https://github.com/ROHAN3183/leetcode_string/tree/main/0713-subarray-product-less-than-k/) | Medium |
 | [0930-binary-subarrays-with-sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0930-binary-subarrays-with-sum/) | Medium |
 | [1004-max-consecutive-ones-iii](https://github.com/ROHAN3183/leetcode_string/tree/main/1004-max-consecutive-ones-iii/) | Medium |
+| [1423-maximum-points-you-can-obtain-from-cards](https://github.com/ROHAN3183/leetcode_string/tree/main/1423-maximum-points-you-can-obtain-from-cards/) | Medium |
 | [1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target](https://github.com/ROHAN3183/leetcode_string/tree/main/1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/) | Medium |
 | [2906-construct-product-matrix](https://github.com/ROHAN3183/leetcode_string/tree/main/2906-construct-product-matrix/) | Medium |
 | [3546-equal-sum-grid-partition-i](https://github.com/ROHAN3183/leetcode_string/tree/main/3546-equal-sum-grid-partition-i/) | Medium |
@@ -242,6 +244,7 @@
 | [1004-max-consecutive-ones-iii](https://github.com/ROHAN3183/leetcode_string/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 | [1031-maximum-sum-of-two-non-overlapping-subarrays](https://github.com/ROHAN3183/leetcode_string/tree/main/1031-maximum-sum-of-two-non-overlapping-subarrays/) | Medium |
 | [1156-swap-for-longest-repeated-character-substring](https://github.com/ROHAN3183/leetcode_string/tree/main/1156-swap-for-longest-repeated-character-substring/) | Medium |
+| [1423-maximum-points-you-can-obtain-from-cards](https://github.com/ROHAN3183/leetcode_string/tree/main/1423-maximum-points-you-can-obtain-from-cards/) | Medium |
 ## Trie
 | Problem Name | Difficulty |
 | ------- | ------- |

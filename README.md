@@ -23,6 +23,7 @@
 | [0137-single-number-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0137-single-number-ii/) | Medium |
 | [0152-maximum-product-subarray](https://github.com/ROHAN3183/leetcode_string/tree/main/0152-maximum-product-subarray/) | Medium |
 | [0169-majority-element](https://github.com/ROHAN3183/leetcode_string/tree/main/0169-majority-element/) | Easy |
+| [0209-minimum-size-subarray-sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0229-majority-element-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0229-majority-element-ii/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/ROHAN3183/leetcode_string/tree/main/0435-non-overlapping-intervals/) | Medium |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/ROHAN3183/leetcode_string/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
@@ -68,6 +69,7 @@
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0209-minimum-size-subarray-sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/ROHAN3183/leetcode_string/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0713-subarray-product-less-than-k](https://github.com/ROHAN3183/leetcode_string/tree/main/0713-subarray-product-less-than-k/) | Medium |
 | [0930-binary-subarrays-with-sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0930-binary-subarrays-with-sum/) | Medium |
@@ -205,6 +207,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/ROHAN3183/leetcode_string/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
+| [0209-minimum-size-subarray-sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0540-single-element-in-a-sorted-array](https://github.com/ROHAN3183/leetcode_string/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
 | [0713-subarray-product-less-than-k](https://github.com/ROHAN3183/leetcode_string/tree/main/0713-subarray-product-less-than-k/) | Medium |
 | [0875-koko-eating-bananas](https://github.com/ROHAN3183/leetcode_string/tree/main/0875-koko-eating-bananas/) | Medium |
@@ -246,6 +249,7 @@
 | ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/ROHAN3183/leetcode_string/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
 | [0076-minimum-window-substring](https://github.com/ROHAN3183/leetcode_string/tree/main/0076-minimum-window-substring/) | Hard |
+| [0209-minimum-size-subarray-sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0424-longest-repeating-character-replacement](https://github.com/ROHAN3183/leetcode_string/tree/main/0424-longest-repeating-character-replacement/) | Medium |
 | [0713-subarray-product-less-than-k](https://github.com/ROHAN3183/leetcode_string/tree/main/0713-subarray-product-less-than-k/) | Medium |
 | [0904-fruit-into-baskets](https://github.com/ROHAN3183/leetcode_string/tree/main/0904-fruit-into-baskets/) | Medium |

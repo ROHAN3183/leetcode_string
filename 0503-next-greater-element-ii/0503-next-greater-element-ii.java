@@ -1,35 +1,24 @@
-                                                    #Logic of code
-1) two thing are the most important just virtual make array double that will help you in moving circular stack with the help
-    i%n.
-2)just use the concept of the monostack property means upcomming element should always less then then peek element else pop out.
-    
 class Solution {
     public int[] nextGreaterElements(int[] nums) {
-        Stack<Integer>stack=new Stack<>();
-        int n=nums.length;
-        int []ans=new int[n];
-        for(int i=2*n-1;i>=0;i--){
-            int element=nums[i%n];
-            if(stack.isEmpty()){
-                stack.push(element);
-                ans[i%n]=-1;
-            }
-            else{
-                if(!stack.isEmpty()&& stack.peek()>=element){
-                    ans[i%n]=stack.peek();
-                }
-                while(!stack.isEmpty() && stack.peek()<=nums[i%n]){
+        int[] result = new int[nums.length];
+        Stack<Integer> stack = new Stack<>();
+        for (int i = 2 * nums.length - 1; i >= 0; i--) {
+            if (stack.isEmpty()) {
+                result[i % nums.length] = -1;
+            } else if (stack.peek() > nums[i % nums.length]) {
+                result[i % nums.length] = stack.peek();
+            } else {
+                while (!stack.isEmpty() && stack.peek() <= nums[i % nums.length]) {
                     stack.pop();
                 }
-                if(!stack.isEmpty()){
-                    ans[i%n]=stack.peek();
+                if (!stack.isEmpty()) {
+                    result[i % nums.length] = stack.peek();
+                } else if (stack.isEmpty()) {
+                    result[i % nums.length] = -1;
                 }
-                else{
-                    ans[i%n]=-1;
-                }
-                stack.push(element);
             }
+            stack.push(nums[i % nums.length]);
         }
-        return ans;
+        return result;
     }
 }

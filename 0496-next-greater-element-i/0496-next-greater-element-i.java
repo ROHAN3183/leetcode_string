@@ -1,57 +1,33 @@
-#BRUTE FORCE
 class Solution {
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
-        int n=nums1.length;
-        int m=nums2.length;
-        int idx=0;
-        int []result=new int[n];
-        Arrays.fill(result,-1);
-        HashMap<Integer,Integer>map=new HashMap<>();
-        for(int i=0;i<m;i++){
-            map.put(nums2[i],i);
-        }
-        for(int i=0;i<n;i++){
-            int element=nums1[i];
-            if(map.containsKey(element)){
-                idx=map.get(element);
+        int [] result=new int [nums1.length];
+        for (int i = 0; i < nums1.length; i++) {
+            int target=nums1[i];
+            int val=foundtarget(nums2,target);
+            if(val!=-1){
+                result[i]=isvalid(nums2,target,val);
             }
-            for(int j=idx+1;j<m;j++){
-                if(nums2[j]>element){
-                    result[i]=nums2[j];
-                    break;
-                }
+            else{
+                result[i]=-1;
             }
+
         }
         return result;
     }
-}
-#OPTIMIZED CODE
-class Solution {
-    public int[] nextGreaterElement(int[] nums1, int[] nums2) {
-        Stack<Integer>stack=new Stack<>();
-        HashMap<Integer,Integer>map=new HashMap<>();
-        int n=nums1.length;
-        int m=nums2.length;
-        int []result=new int[n];
-        int j=m-1;
-        while(j>=0){
-             while(!stack.isEmpty()&&stack.peek()<=nums2[j]){
-                    stack.pop();
-                }
-            if(stack.isEmpty()){
-                map.put(nums2[j],-1);
-            }
-            else{
-                map.put(nums2[j],stack.peek());
-            }
-            stack.push(nums2[j]);
-            j--;
-        }
-        for(int i=0;i<n;i++){
-            if(map.containsKey(nums1[i])){
-              result[i]=map.get(nums1[i]);
+    int  foundtarget(int [] nums2,int target){
+        for(int i=0;i<nums2.length;i++){
+            if(nums2[i]==target){
+                return i;
             }
         }
-        return result;
+        return -1;
+    }
+    int isvalid(int [] nums2,int target,int idx){
+        for(int i=idx;i<nums2.length;i++){
+            if(nums2[i]>target){
+                return nums2[i];
+            }
+        }
+        return -1;
     }
 }

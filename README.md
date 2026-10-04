@@ -54,6 +54,7 @@
 | [1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target](https://github.com/ROHAN3183/leetcode_string/tree/main/1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/) | Medium |
 | [1626-best-team-with-no-conflicts](https://github.com/ROHAN3183/leetcode_string/tree/main/1626-best-team-with-no-conflicts/) | Medium |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/ROHAN3183/leetcode_string/tree/main/1855-maximum-distance-between-a-pair-of-values/) | Medium |
+| [2104-sum-of-subarray-ranges](https://github.com/ROHAN3183/leetcode_string/tree/main/2104-sum-of-subarray-ranges/) | Medium |
 | [2461-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/ROHAN3183/leetcode_string/tree/main/2461-maximum-sum-of-distinct-subarrays-with-length-k/) | Medium |
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/ROHAN3183/leetcode_string/tree/main/2515-shortest-distance-to-target-string-in-a-circular-array/) | Easy |
 | [2540-minimum-common-value](https://github.com/ROHAN3183/leetcode_string/tree/main/2540-minimum-common-value/) | Easy |
@@ -329,6 +330,7 @@
 | [0496-next-greater-element-i](https://github.com/ROHAN3183/leetcode_string/tree/main/0496-next-greater-element-i/) | Easy |
 | [0503-next-greater-element-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0503-next-greater-element-ii/) | Medium |
 | [0678-valid-parenthesis-string](https://github.com/ROHAN3183/leetcode_string/tree/main/0678-valid-parenthesis-string/) | Medium |
+| [2104-sum-of-subarray-ranges](https://github.com/ROHAN3183/leetcode_string/tree/main/2104-sum-of-subarray-ranges/) | Medium |
 ## Bracket Sequences
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -339,4 +341,5 @@
 | [0042-trapping-rain-water](https://github.com/ROHAN3183/leetcode_string/tree/main/0042-trapping-rain-water/) | Hard |
 | [0496-next-greater-element-i](https://github.com/ROHAN3183/leetcode_string/tree/main/0496-next-greater-element-i/) | Easy |
 | [0503-next-greater-element-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0503-next-greater-element-ii/) | Medium |
+| [2104-sum-of-subarray-ranges](https://github.com/ROHAN3183/leetcode_string/tree/main/2104-sum-of-subarray-ranges/) | Medium |
 <!---LeetCode Topics End-->

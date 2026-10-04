@@ -1,88 +1,93 @@
-#Logic of the code
-1) first find the nextgreaterelementfrom the right second nextgreaterelementfrom the left third smallest to left and also
-    find the smallest right during this remember one edge case that flow the < alternate ,also store the index in stack. 
-    
-class Solution {
-    public long subArrayRanges(int[] nums) {
-        int n=nums.length;
-        long ans=0;
-        int [] Right_max=nextGreaterToRight(nums,n);
-        int [] Left_max=nextGreaterToleft(nums,n);
-        int [] Right_smallest=nearestToRightSmallest(nums,n);
-        int [] Left_smallest=nearestToLeftSmallest(nums,n);
-        for(int i=0;i<n;i++){
-            long max=(long) nums[i]*(Right_max[i]-i)*(i-Left_max[i]);
-            long min=(long) nums[i]*(Right_smallest[i]-i)*(i-Left_smallest[i]);
-            ans=ans+(max-min);
-        }
-        return ans;
-    }
-    private int []nextGreaterToRight(int [] nums,int n){
-        Stack<Integer> stack=new Stack<>();
-        int []NGE=new int[n];
-        for(int i=n-1;i>=0;i--){
-            while(!stack.isEmpty() && nums[stack.peek()]<=nums[i]){
-                stack.pop();
+class Solution { 
+    public long subArrayRanges(int[] nums) { 
+        return maxSubarray(nums) - minSubarray(nums); 
+    } 
+
+    long minSubarray(int[] nums) { 
+        int[] left = LNSE(nums); 
+        int[] right = RNSE(nums); 
+        long sum = 0; 
+        for (int i = 0; i < nums.length; i++) { 
+            sum = sum + (long)nums[i] * (i - left[i]) * (right[i] - i); 
+        } 
+        return sum; 
+    } 
+
+    long maxSubarray(int[] nums) { 
+        int[] left = LNGE(nums); 
+        int[] right = RNGE(nums); 
+        long sum = 0; 
+        for (int i = 0; i < nums.length; i++) { 
+            sum = sum + (long)nums[i] * (i - left[i]) * (right[i] - i); 
+        } 
+        return sum; 
+    } 
+
+    int[] LNSE(int[] nums) { 
+        Stack<Integer> stack = new Stack<>(); 
+        int[] left = new int[nums.length]; 
+        for (int i = 0; i < nums.length; i++) { 
+            while (!stack.isEmpty() && nums[stack.peek()] >= nums[i]) { 
+                stack.pop(); 
+            } 
+            if (stack.isEmpty()) {
+                left[i] = -1;
+            } else {
+                left[i] = stack.peek();
             }
-            if(stack.isEmpty()){
-                NGE[i]=n;
+            stack.push(i); 
+        } 
+        return left; 
+    } 
+
+    int[] RNSE(int[] nums) { 
+        Stack<Integer> stack = new Stack<>(); 
+        int[] right = new int[nums.length]; 
+        for (int i = nums.length - 1; i >= 0; i--) { 
+            while (!stack.isEmpty() && nums[stack.peek()] > nums[i]) { 
+                stack.pop(); 
+            } 
+            if (stack.isEmpty()) {
+                right[i] = nums.length;
+            } else {
+                right[i] = stack.peek();
             }
-            else{
-                NGE[i]=stack.peek();
+            stack.push(i); 
+        } 
+        return right; 
+    } 
+
+    int[] LNGE(int[] nums) { 
+        Stack<Integer> stack = new Stack<>(); 
+        int[] left = new int[nums.length]; 
+        for (int i = 0; i < nums.length; i++) { 
+            while (!stack.isEmpty() && nums[stack.peek()] <= nums[i]) { 
+                stack.pop(); 
+            } 
+            if (stack.isEmpty()) {
+                left[i] = -1;
+            } else {
+                left[i] = stack.peek();
             }
-            stack.push(i);
-        }
-        return NGE;
-    }
-        private int []nextGreaterToleft(int [] nums,int n){
-        Stack<Integer> stack=new Stack<>();
-        int []PGE=new int[n];
-        for(int i=0;i<n;i++){
-            while(!stack.isEmpty() && nums[stack.peek()]<nums[i]){
-                stack.pop();
+            stack.push(i); 
+        } 
+        return left; 
+    } 
+
+    int[] RNGE(int[] nums) { 
+        Stack<Integer> stack = new Stack<>(); 
+        int[] right = new int[nums.length]; 
+        for (int i = nums.length - 1; i >= 0; i--) { 
+            while (!stack.isEmpty() && nums[stack.peek()] < nums[i]) { 
+                stack.pop(); 
+            } 
+            if (stack.isEmpty()) {
+                right[i] = nums.length;
+            } else {
+                right[i] = stack.peek();
             }
-            if(stack.isEmpty()){
-                PGE[i]=-1;
-            }
-            else{
-                PGE[i]=stack.peek();
-            }
-            stack.push(i);
-        }
-        return PGE;
-    }
-    private int[]nearestToLeftSmallest(int[] nums,int n){
-        Stack<Integer> stack=new Stack<>();
-        int PSE[]=new int[n];
-        for(int i=0;i<n;i++){
-            while(!stack.isEmpty() && nums[stack.peek()]>=nums[i]){
-                stack.pop();
-            }
-            if(stack.isEmpty()){
-                PSE[i]=-1;
-            }
-            else{
-                PSE[i]=stack.peek();
-            }
-            stack.push(i);
-        }
-        return PSE;
-    }
-        private int[]nearestToRightSmallest(int[] nums,int n){
-        Stack<Integer> stack=new Stack<>();
-        int NSE[]=new int[n];
-        for(int i=n-1;i>=0;i--){
-            while(!stack.isEmpty() && nums[stack.peek()]>nums[i]){
-                stack.pop();
-            }
-            if(stack.isEmpty()){
-                NSE[i]=n;
-            }
-            else{
-                NSE[i]=stack.peek();
-            }
-            stack.push(i);
-        }
-        return NSE;
-    }
+            stack.push(i); 
+        } 
+        return right; 
+    } 
 }

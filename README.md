@@ -36,6 +36,7 @@
 | [0503-next-greater-element-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0503-next-greater-element-ii/) | Medium |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
 | [0540-single-element-in-a-sorted-array](https://github.com/ROHAN3183/leetcode_string/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
+| [0542-01-matrix](https://github.com/ROHAN3183/leetcode_string/tree/main/0542-01-matrix/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/ROHAN3183/leetcode_string/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0561-array-partition](https://github.com/ROHAN3183/leetcode_string/tree/main/0561-array-partition/) | Easy |
 | [0575-distribute-candies](https://github.com/ROHAN3183/leetcode_string/tree/main/0575-distribute-candies/) | Easy |
@@ -76,6 +77,7 @@
 | [0048-rotate-image](https://github.com/ROHAN3183/leetcode_string/tree/main/0048-rotate-image/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/ROHAN3183/leetcode_string/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0200-number-of-islands](https://github.com/ROHAN3183/leetcode_string/tree/main/0200-number-of-islands/) | Medium |
+| [0542-01-matrix](https://github.com/ROHAN3183/leetcode_string/tree/main/0542-01-matrix/) | Medium |
 | [0733-flood-fill](https://github.com/ROHAN3183/leetcode_string/tree/main/0733-flood-fill/) | Easy |
 | [0994-rotting-oranges](https://github.com/ROHAN3183/leetcode_string/tree/main/0994-rotting-oranges/) | Medium |
 | [1020-number-of-enclaves](https://github.com/ROHAN3183/leetcode_string/tree/main/1020-number-of-enclaves/) | Medium |
@@ -262,6 +264,7 @@
 | [0118-pascals-triangle](https://github.com/ROHAN3183/leetcode_string/tree/main/0118-pascals-triangle/) | Easy |
 | [0152-maximum-product-subarray](https://github.com/ROHAN3183/leetcode_string/tree/main/0152-maximum-product-subarray/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/ROHAN3183/leetcode_string/tree/main/0435-non-overlapping-intervals/) | Medium |
+| [0542-01-matrix](https://github.com/ROHAN3183/leetcode_string/tree/main/0542-01-matrix/) | Medium |
 | [0678-valid-parenthesis-string](https://github.com/ROHAN3183/leetcode_string/tree/main/0678-valid-parenthesis-string/) | Medium |
 | [1031-maximum-sum-of-two-non-overlapping-subarrays](https://github.com/ROHAN3183/leetcode_string/tree/main/1031-maximum-sum-of-two-non-overlapping-subarrays/) | Medium |
 | [1626-best-team-with-no-conflicts](https://github.com/ROHAN3183/leetcode_string/tree/main/1626-best-team-with-no-conflicts/) | Medium |
@@ -379,6 +382,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0200-number-of-islands](https://github.com/ROHAN3183/leetcode_string/tree/main/0200-number-of-islands/) | Medium |
+| [0542-01-matrix](https://github.com/ROHAN3183/leetcode_string/tree/main/0542-01-matrix/) | Medium |
 | [0547-number-of-provinces](https://github.com/ROHAN3183/leetcode_string/tree/main/0547-number-of-provinces/) | Medium |
 | [0733-flood-fill](https://github.com/ROHAN3183/leetcode_string/tree/main/0733-flood-fill/) | Easy |
 | [0994-rotting-oranges](https://github.com/ROHAN3183/leetcode_string/tree/main/0994-rotting-oranges/) | Medium |

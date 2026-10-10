@@ -19,6 +19,7 @@
 | [0088-merge-sorted-array](https://github.com/ROHAN3183/leetcode_string/tree/main/0088-merge-sorted-array/) | Easy |
 | [0118-pascals-triangle](https://github.com/ROHAN3183/leetcode_string/tree/main/0118-pascals-triangle/) | Easy |
 | [0128-longest-consecutive-sequence](https://github.com/ROHAN3183/leetcode_string/tree/main/0128-longest-consecutive-sequence/) | Medium |
+| [0130-surrounded-regions](https://github.com/ROHAN3183/leetcode_string/tree/main/0130-surrounded-regions/) | Medium |
 | [0134-gas-station](https://github.com/ROHAN3183/leetcode_string/tree/main/0134-gas-station/) | Medium |
 | [0135-candy](https://github.com/ROHAN3183/leetcode_string/tree/main/0135-candy/) | Hard |
 | [0137-single-number-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0137-single-number-ii/) | Medium |
@@ -76,6 +77,7 @@
 | ------- | ------- |
 | [0048-rotate-image](https://github.com/ROHAN3183/leetcode_string/tree/main/0048-rotate-image/) | Medium |
 | [0073-set-matrix-zeroes](https://github.com/ROHAN3183/leetcode_string/tree/main/0073-set-matrix-zeroes/) | Medium |
+| [0130-surrounded-regions](https://github.com/ROHAN3183/leetcode_string/tree/main/0130-surrounded-regions/) | Medium |
 | [0200-number-of-islands](https://github.com/ROHAN3183/leetcode_string/tree/main/0200-number-of-islands/) | Medium |
 | [0542-01-matrix](https://github.com/ROHAN3183/leetcode_string/tree/main/0542-01-matrix/) | Medium |
 | [0733-flood-fill](https://github.com/ROHAN3183/leetcode_string/tree/main/0733-flood-fill/) | Easy |
@@ -303,6 +305,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/ROHAN3183/leetcode_string/tree/main/0128-longest-consecutive-sequence/) | Medium |
+| [0130-surrounded-regions](https://github.com/ROHAN3183/leetcode_string/tree/main/0130-surrounded-regions/) | Medium |
 | [0200-number-of-islands](https://github.com/ROHAN3183/leetcode_string/tree/main/0200-number-of-islands/) | Medium |
 | [0547-number-of-provinces](https://github.com/ROHAN3183/leetcode_string/tree/main/0547-number-of-provinces/) | Medium |
 | [1020-number-of-enclaves](https://github.com/ROHAN3183/leetcode_string/tree/main/1020-number-of-enclaves/) | Medium |
@@ -334,6 +337,7 @@
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0130-surrounded-regions](https://github.com/ROHAN3183/leetcode_string/tree/main/0130-surrounded-regions/) | Medium |
 | [0200-number-of-islands](https://github.com/ROHAN3183/leetcode_string/tree/main/0200-number-of-islands/) | Medium |
 | [0430-flatten-a-multilevel-doubly-linked-list](https://github.com/ROHAN3183/leetcode_string/tree/main/0430-flatten-a-multilevel-doubly-linked-list/) | Medium |
 | [0547-number-of-provinces](https://github.com/ROHAN3183/leetcode_string/tree/main/0547-number-of-provinces/) | Medium |
@@ -381,6 +385,7 @@
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0130-surrounded-regions](https://github.com/ROHAN3183/leetcode_string/tree/main/0130-surrounded-regions/) | Medium |
 | [0200-number-of-islands](https://github.com/ROHAN3183/leetcode_string/tree/main/0200-number-of-islands/) | Medium |
 | [0542-01-matrix](https://github.com/ROHAN3183/leetcode_string/tree/main/0542-01-matrix/) | Medium |
 | [0547-number-of-provinces](https://github.com/ROHAN3183/leetcode_string/tree/main/0547-number-of-provinces/) | Medium |

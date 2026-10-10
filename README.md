@@ -49,6 +49,7 @@
 | [0992-subarrays-with-k-different-integers](https://github.com/ROHAN3183/leetcode_string/tree/main/0992-subarrays-with-k-different-integers/) | Hard |
 | [1004-max-consecutive-ones-iii](https://github.com/ROHAN3183/leetcode_string/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/ROHAN3183/leetcode_string/tree/main/1011-capacity-to-ship-packages-within-d-days/) | Medium |
+| [1020-number-of-enclaves](https://github.com/ROHAN3183/leetcode_string/tree/main/1020-number-of-enclaves/) | Medium |
 | [1031-maximum-sum-of-two-non-overlapping-subarrays](https://github.com/ROHAN3183/leetcode_string/tree/main/1031-maximum-sum-of-two-non-overlapping-subarrays/) | Medium |
 | [1248-count-number-of-nice-subarrays](https://github.com/ROHAN3183/leetcode_string/tree/main/1248-count-number-of-nice-subarrays/) | Medium |
 | [1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/ROHAN3183/leetcode_string/tree/main/1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/) | Medium |
@@ -75,6 +76,7 @@
 | [0073-set-matrix-zeroes](https://github.com/ROHAN3183/leetcode_string/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0200-number-of-islands](https://github.com/ROHAN3183/leetcode_string/tree/main/0200-number-of-islands/) | Medium |
 | [0733-flood-fill](https://github.com/ROHAN3183/leetcode_string/tree/main/0733-flood-fill/) | Easy |
+| [1020-number-of-enclaves](https://github.com/ROHAN3183/leetcode_string/tree/main/1020-number-of-enclaves/) | Medium |
 | [2906-construct-product-matrix](https://github.com/ROHAN3183/leetcode_string/tree/main/2906-construct-product-matrix/) | Medium |
 | [2965-find-missing-and-repeated-values](https://github.com/ROHAN3183/leetcode_string/tree/main/2965-find-missing-and-repeated-values/) | Easy |
 | [3546-equal-sum-grid-partition-i](https://github.com/ROHAN3183/leetcode_string/tree/main/3546-equal-sum-grid-partition-i/) | Medium |
@@ -298,6 +300,7 @@
 | [0128-longest-consecutive-sequence](https://github.com/ROHAN3183/leetcode_string/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0200-number-of-islands](https://github.com/ROHAN3183/leetcode_string/tree/main/0200-number-of-islands/) | Medium |
 | [0547-number-of-provinces](https://github.com/ROHAN3183/leetcode_string/tree/main/0547-number-of-provinces/) | Medium |
+| [1020-number-of-enclaves](https://github.com/ROHAN3183/leetcode_string/tree/main/1020-number-of-enclaves/) | Medium |
 ## Quicksort
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -330,6 +333,7 @@
 | [0430-flatten-a-multilevel-doubly-linked-list](https://github.com/ROHAN3183/leetcode_string/tree/main/0430-flatten-a-multilevel-doubly-linked-list/) | Medium |
 | [0547-number-of-provinces](https://github.com/ROHAN3183/leetcode_string/tree/main/0547-number-of-provinces/) | Medium |
 | [0733-flood-fill](https://github.com/ROHAN3183/leetcode_string/tree/main/0733-flood-fill/) | Easy |
+| [1020-number-of-enclaves](https://github.com/ROHAN3183/leetcode_string/tree/main/1020-number-of-enclaves/) | Medium |
 ## Doubly-Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -375,6 +379,7 @@
 | [0200-number-of-islands](https://github.com/ROHAN3183/leetcode_string/tree/main/0200-number-of-islands/) | Medium |
 | [0547-number-of-provinces](https://github.com/ROHAN3183/leetcode_string/tree/main/0547-number-of-provinces/) | Medium |
 | [0733-flood-fill](https://github.com/ROHAN3183/leetcode_string/tree/main/0733-flood-fill/) | Easy |
+| [1020-number-of-enclaves](https://github.com/ROHAN3183/leetcode_string/tree/main/1020-number-of-enclaves/) | Medium |
 ## Graph Theory
 | Problem Name | Difficulty |
 | ------- | ------- |

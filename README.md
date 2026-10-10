@@ -292,6 +292,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/ROHAN3183/leetcode_string/tree/main/0128-longest-consecutive-sequence/) | Medium |
+| [0547-number-of-provinces](https://github.com/ROHAN3183/leetcode_string/tree/main/0547-number-of-provinces/) | Medium |
 ## Quicksort
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -321,6 +322,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0430-flatten-a-multilevel-doubly-linked-list](https://github.com/ROHAN3183/leetcode_string/tree/main/0430-flatten-a-multilevel-doubly-linked-list/) | Medium |
+| [0547-number-of-provinces](https://github.com/ROHAN3183/leetcode_string/tree/main/0547-number-of-provinces/) | Medium |
 ## Doubly-Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -360,4 +362,12 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0239-sliding-window-maximum](https://github.com/ROHAN3183/leetcode_string/tree/main/0239-sliding-window-maximum/) | Hard |
+## Breadth-First Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0547-number-of-provinces](https://github.com/ROHAN3183/leetcode_string/tree/main/0547-number-of-provinces/) | Medium |
+## Graph Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0547-number-of-provinces](https://github.com/ROHAN3183/leetcode_string/tree/main/0547-number-of-provinces/) | Medium |
 <!---LeetCode Topics End-->

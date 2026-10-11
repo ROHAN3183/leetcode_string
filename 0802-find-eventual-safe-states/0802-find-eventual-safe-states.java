@@ -1,57 +1,43 @@
 class Solution {
-    Set<Integer> set;
-
     public List<Integer> eventualSafeNodes(int[][] graph) {
-        set = new HashSet<>();
-        List<List<Integer>> adj = new ArrayList<>();
+        boolean[] recPath = new boolean[graph.length];
         boolean[] visited = new boolean[graph.length];
-        List<Integer> result = new ArrayList<>();
-        boolean[] pathvisited = new boolean[graph.length];
+        List<Integer> ans = new ArrayList<>();
+        List<List<Integer>> adj = new ArrayList<>();
         for (int i = 0; i < graph.length; i++) {
             adj.add(new ArrayList<>());
         }
         for (int i = 0; i < graph.length; i++) {
-            int size = graph[i].length;
             for (int neighbour : graph[i]) {
                 adj.get(i).add(neighbour);
             }
         }
-        for (int i = 0; i < graph.length; i++) {
+        for (int i = 0; i < visited.length; i++) {
             if (!visited[i]) {
-                dfs(i, adj, visited, pathvisited);
+                dfs(adj, visited, recPath, i);
             }
         }
-        for (int i = 0; i < graph.length; i++) {
-            if (!set.contains(i)) {
-                result.add(i);
+        for (int i = 0; i < recPath.length; i++) {
+            if (!recPath[i]) {
+                ans.add(i);
             }
         }
-        return result;
+        return ans;
     }
 
-    boolean dfs(int start, List<List<Integer>> adj, boolean[] visited, boolean[] pathvisited) {
-        visited[start] = true;
-        pathvisited[start] = true;
-        for (int neighbour : adj.get(start)) {
+    boolean dfs(List<List<Integer>> adj, boolean[] visited, boolean[] recPath, int source) {
+        visited[source] = true;
+        recPath[source] = true;
+        for (int neighbour : adj.get(source)) {
             if (!visited[neighbour]) {
-                if (dfs(neighbour, adj, visited, pathvisited)) {
-                    for (int i = 0; i < pathvisited.length; i++) {
-                        if (pathvisited[i]) {
-                            set.add(i);
-                        }
-                    }
+                if (dfs(adj, visited, recPath, neighbour)) {
                     return true;
                 }
-            } else if (pathvisited[neighbour]) {
-                for (int i = 0; i < pathvisited.length; i++) {
-                    if (pathvisited[i]) {
-                        set.add(i);
-                    }
-                }
+            } else if (recPath[neighbour]) {
                 return true;
             }
         }
-        pathvisited[start] = false;
+        recPath[source] = false;
         return false;
     }
 }

@@ -2,7 +2,7 @@ class Solution {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
         List<List<Integer>> adj = new ArrayList<>();
         boolean[] visited = new boolean[numCourses];
-        boolean[] pathvisited = new boolean[numCourses];
+        boolean[] recPath = new boolean[numCourses];
         for (int i = 0; i < numCourses; i++) {
             adj.add(new ArrayList<>());
         }
@@ -11,30 +11,29 @@ class Solution {
             int v = prerequisites[i][1];
             adj.get(v).add(u);
         }
-        for (int i = 0; i < numCourses; i++) {
+        for (int i = 0; i < adj.size(); i++) {
             if (!visited[i]) {
-                if (dfs(i, adj, visited, pathvisited)) {
+                if (isCycle(adj, visited, i, recPath)) {
                     return false;
                 }
             }
         }
         return true;
-
     }
 
-    boolean dfs(int start, List<List<Integer>> adj, boolean[] visited, boolean[] pathvisited) {
-        visited[start] = true;
-        pathvisited[start] = true;
-        for (int neighbour : adj.get(start)) {
+    boolean isCycle(List<List<Integer>> adj, boolean[] visited, int source, boolean[] recPath) {
+        visited[source] = true;
+        recPath[source] = true;
+        for (int neighbour : adj.get(source)) {
             if (!visited[neighbour]) {
-                if (dfs(neighbour, adj, visited, pathvisited)) {
+                if (isCycle(adj, visited, neighbour, recPath)) {
                     return true;
                 }
-            } else if (pathvisited[neighbour]) {
+            } else if (recPath[neighbour]) {
                 return true;
             }
         }
-        pathvisited[start] = false;
+        recPath[source] = false;
         return false;
     }
 }

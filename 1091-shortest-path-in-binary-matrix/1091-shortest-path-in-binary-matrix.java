@@ -15,8 +15,8 @@ class Solution {
     int Dijkistra(int[][] grid, int[][] distance) {
         PriorityQueue<int[]> queue = new PriorityQueue<>(
                 (a, b) -> Integer.compare(a[2], b[2]));
-        queue.add(new int[] { 0, 0, 0 });
-        distance[0][0] = 0;
+        queue.add(new int[] { 0, 0, 1 });
+        distance[0][0] = 1;
         while (!queue.isEmpty()) {
             int[] node = queue.poll();
             int i = node[0];
@@ -70,6 +70,6 @@ class Solution {
             return -1;
         }
 
-        return distance[distance.length - 1][distance[0].length - 1] + 1;
+        return distance[distance.length - 1][distance[0].length - 1];
     }
 }

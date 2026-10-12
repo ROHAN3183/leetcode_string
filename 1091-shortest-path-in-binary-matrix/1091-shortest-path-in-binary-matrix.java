@@ -1,79 +1,75 @@
 class Solution {
-    class Pair {
-        int i;
-        int j;
-
-        Pair(int i, int j) {
-            this.i = i;
-            this.j = j;
-        }
-    }
-
     public int shortestPathBinaryMatrix(int[][] grid) {
-        int n = grid.length;
-        if (grid[0][0] == 1 || grid[n - 1][n - 1] == 1) return -1;
-
-        Queue<Pair> queue = new LinkedList<>();
-        boolean[][] visited = new boolean[n][n];
-        return bfs(grid, visited, queue, 0, 0);
+        int[][] distance = new int[grid.length][grid[0].length];
+        if (grid[0][0] != 0 || grid[grid.length - 1][grid[0].length - 1] != 0) {
+            return -1;
+        }
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[0].length; j++) {
+                distance[i][j] = Integer.MAX_VALUE;
+            }
+        }
+        return Dijkistra(grid, distance);
     }
 
-    int bfs(int[][] grid, boolean[][] visited, Queue<Pair> queue, int i0, int j0) {
-        int n = grid.length;
-
-        if (grid[i0][j0] == 0 && !visited[i0][j0]) {
-            visited[i0][j0] = true;
-            queue.offer(new Pair(i0, j0));
-        }
-        int step = 1;
-
+    int Dijkistra(int[][] grid, int[][] distance) {
+        PriorityQueue<int[]> queue = new PriorityQueue<>(
+                (a, b) -> Integer.compare(a[2], b[2]));
+        queue.add(new int[] { 0, 0, 0 });
+        distance[0][0] = 0;
         while (!queue.isEmpty()) {
-            int size = queue.size();
-
-            for (int k = 0; k < size; k++) {
-                Pair node = queue.poll();
-                int i = node.i;
-                int j = node.j;
-
-                if (i == n - 1 && j == n - 1) {
-                    return step;
-                }
-
-                if (i - 1 >= 0 && !visited[i - 1][j] && grid[i - 1][j] == 0) {
-                    visited[i - 1][j] = true;
-                    queue.offer(new Pair(i - 1, j));
-                }
-                if (i + 1 < n && !visited[i + 1][j] && grid[i + 1][j] == 0) {
-                    visited[i + 1][j] = true;
-                    queue.offer(new Pair(i + 1, j));
-                }
-                if (j - 1 >= 0 && !visited[i][j - 1] && grid[i][j - 1] == 0) {
-                    visited[i][j - 1] = true;
-                    queue.offer(new Pair(i, j - 1));
-                }
-                if (j + 1 < n && !visited[i][j + 1] && grid[i][j + 1] == 0) {
-                    visited[i][j + 1] = true;
-                    queue.offer(new Pair(i, j + 1));
-                }
-                if (i + 1 < n && j + 1 < n && !visited[i + 1][j + 1] && grid[i + 1][j + 1] == 0) {
-                    visited[i + 1][j + 1] = true;
-                    queue.offer(new Pair(i + 1, j + 1));
-                }
-                if (i - 1 >= 0 && j - 1 >= 0 && !visited[i - 1][j - 1] && grid[i - 1][j - 1] == 0) {
-                    visited[i - 1][j - 1] = true;
-                    queue.offer(new Pair(i - 1, j - 1));
-                }
-                if (i - 1 >= 0 && j + 1 < n && !visited[i - 1][j + 1] && grid[i - 1][j + 1] == 0) {
-                    visited[i - 1][j + 1] = true;
-                    queue.offer(new Pair(i - 1, j + 1));
-                }
-                if (i + 1 < n && j - 1 >= 0 && !visited[i + 1][j - 1] && grid[i + 1][j - 1] == 0) {
-                    visited[i + 1][j - 1] = true;
-                    queue.offer(new Pair(i + 1, j - 1));
-                }
+            int[] node = queue.poll();
+            int i = node[0];
+            int j = node[1];
+            int d = node[2];
+            if (d > distance[i][j]) {
+                continue;
             }
-            step++;
+            if (i + 1 < grid.length && distance[i + 1][j] > d + 1 && grid[i + 1][j] == 0) {
+                distance[i + 1][j] = d + 1;
+                queue.add(new int[] { i + 1, j, distance[i + 1][j] });
+            }
+
+            if (i - 1 >= 0 && distance[i - 1][j] > d + 1 && grid[i - 1][j] == 0) {
+                distance[i - 1][j] = d + 1;
+                queue.add(new int[] { i - 1, j, distance[i - 1][j] });
+            }
+
+            if (j + 1 < grid[0].length && distance[i][j + 1] > d + 1 && grid[i][j + 1] == 0) {
+                distance[i][j + 1] = d + 1;
+                queue.add(new int[] { i, j + 1, distance[i][j + 1] });
+            }
+
+            if (j - 1 >= 0 && distance[i][j - 1] > d + 1 && grid[i][j - 1] == 0) {
+                distance[i][j - 1] = d + 1;
+                queue.add(new int[] { i, j - 1, distance[i][j - 1] });
+            }
+
+            if (i + 1 < grid.length && j + 1 < grid[0].length && distance[i + 1][j + 1] > d + 1
+                    && grid[i + 1][j + 1] == 0) {
+                distance[i + 1][j + 1] = d + 1;
+                queue.add(new int[] { i + 1, j + 1, distance[i + 1][j + 1] });
+            }
+
+            if (i + 1 < grid.length && j - 1 >= 0 && distance[i + 1][j - 1] > d + 1 && grid[i + 1][j - 1] == 0) {
+                distance[i + 1][j - 1] = d + 1;
+                queue.add(new int[] { i + 1, j - 1, distance[i + 1][j - 1] });
+            }
+
+            if (i - 1 >= 0 && j + 1 < grid[0].length && distance[i - 1][j + 1] > d + 1 && grid[i - 1][j + 1] == 0) {
+                distance[i - 1][j + 1] = d + 1;
+                queue.add(new int[] { i - 1, j + 1, distance[i - 1][j + 1] });
+            }
+
+            if (i - 1 >= 0 && j - 1 >= 0 && distance[i - 1][j - 1] > d + 1 && grid[i - 1][j - 1] == 0) {
+                distance[i - 1][j - 1] = d + 1;
+                queue.add(new int[] { i - 1, j - 1, distance[i - 1][j - 1] });
+            }
         }
-        return -1;
+        if (distance[distance.length - 1][distance[0].length - 1] == Integer.MAX_VALUE) {
+            return -1;
+        }
+
+        return distance[distance.length - 1][distance[0].length - 1] + 1;
     }
 }

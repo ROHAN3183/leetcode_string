@@ -1,48 +1,52 @@
+
 class Solution {
-    class Pair {
-        int node, cost;
-        Pair(int node, int cost) {
-            this.node = node;
-            this.cost = cost;
-        }
-    }
-
-    class Info {
-        int node, cost, stops;
-        Info(int node, int stops, int cost) {
-            this.node = node;
-            this.stops = stops;
-            this.cost = cost;
-        }
-    }
-
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
-        ArrayList<ArrayList<Pair>> adj = new ArrayList<>();
-        for (int i = 0; i < n; i++) adj.add(new ArrayList<>());
-        for (int[] edge : flights)
-            adj.get(edge[0]).add(new Pair(edge[1], edge[2]));
+        List<List<int[]>> adj = new ArrayList<>();
 
-        Queue<Info> q = new LinkedList<>();
-        q.offer(new Info(src, 0, 0));
+        for (int i = 0; i < n; i++) {
+            adj.add(new ArrayList<>());
+        }
 
-        int[] dist = new int[n];
-        Arrays.fill(dist, Integer.MAX_VALUE);
-        dist[src] = 0;
+        for (int i = 0; i < flights.length; i++) {
+            adj.get(flights[i][0]).add(
+                new int[]{flights[i][1], flights[i][2]}
+            );
+        }
 
-        while (!q.isEmpty()) {
-            Info cur = q.poll();
+        return bfs(adj, src, dst, k + 1);
+    }
 
-            if (cur.stops > k) continue;
+    int bfs(List<List<int[]>> adj, int src, int dst, int k) {
+        Queue<int[]> queue = new LinkedList<>();
+        int[] distance = new int[adj.size()];
 
-            for (Pair nei : adj.get(cur.node)) {
-                int newCost = cur.cost + nei.cost;
-                if (newCost < dist[nei.node] && cur.stops <= k) {
-                    dist[nei.node] = newCost;
-                    q.offer(new Info(nei.node, cur.stops + 1, newCost));
+        Arrays.fill(distance, Integer.MAX_VALUE);
+        distance[src] = 0;
+
+        queue.add(new int[]{src, 0, 0});
+
+        while (!queue.isEmpty()) {
+            int[] node = queue.poll();
+
+            int u = node[0];
+            int cost = node[1];
+            int d = node[2];
+
+            for (int[] neighbour : adj.get(u)) {
+                int v = neighbour[0];
+                int w = neighbour[1];
+
+                if (cost + w < distance[v] && d + 1 <= k) {
+                    distance[v] = cost + w;
+                    queue.add(new int[]{v, distance[v], d + 1});
                 }
             }
         }
 
-        return dist[dst] == Integer.MAX_VALUE ? -1 : dist[dst];
+        if (distance[dst] == Integer.MAX_VALUE) {
+            return -1;
+        }
+
+        return distance[dst];
     }
 }

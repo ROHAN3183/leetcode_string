@@ -276,6 +276,7 @@
 | [0787-cheapest-flights-within-k-stops](https://github.com/ROHAN3183/leetcode_string/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
 | [1031-maximum-sum-of-two-non-overlapping-subarrays](https://github.com/ROHAN3183/leetcode_string/tree/main/1031-maximum-sum-of-two-non-overlapping-subarrays/) | Medium |
 | [1626-best-team-with-no-conflicts](https://github.com/ROHAN3183/leetcode_string/tree/main/1626-best-team-with-no-conflicts/) | Medium |
+| [1976-number-of-ways-to-arrive-at-destination](https://github.com/ROHAN3183/leetcode_string/tree/main/1976-number-of-ways-to-arrive-at-destination/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -424,6 +425,7 @@
 | [0785-is-graph-bipartite](https://github.com/ROHAN3183/leetcode_string/tree/main/0785-is-graph-bipartite/) | Medium |
 | [0787-cheapest-flights-within-k-stops](https://github.com/ROHAN3183/leetcode_string/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
 | [0802-find-eventual-safe-states](https://github.com/ROHAN3183/leetcode_string/tree/main/0802-find-eventual-safe-states/) | Medium |
+| [1976-number-of-ways-to-arrive-at-destination](https://github.com/ROHAN3183/leetcode_string/tree/main/1976-number-of-ways-to-arrive-at-destination/) | Medium |
 ## Graph Coloring
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -438,6 +440,7 @@
 | [0207-course-schedule](https://github.com/ROHAN3183/leetcode_string/tree/main/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0210-course-schedule-ii/) | Medium |
 | [0802-find-eventual-safe-states](https://github.com/ROHAN3183/leetcode_string/tree/main/0802-find-eventual-safe-states/) | Medium |
+| [1976-number-of-ways-to-arrive-at-destination](https://github.com/ROHAN3183/leetcode_string/tree/main/1976-number-of-ways-to-arrive-at-destination/) | Medium |
 ## Kosaraju's Algorithm
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -454,8 +457,10 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1631-path-with-minimum-effort](https://github.com/ROHAN3183/leetcode_string/tree/main/1631-path-with-minimum-effort/) | Medium |
+| [1976-number-of-ways-to-arrive-at-destination](https://github.com/ROHAN3183/leetcode_string/tree/main/1976-number-of-ways-to-arrive-at-destination/) | Medium |
 ## Shortest Path
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0787-cheapest-flights-within-k-stops](https://github.com/ROHAN3183/leetcode_string/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
+| [1976-number-of-ways-to-arrive-at-destination](https://github.com/ROHAN3183/leetcode_string/tree/main/1976-number-of-ways-to-arrive-at-destination/) | Medium |
 <!---LeetCode Topics End-->

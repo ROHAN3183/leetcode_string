@@ -44,6 +44,7 @@
 | [0643-maximum-average-subarray-i](https://github.com/ROHAN3183/leetcode_string/tree/main/0643-maximum-average-subarray-i/) | Easy |
 | [0713-subarray-product-less-than-k](https://github.com/ROHAN3183/leetcode_string/tree/main/0713-subarray-product-less-than-k/) | Medium |
 | [0733-flood-fill](https://github.com/ROHAN3183/leetcode_string/tree/main/0733-flood-fill/) | Easy |
+| [0778-swim-in-rising-water](https://github.com/ROHAN3183/leetcode_string/tree/main/0778-swim-in-rising-water/) | Hard |
 | [0860-lemonade-change](https://github.com/ROHAN3183/leetcode_string/tree/main/0860-lemonade-change/) | Easy |
 | [0875-koko-eating-bananas](https://github.com/ROHAN3183/leetcode_string/tree/main/0875-koko-eating-bananas/) | Medium |
 | [0904-fruit-into-baskets](https://github.com/ROHAN3183/leetcode_string/tree/main/0904-fruit-into-baskets/) | Medium |
@@ -83,6 +84,7 @@
 | [0200-number-of-islands](https://github.com/ROHAN3183/leetcode_string/tree/main/0200-number-of-islands/) | Medium |
 | [0542-01-matrix](https://github.com/ROHAN3183/leetcode_string/tree/main/0542-01-matrix/) | Medium |
 | [0733-flood-fill](https://github.com/ROHAN3183/leetcode_string/tree/main/0733-flood-fill/) | Easy |
+| [0778-swim-in-rising-water](https://github.com/ROHAN3183/leetcode_string/tree/main/0778-swim-in-rising-water/) | Hard |
 | [0994-rotting-oranges](https://github.com/ROHAN3183/leetcode_string/tree/main/0994-rotting-oranges/) | Medium |
 | [1020-number-of-enclaves](https://github.com/ROHAN3183/leetcode_string/tree/main/1020-number-of-enclaves/) | Medium |
 | [1091-shortest-path-in-binary-matrix](https://github.com/ROHAN3183/leetcode_string/tree/main/1091-shortest-path-in-binary-matrix/) | Medium |
@@ -238,6 +240,7 @@
 | [0209-minimum-size-subarray-sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0209-minimum-size-subarray-sum/) | Medium |
 | [0540-single-element-in-a-sorted-array](https://github.com/ROHAN3183/leetcode_string/tree/main/0540-single-element-in-a-sorted-array/) | Medium |
 | [0713-subarray-product-less-than-k](https://github.com/ROHAN3183/leetcode_string/tree/main/0713-subarray-product-less-than-k/) | Medium |
+| [0778-swim-in-rising-water](https://github.com/ROHAN3183/leetcode_string/tree/main/0778-swim-in-rising-water/) | Hard |
 | [0875-koko-eating-bananas](https://github.com/ROHAN3183/leetcode_string/tree/main/0875-koko-eating-bananas/) | Medium |
 | [1004-max-consecutive-ones-iii](https://github.com/ROHAN3183/leetcode_string/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/ROHAN3183/leetcode_string/tree/main/1011-capacity-to-ship-packages-within-d-days/) | Medium |
@@ -316,6 +319,7 @@
 | [0130-surrounded-regions](https://github.com/ROHAN3183/leetcode_string/tree/main/0130-surrounded-regions/) | Medium |
 | [0200-number-of-islands](https://github.com/ROHAN3183/leetcode_string/tree/main/0200-number-of-islands/) | Medium |
 | [0547-number-of-provinces](https://github.com/ROHAN3183/leetcode_string/tree/main/0547-number-of-provinces/) | Medium |
+| [0778-swim-in-rising-water](https://github.com/ROHAN3183/leetcode_string/tree/main/0778-swim-in-rising-water/) | Hard |
 | [0785-is-graph-bipartite](https://github.com/ROHAN3183/leetcode_string/tree/main/0785-is-graph-bipartite/) | Medium |
 | [1020-number-of-enclaves](https://github.com/ROHAN3183/leetcode_string/tree/main/1020-number-of-enclaves/) | Medium |
 | [1631-path-with-minimum-effort](https://github.com/ROHAN3183/leetcode_string/tree/main/1631-path-with-minimum-effort/) | Medium |
@@ -355,6 +359,7 @@
 | [0547-number-of-provinces](https://github.com/ROHAN3183/leetcode_string/tree/main/0547-number-of-provinces/) | Medium |
 | [0733-flood-fill](https://github.com/ROHAN3183/leetcode_string/tree/main/0733-flood-fill/) | Easy |
 | [0743-network-delay-time](https://github.com/ROHAN3183/leetcode_string/tree/main/0743-network-delay-time/) | Medium |
+| [0778-swim-in-rising-water](https://github.com/ROHAN3183/leetcode_string/tree/main/0778-swim-in-rising-water/) | Hard |
 | [0785-is-graph-bipartite](https://github.com/ROHAN3183/leetcode_string/tree/main/0785-is-graph-bipartite/) | Medium |
 | [0787-cheapest-flights-within-k-stops](https://github.com/ROHAN3183/leetcode_string/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
 | [0802-find-eventual-safe-states](https://github.com/ROHAN3183/leetcode_string/tree/main/0802-find-eventual-safe-states/) | Medium |
@@ -392,6 +397,7 @@
 | ------- | ------- |
 | [0239-sliding-window-maximum](https://github.com/ROHAN3183/leetcode_string/tree/main/0239-sliding-window-maximum/) | Hard |
 | [0743-network-delay-time](https://github.com/ROHAN3183/leetcode_string/tree/main/0743-network-delay-time/) | Medium |
+| [0778-swim-in-rising-water](https://github.com/ROHAN3183/leetcode_string/tree/main/0778-swim-in-rising-water/) | Hard |
 | [0787-cheapest-flights-within-k-stops](https://github.com/ROHAN3183/leetcode_string/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
 | [1631-path-with-minimum-effort](https://github.com/ROHAN3183/leetcode_string/tree/main/1631-path-with-minimum-effort/) | Medium |
 ## Monotonic Queue
@@ -413,6 +419,7 @@
 | [0547-number-of-provinces](https://github.com/ROHAN3183/leetcode_string/tree/main/0547-number-of-provinces/) | Medium |
 | [0733-flood-fill](https://github.com/ROHAN3183/leetcode_string/tree/main/0733-flood-fill/) | Easy |
 | [0743-network-delay-time](https://github.com/ROHAN3183/leetcode_string/tree/main/0743-network-delay-time/) | Medium |
+| [0778-swim-in-rising-water](https://github.com/ROHAN3183/leetcode_string/tree/main/0778-swim-in-rising-water/) | Hard |
 | [0785-is-graph-bipartite](https://github.com/ROHAN3183/leetcode_string/tree/main/0785-is-graph-bipartite/) | Medium |
 | [0787-cheapest-flights-within-k-stops](https://github.com/ROHAN3183/leetcode_string/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
 | [0802-find-eventual-safe-states](https://github.com/ROHAN3183/leetcode_string/tree/main/0802-find-eventual-safe-states/) | Medium |
@@ -463,6 +470,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0743-network-delay-time](https://github.com/ROHAN3183/leetcode_string/tree/main/0743-network-delay-time/) | Medium |
+| [0778-swim-in-rising-water](https://github.com/ROHAN3183/leetcode_string/tree/main/0778-swim-in-rising-water/) | Hard |
 | [1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/ROHAN3183/leetcode_string/tree/main/1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/) | Medium |
 | [1631-path-with-minimum-effort](https://github.com/ROHAN3183/leetcode_string/tree/main/1631-path-with-minimum-effort/) | Medium |
 | [1976-number-of-ways-to-arrive-at-destination](https://github.com/ROHAN3183/leetcode_string/tree/main/1976-number-of-ways-to-arrive-at-destination/) | Medium |
@@ -481,4 +489,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/ROHAN3183/leetcode_string/tree/main/1334-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/) | Medium |
+## Minimax
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0778-swim-in-rising-water](https://github.com/ROHAN3183/leetcode_string/tree/main/0778-swim-in-rising-water/) | Hard |
 <!---LeetCode Topics End-->

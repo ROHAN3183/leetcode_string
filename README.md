@@ -360,6 +360,7 @@
 | [0207-course-schedule](https://github.com/ROHAN3183/leetcode_string/tree/main/0207-course-schedule/) | Medium |
 | [0210-course-schedule-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0210-course-schedule-ii/) | Medium |
 | [0430-flatten-a-multilevel-doubly-linked-list](https://github.com/ROHAN3183/leetcode_string/tree/main/0430-flatten-a-multilevel-doubly-linked-list/) | Medium |
+| [0543-diameter-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0543-diameter-of-binary-tree/) | Easy |
 | [0547-number-of-provinces](https://github.com/ROHAN3183/leetcode_string/tree/main/0547-number-of-provinces/) | Medium |
 | [0733-flood-fill](https://github.com/ROHAN3183/leetcode_string/tree/main/0733-flood-fill/) | Easy |
 | [0743-network-delay-time](https://github.com/ROHAN3183/leetcode_string/tree/main/0743-network-delay-time/) | Medium |
@@ -510,6 +511,7 @@
 | [0102-binary-tree-level-order-traversal](https://github.com/ROHAN3183/leetcode_string/tree/main/0102-binary-tree-level-order-traversal/) | Medium |
 | [0104-maximum-depth-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0110-balanced-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0110-balanced-binary-tree/) | Easy |
+| [0543-diameter-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0543-diameter-of-binary-tree/) | Easy |
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -517,4 +519,9 @@
 | [0102-binary-tree-level-order-traversal](https://github.com/ROHAN3183/leetcode_string/tree/main/0102-binary-tree-level-order-traversal/) | Medium |
 | [0104-maximum-depth-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0110-balanced-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0110-balanced-binary-tree/) | Easy |
+| [0543-diameter-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0543-diameter-of-binary-tree/) | Easy |
+## DP on Trees
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0543-diameter-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0543-diameter-of-binary-tree/) | Easy |
 <!---LeetCode Topics End-->

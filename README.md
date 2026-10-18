@@ -272,6 +272,7 @@
 | [0053-maximum-subarray](https://github.com/ROHAN3183/leetcode_string/tree/main/0053-maximum-subarray/) | Medium |
 | [0055-jump-game](https://github.com/ROHAN3183/leetcode_string/tree/main/0055-jump-game/) | Medium |
 | [0118-pascals-triangle](https://github.com/ROHAN3183/leetcode_string/tree/main/0118-pascals-triangle/) | Easy |
+| [0124-binary-tree-maximum-path-sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0152-maximum-product-subarray](https://github.com/ROHAN3183/leetcode_string/tree/main/0152-maximum-product-subarray/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/ROHAN3183/leetcode_string/tree/main/0435-non-overlapping-intervals/) | Medium |
 | [0542-01-matrix](https://github.com/ROHAN3183/leetcode_string/tree/main/0542-01-matrix/) | Medium |
@@ -355,6 +356,7 @@
 | [0100-same-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0100-same-tree/) | Easy |
 | [0104-maximum-depth-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0110-balanced-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0110-balanced-binary-tree/) | Easy |
+| [0124-binary-tree-maximum-path-sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0130-surrounded-regions](https://github.com/ROHAN3183/leetcode_string/tree/main/0130-surrounded-regions/) | Medium |
 | [0200-number-of-islands](https://github.com/ROHAN3183/leetcode_string/tree/main/0200-number-of-islands/) | Medium |
 | [0207-course-schedule](https://github.com/ROHAN3183/leetcode_string/tree/main/0207-course-schedule/) | Medium |
@@ -511,6 +513,7 @@
 | [0102-binary-tree-level-order-traversal](https://github.com/ROHAN3183/leetcode_string/tree/main/0102-binary-tree-level-order-traversal/) | Medium |
 | [0104-maximum-depth-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0110-balanced-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0110-balanced-binary-tree/) | Easy |
+| [0124-binary-tree-maximum-path-sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0543-diameter-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0543-diameter-of-binary-tree/) | Easy |
 ## Binary Tree
 | Problem Name | Difficulty |
@@ -519,9 +522,11 @@
 | [0102-binary-tree-level-order-traversal](https://github.com/ROHAN3183/leetcode_string/tree/main/0102-binary-tree-level-order-traversal/) | Medium |
 | [0104-maximum-depth-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0110-balanced-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0110-balanced-binary-tree/) | Easy |
+| [0124-binary-tree-maximum-path-sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0543-diameter-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0543-diameter-of-binary-tree/) | Easy |
 ## DP on Trees
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0124-binary-tree-maximum-path-sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0543-diameter-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0543-diameter-of-binary-tree/) | Easy |
 <!---LeetCode Topics End-->

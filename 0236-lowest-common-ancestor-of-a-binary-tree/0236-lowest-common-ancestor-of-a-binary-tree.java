@@ -1,22 +1,27 @@
 class Solution {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        return dfs(root, p, q);
+    }
+
+    TreeNode dfs(TreeNode root, TreeNode p, TreeNode q) {
         if (root == null) {
             return null;
         }
-
-        if (root.val == p.val || root.val == q.val) {
+        TreeNode left = dfs(root.left, p, q);
+        TreeNode right = dfs(root.right, p, q);
+        if (root == p || root == q) {
             return root;
         }
 
-        TreeNode leftTraverse = lowestCommonAncestor(root.left, p, q);
-        TreeNode rightTraverse = lowestCommonAncestor(root.right, p, q);
-
-        if (leftTraverse != null && rightTraverse != null)
+        if (left != null && right != null) {
             return root;
-        else if (leftTraverse != null)
-            return leftTraverse;
-        else
-            return rightTraverse;
-
+        }
+        if (left != null) {
+            return left;
+        }
+        if (right != null) {
+            return right;
+        }
+        return null;
     }
 }

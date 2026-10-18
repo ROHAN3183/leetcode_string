@@ -367,6 +367,7 @@
 | [0430-flatten-a-multilevel-doubly-linked-list](https://github.com/ROHAN3183/leetcode_string/tree/main/0430-flatten-a-multilevel-doubly-linked-list/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0543-diameter-of-binary-tree/) | Easy |
 | [0547-number-of-provinces](https://github.com/ROHAN3183/leetcode_string/tree/main/0547-number-of-provinces/) | Medium |
+| [0662-maximum-width-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
 | [0733-flood-fill](https://github.com/ROHAN3183/leetcode_string/tree/main/0733-flood-fill/) | Easy |
 | [0743-network-delay-time](https://github.com/ROHAN3183/leetcode_string/tree/main/0743-network-delay-time/) | Medium |
 | [0778-swim-in-rising-water](https://github.com/ROHAN3183/leetcode_string/tree/main/0778-swim-in-rising-water/) | Hard |
@@ -434,6 +435,7 @@
 | [0210-course-schedule-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0210-course-schedule-ii/) | Medium |
 | [0542-01-matrix](https://github.com/ROHAN3183/leetcode_string/tree/main/0542-01-matrix/) | Medium |
 | [0547-number-of-provinces](https://github.com/ROHAN3183/leetcode_string/tree/main/0547-number-of-provinces/) | Medium |
+| [0662-maximum-width-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
 | [0733-flood-fill](https://github.com/ROHAN3183/leetcode_string/tree/main/0733-flood-fill/) | Easy |
 | [0743-network-delay-time](https://github.com/ROHAN3183/leetcode_string/tree/main/0743-network-delay-time/) | Medium |
 | [0778-swim-in-rising-water](https://github.com/ROHAN3183/leetcode_string/tree/main/0778-swim-in-rising-water/) | Hard |
@@ -525,6 +527,7 @@
 | [0199-binary-tree-right-side-view](https://github.com/ROHAN3183/leetcode_string/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0543-diameter-of-binary-tree/) | Easy |
+| [0662-maximum-width-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -538,6 +541,7 @@
 | [0199-binary-tree-right-side-view](https://github.com/ROHAN3183/leetcode_string/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0543-diameter-of-binary-tree/) | Easy |
+| [0662-maximum-width-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
 ## DP on Trees
 | Problem Name | Difficulty |
 | ------- | ------- |

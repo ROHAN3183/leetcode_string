@@ -144,6 +144,7 @@
 | [0522-longest-uncommon-subsequence-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/ROHAN3183/leetcode_string/tree/main/0560-subarray-sum-equals-k/) | Medium |
 | [0575-distribute-candies](https://github.com/ROHAN3183/leetcode_string/tree/main/0575-distribute-candies/) | Easy |
+| [0863-all-nodes-distance-k-in-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0863-all-nodes-distance-k-in-binary-tree/) | Medium |
 | [0884-uncommon-words-from-two-sentences](https://github.com/ROHAN3183/leetcode_string/tree/main/0884-uncommon-words-from-two-sentences/) | Easy |
 | [0904-fruit-into-baskets](https://github.com/ROHAN3183/leetcode_string/tree/main/0904-fruit-into-baskets/) | Medium |
 | [0930-binary-subarrays-with-sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0930-binary-subarrays-with-sum/) | Medium |
@@ -374,6 +375,7 @@
 | [0785-is-graph-bipartite](https://github.com/ROHAN3183/leetcode_string/tree/main/0785-is-graph-bipartite/) | Medium |
 | [0787-cheapest-flights-within-k-stops](https://github.com/ROHAN3183/leetcode_string/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
 | [0802-find-eventual-safe-states](https://github.com/ROHAN3183/leetcode_string/tree/main/0802-find-eventual-safe-states/) | Medium |
+| [0863-all-nodes-distance-k-in-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0863-all-nodes-distance-k-in-binary-tree/) | Medium |
 | [1020-number-of-enclaves](https://github.com/ROHAN3183/leetcode_string/tree/main/1020-number-of-enclaves/) | Medium |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/ROHAN3183/leetcode_string/tree/main/1319-number-of-operations-to-make-network-connected/) | Medium |
 | [1631-path-with-minimum-effort](https://github.com/ROHAN3183/leetcode_string/tree/main/1631-path-with-minimum-effort/) | Medium |
@@ -442,6 +444,7 @@
 | [0785-is-graph-bipartite](https://github.com/ROHAN3183/leetcode_string/tree/main/0785-is-graph-bipartite/) | Medium |
 | [0787-cheapest-flights-within-k-stops](https://github.com/ROHAN3183/leetcode_string/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
 | [0802-find-eventual-safe-states](https://github.com/ROHAN3183/leetcode_string/tree/main/0802-find-eventual-safe-states/) | Medium |
+| [0863-all-nodes-distance-k-in-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0863-all-nodes-distance-k-in-binary-tree/) | Medium |
 | [0994-rotting-oranges](https://github.com/ROHAN3183/leetcode_string/tree/main/0994-rotting-oranges/) | Medium |
 | [1020-number-of-enclaves](https://github.com/ROHAN3183/leetcode_string/tree/main/1020-number-of-enclaves/) | Medium |
 | [1091-shortest-path-in-binary-matrix](https://github.com/ROHAN3183/leetcode_string/tree/main/1091-shortest-path-in-binary-matrix/) | Medium |
@@ -528,6 +531,7 @@
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0543-diameter-of-binary-tree/) | Easy |
 | [0662-maximum-width-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
+| [0863-all-nodes-distance-k-in-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0863-all-nodes-distance-k-in-binary-tree/) | Medium |
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -542,6 +546,7 @@
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0543-diameter-of-binary-tree/) | Easy |
 | [0662-maximum-width-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
+| [0863-all-nodes-distance-k-in-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0863-all-nodes-distance-k-in-binary-tree/) | Medium |
 ## DP on Trees
 | Problem Name | Difficulty |
 | ------- | ------- |

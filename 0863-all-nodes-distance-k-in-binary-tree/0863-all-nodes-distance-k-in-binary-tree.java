@@ -7,10 +7,7 @@ class Solution {
         }
         map = new HashMap<>();
         dfs(root, -1);
-        if (target != null) {
-            return bfs(target.val, k);
-        }
-        return new ArrayList<>();
+        return bfs(target.val,k);
     }
 
     void dfs(TreeNode root, int parent) {

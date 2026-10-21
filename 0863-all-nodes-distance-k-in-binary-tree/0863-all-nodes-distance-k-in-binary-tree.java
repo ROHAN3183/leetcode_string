@@ -1,57 +1,62 @@
 class Solution {
-    HashMap<TreeNode, TreeNode> map;
+    HashMap<Integer, List<Integer>> map;
 
     public List<Integer> distanceK(TreeNode root, TreeNode target, int k) {
+        if (root == null) {
+            return new ArrayList<>();
+        }
         map = new HashMap<>();
-        dfs(root, null);
-        return bfs(root, target, k);
+        dfs(root, -1);
+        if (target != null) {
+            return bfs(target.val, k);
+        }
+        return new ArrayList<>();
     }
 
-    void dfs(TreeNode root, TreeNode parent) {
+    void dfs(TreeNode root, int parent) {
         if (root == null) {
             return;
         }
-        map.put(root, parent);
-        dfs(root.left, root);
-        dfs(root.right, root);
+        List<Integer> list = new ArrayList<>();
+        if (parent != -1) {
+            list.add(parent);
+        }
+        if (root.left != null) {
+            list.add(root.left.val);
+        }
+        if (root.right != null) {
+            list.add(root.right.val);
+        }
+        map.put(root.val, list);
+        dfs(root.left, root.val);
+        dfs(root.right, root.val);
         return;
     }
 
-    List<Integer> bfs(TreeNode root, TreeNode target, int k) {
-        Queue<TreeNode> queue = new LinkedList<>();
-        HashSet<TreeNode> visited = new HashSet<>();
+    List<Integer> bfs(int source, int k) {
+        HashMap<Integer, Boolean> visited = new HashMap<>();
+        Queue<Integer> queue = new LinkedList<>();
         List<Integer> result = new ArrayList<>();
-        queue.add(target);
-        visited.add(target);
-        int level = 0;
-        while (!queue.isEmpty()) {
+        queue.add(source);
+        visited.put(source, true);
+
+        for (int level = 0; level < k; level++) {
             int size = queue.size();
-            if (level == k) {
-                while (!queue.isEmpty()) {
-                    TreeNode node = queue.poll();
-                    result.add(node.val);
-                }
-                return result;
-            }
+
             for (int i = 0; i < size; i++) {
-                TreeNode node = queue.poll();
-                if (node.left != null && !visited.contains(node.left)) {
-                    visited.add(node.left);
-                    queue.add(node.left);
-                }
-                if (node.right != null && !visited.contains(node.right)) {
-                    visited.add(node.right);
-                    queue.add(node.right);
-                }
-                TreeNode parent = map.get(node);
+                int value = queue.poll();
+                List<Integer> list = map.get(value);
 
-                if (parent != null && !visited.contains(parent)) {
-                    visited.add(parent);
-                    queue.add(parent);
-
+                for (int j = 0; j < list.size(); j++) {
+                    if (!visited.containsKey(list.get(j))) {
+                        queue.add(list.get(j));
+                        visited.put(list.get(j), true);
+                    }
                 }
             }
-            level++;
+        }
+        while (!queue.isEmpty()) {
+            result.add(queue.poll());
         }
         return result;
     }

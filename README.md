@@ -529,6 +529,7 @@
 | [0124-binary-tree-maximum-path-sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0199-binary-tree-right-side-view](https://github.com/ROHAN3183/leetcode_string/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
+| [0450-delete-node-in-a-bst](https://github.com/ROHAN3183/leetcode_string/tree/main/0450-delete-node-in-a-bst/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0543-diameter-of-binary-tree/) | Easy |
 | [0662-maximum-width-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0863-all-nodes-distance-k-in-binary-tree/) | Medium |
@@ -544,6 +545,7 @@
 | [0124-binary-tree-maximum-path-sum](https://github.com/ROHAN3183/leetcode_string/tree/main/0124-binary-tree-maximum-path-sum/) | Hard |
 | [0199-binary-tree-right-side-view](https://github.com/ROHAN3183/leetcode_string/tree/main/0199-binary-tree-right-side-view/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
+| [0450-delete-node-in-a-bst](https://github.com/ROHAN3183/leetcode_string/tree/main/0450-delete-node-in-a-bst/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0543-diameter-of-binary-tree/) | Easy |
 | [0662-maximum-width-of-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0863-all-nodes-distance-k-in-binary-tree/) | Medium |
@@ -560,4 +562,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/ROHAN3183/leetcode_string/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
+## Binary Search Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0450-delete-node-in-a-bst](https://github.com/ROHAN3183/leetcode_string/tree/main/0450-delete-node-in-a-bst/) | Medium |
 <!---LeetCode Topics End-->

@@ -9,13 +9,13 @@ class Solution {
     }
 
     void dfs(int[] nums, int idx, List<Integer> ans) {
-        if (idx == nums.length) {
-            result.add(new ArrayList<>(ans));
-            return;
+        result.add(new ArrayList<>(ans));
+
+        for (int i = idx; i < nums.length; i++) {
+            ans.add(nums[i]);
+            dfs(nums, i + 1, ans);
+            ans.remove(ans.size() - 1);
         }
-        ans.add(nums[idx]);
-        dfs(nums, idx + 1, ans);
-        ans.remove(ans.size() - 1);
-        dfs(nums, idx + 1, ans);
+        return;
     }
 }

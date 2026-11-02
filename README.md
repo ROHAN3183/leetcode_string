@@ -10,6 +10,7 @@
 | [0033-search-in-rotated-sorted-array](https://github.com/ROHAN3183/leetcode_string/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0042-trapping-rain-water](https://github.com/ROHAN3183/leetcode_string/tree/main/0042-trapping-rain-water/) | Hard |
 | [0045-jump-game-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0045-jump-game-ii/) | Medium |
+| [0046-permutations](https://github.com/ROHAN3183/leetcode_string/tree/main/0046-permutations/) | Medium |
 | [0048-rotate-image](https://github.com/ROHAN3183/leetcode_string/tree/main/0048-rotate-image/) | Medium |
 | [0053-maximum-subarray](https://github.com/ROHAN3183/leetcode_string/tree/main/0053-maximum-subarray/) | Medium |
 | [0055-jump-game](https://github.com/ROHAN3183/leetcode_string/tree/main/0055-jump-game/) | Medium |
@@ -574,6 +575,7 @@
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0046-permutations](https://github.com/ROHAN3183/leetcode_string/tree/main/0046-permutations/) | Medium |
 | [0078-subsets](https://github.com/ROHAN3183/leetcode_string/tree/main/0078-subsets/) | Medium |
 | [0090-subsets-ii](https://github.com/ROHAN3183/leetcode_string/tree/main/0090-subsets-ii/) | Medium |
 | [0216-combination-sum-iii](https://github.com/ROHAN3183/leetcode_string/tree/main/0216-combination-sum-iii/) | Medium |
